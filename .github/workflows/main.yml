@@ -1,3 +1,33 @@
+name: Run LPGB Analysis Agent
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout full repository
+      - name: Checkout full repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Show all files (Debug)
+      - name: Show files (DEBUG)
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "All files in repo:"
+          ls -R
+
+      # 3️⃣ Generate Agent Instruction
       - name: Run LPGB Analysis Agent
         run: |
           cat << 'EOF' > agent_instruction.txt
@@ -30,3 +60,17 @@ Instructions:
 
 Goal: Produce one comprehensive LPGB Module A–L cheat sheet, using all repository files, fully analyzed and structured for easy study.
 EOF
+
+      # 4️⃣ Execute Agent (Replace this with your actual agent command)
+      - name: Execute LPGB Agent
+        run: |
+          # Replace this line with your actual agent run command
+          # e.g., python run_agent.py --instruction agent_instruction.txt
+          echo "Agent would run here using agent_instruction.txt"
+
+      # 5️⃣ Upload generated cheat sheet as artifact (Optional)
+      - name: Upload Cheat Sheet as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: LPGB_Cheat_Sheet
+          path: output/LPGB_Cheat_Sheet.pdf
