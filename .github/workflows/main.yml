@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repository
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -30,7 +30,7 @@ jobs:
       # 3️⃣ Generate agent instruction
       - name: Generate Agent Instruction
         run: |
-          cat > agent_instruction.txt <<'EOF'
+cat > agent_instruction.txt <<'EOF'
 Task: Generate a complete LPGB Module A–L cheat sheet using all files in the repository.
 
 Sources:
