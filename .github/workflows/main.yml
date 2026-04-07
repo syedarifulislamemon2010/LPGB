@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout full repository
-      - name: Checkout full repository
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Show all files (Debug)
-      - name: Show files (DEBUG)
+      # 2️⃣ Show files (Debug)
+      - name: Show files
         run: |
           echo "Current directory:"
           pwd
-          echo "All files in repo:"
+          echo "All files:"
           ls -R
 
-      # 3️⃣ Generate Agent Instruction file
+      # 3️⃣ Generate Agent Instruction
       - name: Generate Agent Instruction
         run: |
           cat << 'EOF' > agent_instruction.txt
@@ -61,14 +61,13 @@ Instructions:
 Goal: Produce one comprehensive LPGB Module A–L cheat sheet, using all repository files, fully analyzed and structured for easy study.
 EOF
 
-      # 4️⃣ Execute LPGB Agent (placeholder command)
+      # 4️⃣ Execute LPGB Agent
       - name: Execute LPGB Agent
         run: |
-          # Replace this with your actual agent run command
           echo "Agent would run here using agent_instruction.txt"
 
-      # 5️⃣ Upload generated cheat sheet as artifact
-      - name: Upload Cheat Sheet as Artifact
+      # 5️⃣ Upload artifact
+      - name: Upload LPGB Cheat Sheet
         uses: actions/upload-artifact@v3
         with:
           name: LPGB_Cheat_Sheet
