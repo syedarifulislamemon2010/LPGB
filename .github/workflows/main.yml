@@ -61,14 +61,13 @@ Instructions:
 Goal: Produce one comprehensive LPGB Module A–L cheat sheet, using all repository files, fully analyzed and structured for easy study.
 EOF
 
-      # 4️⃣ Execute Agent (Replace this with your actual agent command)
+      # 4️⃣ Execute Agent (Replace with your actual agent command)
       - name: Execute LPGB Agent
         run: |
-          # Replace this line with your actual agent run command
-          # e.g., python run_agent.py --instruction agent_instruction.txt
+          # Example placeholder command
           echo "Agent would run here using agent_instruction.txt"
 
-      # 5️⃣ Upload generated cheat sheet as artifact (Optional)
+      # 5️⃣ Upload generated cheat sheet as artifact
       - name: Upload Cheat Sheet as Artifact
         uses: actions/upload-artifact@v3
         with:
