@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
+      # 1️⃣ Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Show files (Debug)
+      # 2️⃣ Show all files (Debug)
       - name: Show all files
         run: |
           echo "Current directory:"
@@ -27,10 +27,10 @@ jobs:
           echo "All files in repo:"
           ls -R
 
-      # 3️⃣ Generate Agent Instruction
+      # 3️⃣ Generate agent instruction
       - name: Generate Agent Instruction
         run: |
-          cat << 'EOF' > agent_instruction.txt
+          cat > agent_instruction.txt <<'EOF'
 Task: Generate a complete LPGB Module A–L cheat sheet using all files in the repository.
 
 Sources:
@@ -40,7 +40,7 @@ Sources:
    - 5th.pdf, 6th.pdf, 96-99.pdf, law question.pdf
 3. All other files (.docx, .pdf, .html, etc.):
    - Include all latest/final versions
-   - Ignore drafts or clearly outdated files
+   - Ignore drafts or outdated files
 
 Instructions:
 - Identify module content (A → L)
