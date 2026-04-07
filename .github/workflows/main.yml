@@ -1,4 +1,4 @@
-name: Run Analysis Agent
+name: Run LPGB Analysis Agent
 
 on:
   push:
@@ -13,14 +13,64 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout full repository
       - name: Checkout full repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # 2️⃣ Show all files (Debug)
       - name: Show files (DEBUG)
         run: |
           echo "Current directory:"
           pwd
-          echo "All files:"
+          echo "All files in repo:"
           ls -R
+
+      # 3️⃣ Generate Agent Instruction
+      - name: Run LPGB Analysis Agent
+        run: |
+          cat << 'EOF' > agent_instruction.txt
+Task: Generate a complete LPGB Module A–L cheat sheet using all files in the repository.
+
+Sources:
+1. Primary Source:
+   - law book.pdf
+
+2. Past-Year Questions / Reference PDFs:
+   - 5th.pdf, 6th.pdf, 96-99.pdf, law question.pdf
+
+3. All other files (.docx, .pdf, .html, etc.) in the repository:
+   - Include every file.
+   - Use latest / most complete / final version where multiple exist.
+   - Ignore only drafts or clearly outdated files.
+
+Instructions:
+- Automatically identify module content (A → L) from all sources.
+- Consolidate all information into one master cheat sheet.
+- Language: Simple Bangla, suitable for Class 1 understanding.
+- Output per module:
+  1. Key points (bullet points)
+  2. Memory tips / mnemonics
+  3. Exam answer examples / templates
+  4. Optional: text-based mind-map or flowchart
+- Integrate past-year questions as reference material.
+- Ensure clarity, completeness, and exam readiness.
+- Focus entirely on content analysis and synthesis, not coding.
+
+Goal: Produce one comprehensive LPGB Module A–L cheat sheet, using all repository files, fully analyzed and structured for easy study.
+EOF
+
+      # 4️⃣ Execute Agent (Replace this with your actual agent command)
+      - name: Execute LPGB Agent
+        run: |
+          # Replace the line below with your actual agent run command
+          # e.g., python run_agent.py --instruction agent_instruction.txt
+          echo "Agent would run here using agent_instruction.txt"
+
+      # 5️⃣ Upload generated cheat sheet as artifact (Optional)
+      - name: Upload Cheat Sheet as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: LPGB_Cheat_Sheet
+          path: output/LPGB_Cheat_Sheet.pdf
