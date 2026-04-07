@@ -1,0 +1,23 @@
+name: Run Analysis Agent
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout full repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Show files (DEBUG)
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "All files:"
+          ls -R
