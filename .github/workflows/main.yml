@@ -1,4 +1,4 @@
-name: Run LPGB Analysis Agent
+name: Simple LPGB Workflow
 
 on:
   push:
@@ -13,58 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Show all files (Debug)
-      - name: Show all files
+      # 2️⃣ Show all files (debug)
+      - name: List files
         run: |
           echo "Current directory:"
           pwd
           echo "All files in repo:"
           ls -R
 
-      # 3️⃣ Generate agent instruction
+      # 3️⃣ Create agent instruction (placeholder)
       - name: Generate Agent Instruction
         run: |
 cat > agent_instruction.txt <<'EOF'
-Task: Generate a complete LPGB Module A–L cheat sheet using all files in the repository.
-
-Sources:
-1. Primary Source:
-   - law book.pdf
-2. Past-Year Questions / Reference PDFs:
-   - 5th.pdf, 6th.pdf, 96-99.pdf, law question.pdf
-3. All other files (.docx, .pdf, .html, etc.):
-   - Include all latest/final versions
-   - Ignore drafts or outdated files
-
-Instructions:
-- Identify module content (A → L)
-- Consolidate into one master cheat sheet
-- Simple Bangla, Class 1 level
-- Output per module:
-  1. Key points
-  2. Memory tips / mnemonics
-  3. Exam answer examples/templates
-  4. Optional: text-based mind-map/flowchart
-- Integrate past-year questions
-- Focus on content analysis & synthesis, not coding
-
-Goal: Produce one comprehensive LPGB Module A–L cheat sheet using all repository files.
+Task: Placeholder LPGB Agent instruction.
+This file currently just exists to avoid YAML errors.
 EOF
 
       # 4️⃣ Execute LPGB Agent (placeholder)
-      - name: Execute LPGB Agent
+      - name: Run LPGB Agent
         run: |
           echo "Agent would run here using agent_instruction.txt"
 
-      # 5️⃣ Upload artifact
-      - name: Upload LPGB Cheat Sheet
+      # 5️⃣ Upload artifact (placeholder)
+      - name: Upload placeholder artifact
         uses: actions/upload-artifact@v3
         with:
-          name: LPGB_Cheat_Sheet
-          path: output/LPGB_Cheat_Sheet.pdf
+          name: LPGB_Placeholder
+          path: agent_instruction.txt
