@@ -30,10 +30,14 @@ jobs:
 
           root = pathlib.Path(".")
 
-          expected_original = ["law book.pdf"]
+          expected_original_candidates = ["law book.pdf", "law_book.pdf"]
           expected_past = ["96-99.pdf", "5th.pdf", "6th.pdf"]
+          detected_original = [f for f in expected_original_candidates if (root / f).exists()]
+          if not detected_original:
+              print("Missing required original law source (expected one of):", ", ".join(expected_original_candidates))
+              sys.exit(1)
 
-          missing = [f for f in expected_original + expected_past if not (root / f).exists()]
+          missing = [f for f in expected_past if not (root / f).exists()]
           if missing:
               print("Missing required files:", ", ".join(missing))
               sys.exit(1)
@@ -57,13 +61,14 @@ jobs:
 
           report = {
               "source_priority": {
-                  "original_law": expected_original,
+                  "original_law": detected_original,
                   "past_questions": expected_past,
               },
               "validation": {
                   "required_files_present": True,
                   "total_content_files": len(all_content_files),
                   "duplicate_groups_found": len(duplicates),
+                  "duplicate_normalization": "lowercase + remove '(number)' suffix + remove non-alphanumeric chars",
               },
               "all_content_files": all_content_files,
               "duplicate_groups": duplicates,
@@ -78,7 +83,7 @@ jobs:
               "# LPGB Source Validation",
               "",
               "## Source Priority",
-              f"- Original law source: {', '.join(expected_original)}",
+              f"- Original law source: {', '.join(detected_original)}",
               f"- Past question sources: {', '.join(expected_past)}",
               "",
               "## Validation",
