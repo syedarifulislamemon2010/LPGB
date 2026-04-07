@@ -1,43 +1,70 @@
+name: Run LPGB Analysis Agent
 
----
+on:
+  push:
+    branches:
+      - main
 
-*Note: This is a template. Extract actual content from PDF files in the repository.*
-"""
-        
-        # Save as markdown
-        with open("output/LPGB_Cheat_Sheet.md", "w", encoding="utf-8") as f:
-            f.write(cheat_sheet_content)
-        
-        # Also create a text version for compatibility
-        with open("output/LPGB_Cheat_Sheet.txt", "w", encoding="utf-8") as f:
-            f.write(cheat_sheet_content)
-        
-        print("✅ Cheat sheet generated successfully!")
-        PYTHON_SCRIPT
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-    # 6️⃣ Convert to PDF (optional)
-    - name: Convert to PDF
-      run: |
-        sudo apt-get install -y pandoc texlive-xetex
-        cd output
-        pandoc LPGB_Cheat_Sheet.md -o LPGB_Cheat_Sheet.pdf --pdf-engine=xelatex || echo "PDF conversion skipped, markdown available"
-        cd ..
+jobs:
+  run:
+    runs-on: ubuntu-latest
 
-    # 7️⃣ Upload artifact - Fixed path
-    - name: Upload LPGB Cheat Sheet
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: LPGB_Cheat_Sheet
-        path: |
-          output/LPGB_Cheat_Sheet.pdf
-          output/LPGB_Cheat_Sheet.md
-          output/LPGB_Cheat_Sheet.txt
-        if-no-files-found: warn
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    # 8️⃣ Debug output (show what was generated)
-    - name: Show generated files
-      if: always()
-      run: |
-        echo "Generated files in output directory:"
-        ls -la output/
+      # 2️⃣ Show files (Debug)
+      - name: Show all files
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "All files in repo:"
+          ls -R
+
+      # 3️⃣ Generate Agent Instruction
+      - name: Generate Agent Instruction
+        run: |
+          cat << 'EOF' > agent_instruction.txt
+Task: Generate a complete LPGB Module A–L cheat sheet using all files in the repository.
+
+Sources:
+1. Primary Source:
+   - law book.pdf
+2. Past-Year Questions / Reference PDFs:
+   - 5th.pdf, 6th.pdf, 96-99.pdf, law question.pdf
+3. All other files (.docx, .pdf, .html, etc.):
+   - Include all latest/final versions
+   - Ignore drafts or clearly outdated files
+
+Instructions:
+- Identify module content (A → L)
+- Consolidate into one master cheat sheet
+- Simple Bangla, Class 1 level
+- Output per module:
+  1. Key points
+  2. Memory tips / mnemonics
+  3. Exam answer examples/templates
+  4. Optional: text-based mind-map/flowchart
+- Integrate past-year questions
+- Focus on content analysis & synthesis, not coding
+
+Goal: Produce one comprehensive LPGB Module A–L cheat sheet using all repository files.
+EOF
+
+      # 4️⃣ Execute LPGB Agent (placeholder)
+      - name: Execute LPGB Agent
+        run: |
+          echo "Agent would run here using agent_instruction.txt"
+
+      # 5️⃣ Upload artifact
+      - name: Upload LPGB Cheat Sheet
+        uses: actions/upload-artifact@v3
+        with:
+          name: LPGB_Cheat_Sheet
+          path: output/LPGB_Cheat_Sheet.pdf
