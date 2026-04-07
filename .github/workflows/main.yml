@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - copilot/upload-pdf-files
+      - copilot/**
   workflow_dispatch:
 
 env:
@@ -52,8 +52,8 @@ jobs:
 
           normalized = {}
           for path in all_content_files:
-              name = pathlib.Path(path).name.lower()
-              key = re.sub(r"\s*\(\d+\)", "", pathlib.Path(name).stem)
+              stem = pathlib.Path(path).stem.lower()
+              key = re.sub(r"\s*\(\d+\)", "", stem)
               key = re.sub(r"[^a-z0-9]+", "", key)
               normalized.setdefault(key, []).append(path)
 
@@ -68,7 +68,7 @@ jobs:
                   "required_files_present": True,
                   "total_content_files": len(all_content_files),
                   "duplicate_groups_found": len(duplicates),
-                  "duplicate_normalization": "lowercase + remove '(number)' suffix + remove non-alphanumeric chars",
+                  "duplicate_normalization": "lowercase + remove ' (digit)' patterns + remove non-alphanumeric chars",
               },
               "all_content_files": all_content_files,
               "duplicate_groups": duplicates,
