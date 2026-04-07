@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPGB 7th Exam — Part B & C Complete Guide</title>
+<style>
+  :root {
+    --bg: #ffffff; --bg2: #f5f4f0; --bg3: #eceae4;
+    --text: #1a1a18; --text2: #5a5956; --text3: #888780;
+    --border: rgba(0,0,0,0.12); --border2: rgba(0,0,0,0.2);
+    --blue: #185FA5; --blue-bg: #E6F1FB; --blue-text: #0C447C;
+    --green: #3B6D11; --green-bg: #EAF3DE; --green-text: #27500A;
+    --amber: #BA7517; --amber-bg: #FAEEDA; --amber-text: #633806;
+    --teal: #0F6E56; --teal-bg: #E1F5EE; --teal-text: #085041;
+    --red: #A32D2D; --red-bg: #FCEBEB; --red-text: #501313;
+    --purple: #534AB7; --purple-bg: #EEEDFE; --purple-text: #3C3489;
+    --coral: #993C1D; --coral-bg: #FAECE7; --coral-text: #4A1B0C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a18; --bg2: #242420; --bg3: #2e2e2a;
+      --text: #e8e6de; --text2: #a0a09a; --text3: #6a6a64;
+      --border: rgba(255,255,255,0.1); --border2: rgba(255,255,255,0.2);
+      --blue: #85B7EB; --blue-bg: #0C447C; --blue-text: #B5D4F4;
+      --green: #97C459; --green-bg: #27500A; --green-text: #C0DD97;
+      --amber: #EF9F27; --amber-bg: #633806; --amber-text: #FAC775;
+      --teal: #5DCAA5; --teal-bg: #085041; --teal-text: #9FE1CB;
+      --red: #F09595; --red-bg: #791F1F; --red-text: #F7C1C1;
+      --purple: #AFA9EC; --purple-bg: #3C3489; --purple-text: #CECBF6;
+      --coral: #F0997B; --coral-bg: #711B13; --coral-text: #F5C4B3;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 15px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  .header { text-align: center; margin-bottom: 2.5rem; padding: 2rem; background: var(--blue-bg); border-radius: 16px; border: 0.5px solid var(--border); }
+  .header h1 { font-size: 22px; font-weight: 500; color: var(--blue-text); margin-bottom: 8px; }
+  .header p { font-size: 14px; color: var(--text2); }
+  .section-title { font-size: 20px; font-weight: 500; color: var(--text); margin: 2.5rem 0 1rem; padding: 12px 16px; background: var(--bg2); border-radius: 10px; border-left: 4px solid var(--blue); }
+  .card { background: var(--bg); border: 0.5px solid var(--border); border-radius: 14px; padding: 1.5rem; margin-bottom: 1.5rem; }
+  .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+  .badge { font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+  .badge-blue { background: var(--blue-bg); color: var(--blue-text); }
+  .badge-green { background: var(--green-bg); color: var(--green-text); }
+  .badge-amber { background: var(--amber-bg); color: var(--amber-text); }
+  .badge-red { background: var(--red-bg); color: var(--red-text); }
+  .badge-teal { background: var(--teal-bg); color: var(--teal-text); }
+  .badge-purple { background: var(--purple-bg); color: var(--purple-text); }
+  .q-title { font-size: 16px; font-weight: 500; color: var(--text); }
+  .formula-box { background: var(--amber-bg); border: 1px solid var(--amber); border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .formula-box .label { font-size: 12px; color: var(--amber-text); font-weight: 500; margin-bottom: 6px; }
+  .formula-box .formula { font-size: 17px; font-weight: 500; color: var(--amber-text); font-family: monospace; }
+  .steps { margin: 1rem 0; }
+  .step { display: flex; gap: 12px; margin-bottom: 10px; align-items: flex-start; }
+  .step-num { background: var(--blue-bg); color: var(--blue-text); width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+  .step-content { flex: 1; }
+  .answer-box { background: var(--green-bg); border: 1px solid var(--green); border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .answer-box .label { font-size: 12px; color: var(--green-text); font-weight: 500; margin-bottom: 4px; }
+  .answer-box .value { font-size: 18px; font-weight: 500; color: var(--green-text); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 14px; }
+  th { background: var(--bg2); padding: 8px 12px; text-align: left; border: 0.5px solid var(--border2); font-weight: 500; font-size: 13px; }
+  td { padding: 8px 12px; border: 0.5px solid var(--border); }
+  tr:nth-child(even) td { background: var(--bg2); }
+  .warning { background: var(--amber-bg); border: 1px solid var(--amber); border-radius: 8px; padding: 10px 14px; margin: 10px 0; font-size: 13px; color: var(--amber-text); }
+  .tip { background: var(--teal-bg); border: 1px solid var(--teal); border-radius: 8px; padding: 10px 14px; margin: 10px 0; font-size: 13px; color: var(--teal-text); }
+  .case-bg { background: var(--bg2); border-radius: 10px; padding: 1rem; margin: 1rem 0; }
+  .flowchart { overflow-x: auto; margin: 1rem 0; }
+  .law-ref { display: inline-block; background: var(--purple-bg); color: var(--purple-text); font-size: 12px; padding: 2px 8px; border-radius: 4px; font-weight: 500; }
+  .bilingual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 10px 0; }
+  @media (max-width: 600px) { .bilingual { grid-template-columns: 1fr; } }
+  .bn { background: var(--blue-bg); border-radius: 8px; padding: 10px; font-size: 14px; color: var(--text); }
+  .en { background: var(--green-bg); border-radius: 8px; padding: 10px; font-size: 14px; color: var(--text); }
+  .bn-label { font-size: 11px; color: var(--blue-text); font-weight: 500; margin-bottom: 4px; }
+  .en-label { font-size: 11px; color: var(--green-text); font-weight: 500; margin-bottom: 4px; }
+  h3 { font-size: 15px; font-weight: 500; margin: 1rem 0 0.5rem; color: var(--text); }
+  .divider { height: 1px; background: var(--border); margin: 1.5rem 0; }
+  .stat-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 1rem 0; }
+  .stat { background: var(--bg2); border-radius: 8px; padding: 10px 14px; flex: 1; min-width: 120px; }
+  .stat-label { font-size: 12px; color: var(--text2); }
+  .stat-val { font-size: 18px; font-weight: 500; color: var(--text); }
+  .tick { color: var(--green); font-weight: 500; }
+  .cross { color: var(--red); font-weight: 500; }
+  .highlight { background: var(--amber-bg); padding: 1px 4px; border-radius: 3px; font-weight: 500; color: var(--amber-text); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>JAIBB — LPGB (Subject Code: 104)</h1>
+  <p>৭ম ব্যাংকিং পেশাদার পরীক্ষা প্রস্তুতি | 7th Banking Professional Examination Preparation</p>
+  <p style="margin-top:8px; font-weight:500; color:var(--blue-text)">Part B — গাণিতিক সমস্যা (Mathematical Problems) + Part C — কেস স্টাডি (Case Study)</p>
+  <p style="margin-top:6px; font-size:13px; color:var(--text2)">মেইন বই law_book.pdf বিশ্লেষণ + বিগত বছরের প্রশ্ন বিশ্লেষণ</p>
+</div>
+
+<!-- ===================== PART B ===================== -->
+<div class="section-title">📐 Part B — গাণিতিক সমস্যা | Mathematical Problems (10 × 1 = 10 Marks)</div>
+<p style="color:var(--text2); margin-bottom:1.5rem; font-size:14px;">নিচের সব ফর্মুলা মেইন বই থেকে নেওয়া। যেকোনো ১টি উত্তর দিতে হবে। ৬ষ্ঠ পরীক্ষায় Q5 (FDR) ও Q6 (CAR) এসেছে — ৭ম পরীক্ষায় নতুন টপিক থেকে আসবে।</p>
+
+<!-- Q5-TYPE: FDR -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-green">✓ ৬ষ্ঠ পরীক্ষায় এসেছে | Already in 6th Exam</span>
+    <span class="badge badge-blue">FDR সুদ | FDR Interest</span>
+  </div>
+  <div class="q-title">প্রশ্নের ধরন: Fixed Deposit Receipt (FDR) সুদ নির্ণয়</div>
+  
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Main Book — Module H, FDR Section)</div>
+    <div class="formula">Simple Interest (I) = (P × R × T) ÷ 100</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">P = মূলধন (Principal) | R = বার্ষিক হার % (Rate per annum) | T = সময় বছরে (Time in years)</div>
+    <div style="margin-top:4px; font-size:13px; color:var(--amber-text)">মোট প্রদেয় = P + I | Total Payable = P + I</div>
+  </div>
+
+  <div class="warning">⚠️ মনে রাখো! মাস → বছর রূপান্তর করো! | Remember: Convert months to years! 6 মাস = 6÷12 = 0.5 বছর</div>
+  
+  <h3>নমুনা প্রশ্ন ও সমাধান (Sample Q & Solution)</h3>
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">বাংলা প্রশ্ন</div>একজন গ্রাহক ১০ লক্ষ টাকার ৬ মাসের FDR-এর সুদ জানতে চান। বার্ষিক সুদের হার ১০%। পরিপক্বতায় প্রদেয় সুদের পরিমাণ নির্ধারণ করুন।</div>
+    <div class="en"><div class="en-label">English Question</div>A customer wants to know interest on FDR of BDT 10 lakh for 6 months at 10% per annum. Calculate interest payable at maturity.</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">প্রদত্ত তথ্য: P = ১০,০০,০০০ | R = ১০% | T = ৬ মাস = ০.৫ বছর</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">I = (১০,০০,০০০ × ১০ × ০.৫) ÷ ১০০ = ৫০,০০,০০০ ÷ ১০০</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">I = <strong>৫০,০০০ টাকা</strong></div></div>
+    <div class="step"><div class="step-num">৪</div><div class="step-content">মোট প্রদেয় = ১০,০০,০০০ + ৫০,০০০ = ১০,৫০,০০০ টাকা</div></div>
+  </div>
+  <div class="tip">💡 TDS মনে রাখো: TIN থাকলে @১০%, TIN না থাকলে @১৫% সুদ থেকে কাটা হবে। (Main Book, Module H)</div>
+
+  <h3>অতিরিক্ত ভিন্নতা যা আসতে পারে | Possible Variations</h3>
+  <table>
+    <tr><th>ভিন্নতা | Variation</th><th>সূত্র পরিবর্তন | Formula Change</th></tr>
+    <tr><td>৩ বছরের FDR, ১২% হার</td><td>T = 3 বছর সরাসরি ব্যবহার করো</td></tr>
+    <tr><td>প্রিম্যাচিউর উইথড্রয়াল</td><td>প্রযোজ্য হার = উত্তোলনের তারিখে প্রযোজ্য হার (কম হতে পারে)</td></tr>
+    <tr><td>TDS সহ নেট সুদ নির্ণয়</td><td>নেট সুদ = I × (১ - ০.১০) যদি TIN থাকে</td></tr>
+  </table>
+</div>
+
+<!-- Q6-TYPE: CAR -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-green">✓ ৬ষ্ঠ পরীক্ষায় এসেছে | Already in 6th Exam</span>
+    <span class="badge badge-blue">CAR / CRAR নির্ণয়</span>
+  </div>
+  <div class="q-title">Capital Adequacy Ratio (CAR/CRAR) নির্ণয় ও নিয়ন্ত্রক মূল্যায়ন</div>
+
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Main Book — BCA 1991, Section 13 + BB RBCA Guidelines 2014)</div>
+    <div class="formula">CRAR = (Total Eligible Capital ÷ Total RWA) × 100</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">Total Eligible Capital = Tier-1 Capital + Tier-2 Capital − Deductions</div>
+    <div style="margin-top:4px; font-size:13px; color:var(--amber-text)">Total RWA = Credit RWA + Market RWA + Operational RWA</div>
+  </div>
+
+  <h3>বাংলাদেশ ব্যাংকের ন্যূনতম মান | Bangladesh Bank Minimum Requirements</h3>
+  <table>
+    <tr><th>মান | Standard</th><th>ন্যূনতম % | Min %</th></tr>
+    <tr><td>Common Equity Tier 1 (CET1)</td><td class="highlight">৪.৫% of RWA</td></tr>
+    <tr><td>Tier-1 Capital Ratio</td><td class="highlight">৬.০% of RWA</td></tr>
+    <tr><td>Minimum CRAR</td><td class="highlight">১০% of RWA</td></tr>
+    <tr><td>Capital Conservation Buffer (CCB)</td><td class="highlight">২.৫% of RWA</td></tr>
+    <tr><td><strong>মোট (CRAR + CCB) | Total Required</strong></td><td class="highlight"><strong>১২.৫% of RWA</strong></td></tr>
+  </table>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">Total Capital = Tier-1 + Tier-2 − Deductions</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">CRAR = (Total Capital ÷ RWA) × ১০০</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">তুলনা করো: CRAR ≥ ১২.৫%? → ✅ Compliant | CRAR < ১২.৫%? → ❌ Non-compliant</div></div>
+  </div>
+
+  <div class="warning">⚠️ যদি CRAR কম হয় → ব্যাংককে মূলধন বাড়াতে হবে অথবা RWA কমাতে হবে। BB শাস্তি দিতে পারে [BCA 1991, Sec 13(7)]</div>
+</div>
+
+<!-- NEW: CRR CALCULATION -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-amber">⭐ ৭ম পরীক্ষায় সম্ভাবনা বেশি | High Probability for 7th Exam</span>
+    <span class="badge badge-blue">CRR হিসাব</span>
+  </div>
+  <div class="q-title">Cash Reserve Ratio (CRR) — নগদ সংরক্ষণ অনুপাত নির্ণয়</div>
+  
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Main Book — BCA 1991, Section 25 + Module K)</div>
+    <div class="formula">CRR Amount = Total Demand & Time Liabilities (TDTL) × CRR Rate%</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">বর্তমান CRR হার (Current Rate): ৪% (bi-weekly average basis) | ন্যূনতম দৈনিক: ৩.৫%</div>
+  </div>
+
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">নমুনা প্রশ্ন (বাংলা)</div>ABC Bank-এর মোট চাহিদা ও মেয়াদী দায় (TDTL) = ৫,০০০ কোটি টাকা। CRR হার ৪%। বাংলাদেশ ব্যাংকে রাখার জন্য নূন্যতম CRR পরিমাণ নির্ধারণ করুন।</div>
+    <div class="en"><div class="en-label">Sample Question (English)</div>ABC Bank's Total Demand & Time Liabilities (TDTL) = BDT 5,000 crore. CRR rate is 4%. Calculate minimum CRR amount to be kept with Bangladesh Bank.</div>
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">CRR = TDTL × হার = ৫,০০০ কোটি × ৪% = ৫,০০০ × ০.০৪</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">CRR = <strong>২০০ কোটি টাকা</strong></div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">ন্যূনতম দৈনিক (৩.৫%): ৫,০০০ × ০.০৩৫ = <strong>১৭৫ কোটি টাকা</strong></div></div>
+  </div>
+  <div class="answer-box">
+    <div class="label">✅ উত্তর | Answer</div>
+    <div class="value">CRR = BDT ২০০ কোটি (Bi-weekly Average) | Daily Minimum = BDT ১৭৫ কোটি</div>
+  </div>
+  <div class="tip">💡 BB CRR-এ কোনো সুদ দেয় না। ঘাটতি হলে = Bank Rate + ৫% জরিমানা সুদ [DOS Circular 03/2010]</div>
+</div>
+
+<!-- NEW: SLR CALCULATION -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-amber">⭐ ৭ম পরীক্ষায় সম্ভাবনা বেশি | High Probability for 7th Exam</span>
+    <span class="badge badge-blue">SLR হিসাব</span>
+  </div>
+  <div class="q-title">Statutory Liquidity Ratio (SLR) — বিধিবদ্ধ তারল্য অনুপাত নির্ণয়</div>
+
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Main Book — BCA 1991, Section 33 + Module K)</div>
+    <div class="formula">SLR Amount = Total Demand & Time Liabilities × SLR Rate%</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">Conventional Banks: SLR = ১৩% (daily) | Islamic Banks: SLR = ৫.৫% (daily)</div>
+    <div style="margin-top:4px; font-size:13px; color:var(--amber-text)">SLR-এ অন্তর্ভুক্ত: নগদ + সোনা + সরকারি অনুমোদিত সিকিউরিটি</div>
+  </div>
+
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">নমুনা প্রশ্ন</div>XYZ Conventional Bank-এর TDTL = ৮,০০০ কোটি টাকা। SLR হার ১৩%। (ক) SLR পরিমাণ নির্ণয় করুন। (খ) বর্তমানে ব্যাংকের নগদ ৪০০ কোটি, সরকারি সিকিউরিটি ৬০০ কোটি — SLR মানা হয়েছে কি?</div>
+    <div class="en"><div class="en-label">Sample Question</div>XYZ Conventional Bank TDTL = BDT 8,000 crore. SLR rate 13%. (a) Calculate SLR amount. (b) Bank currently holds Cash BDT 400 crore + Govt Securities BDT 600 crore — is SLR maintained?</div>
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">Required SLR = ৮,০০০ × ১৩% = ৮,০০০ × ০.১৩ = <strong>১,০৪০ কোটি টাকা</strong></div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">বর্তমান SLR সম্পদ = নগদ ৪০০ + সিকিউরিটি ৬০০ = ১,০০০ কোটি</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">ঘাটতি = ১,০৪০ - ১,০০০ = <strong>৪০ কোটি টাকা</strong> — SLR পূরণ হয়নি ❌</div></div>
+  </div>
+  <div class="warning">⚠️ SLR ঘাটতি হলে: Prevailing Special Repo Rate-এ দৈনিক জরিমানা সুদ প্রযোজ্য [BCA 1991, Sec 33]</div>
+</div>
+
+<!-- NEW: Artha Rin Suit Value -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-amber">⭐ ৭ম পরীক্ষায় সম্ভাবনা বেশি | High Probability for 7th Exam</span>
+    <span class="badge badge-blue">অর্থঋণ আদালত মামলা মূল্য</span>
+  </div>
+  <div class="q-title">Artha Rin Adalat — মামলার মূল্য ও বিধিবদ্ধ সুদ নির্ণয়</div>
+
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Artha Rin Adalat Ain 2003 — Section 47)</div>
+    <div class="formula">Maximum Suit Value = Principal + (Max 200% of Principal as Interest)</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">সর্বোচ্চ মামলা মূল্য = মূলধন + সর্বোচ্চ মূলধনের ২০০% সুদ = মূলধনের ৩০০% (১+২=৩ গুণ)</div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="stat-label">রায়ের পর সুদ | Post-Decree</div><div class="stat-val">১২%</div></div>
+    <div class="stat"><div class="stat-label">আপিলে সুদ | On Appeal</div><div class="stat-val">১৬%</div></div>
+    <div class="stat"><div class="stat-label">উচ্চ আদালতে | High Court</div><div class="stat-val">১৮%</div></div>
+    <div class="stat"><div class="stat-label">রিট মামলায় | Writ Petition</div><div class="stat-val">২৫%</div></div>
+  </div>
+
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">নমুনা প্রশ্ন</div>ABC Bank Mr. করিমকে ৫০ লক্ষ টাকা ঋণ দিয়েছে। করিম পরিশোধ করেননি। অর্থঋণ আদালতে মামলার সর্বোচ্চ মূল্য কত হবে?</div>
+    <div class="en"><div class="en-label">Sample Question</div>ABC Bank lent Mr. Karim BDT 50 lakh. Karim defaulted. What is the maximum suit value in Artha Rin Adalat?</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">মূলধন = ৫০ লক্ষ</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">সর্বোচ্চ সুদ = ৫০ লক্ষের ২০০% = ১,০০ লক্ষ</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">সর্বোচ্চ মামলা মূল্য = ৫০ + ১০০ = <strong>১৫০ লক্ষ টাকা</strong></div></div>
+  </div>
+
+  <h3>নিলামে বিডারের আমানত | Auction Bid Deposit (Section 33)</h3>
+  <table>
+    <tr><th>মূল্য সীমা | Price Slab</th><th>আমানতের %</th><th>বাকি অর্থ পরিশোধের সময়</th></tr>
+    <tr><td>সর্বোচ্চ ১০ লক্ষ পর্যন্ত</td><td class="highlight">২০%</td><td>৩০ দিন</td></tr>
+    <tr><td>১০ লক্ষের বেশি থেকে ৫০ লক্ষ পর্যন্ত</td><td class="highlight">১৫%</td><td>৬০ দিন</td></tr>
+    <tr><td>৫০ লক্ষের বেশি</td><td class="highlight">১০%</td><td>৯০ দিন</td></tr>
+  </table>
+</div>
+
+<!-- NEW: Excise Duty Calculation -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-teal">নতুন টপিক | New Topic</span>
+    <span class="badge badge-blue">আবগারি শুল্ক | Excise Duty</span>
+  </div>
+  <div class="q-title">আবগারি শুল্ক নির্ণয় | Excise Duty Calculation</div>
+  
+  <div class="formula-box">
+    <div class="label">📌 ভিত্তি | Basis (Main Book — SRO 143-Law/2020/104 dated 11 June 2020, Module J)</div>
+    <div class="formula">Excise Duty = Fixed Amount based on Highest Balance during year</div>
+  </div>
+
+  <table>
+    <tr><th>সর্বোচ্চ ব্যালেন্স (টাকায়) | Highest Balance (BDT)</th><th>আবগারি শুল্ক (টাকা) | Excise Duty (BDT)</th></tr>
+    <tr><td>০ — ১,০০,০০০</td><td>শূন্য | NIL</td></tr>
+    <tr><td>১,০০,০০১ — ৫,০০,০০০</td><td class="highlight">১৫০</td></tr>
+    <tr><td>৫,০০,০০১ — ১০,০০,০০০</td><td class="highlight">৫০০</td></tr>
+    <tr><td>১০,০০,০০১ — ১,০০,০০,০০০</td><td class="highlight">৩,০০০</td></tr>
+    <tr><td>১,০০,০০,০০১ — ৫,০০,০০,০০০</td><td class="highlight">১৫,০০০</td></tr>
+    <tr><td>৫,০০,০০,০০১ এবং তার উপরে</td><td class="highlight">৪০,০০০</td></tr>
+  </table>
+  <div class="tip">💡 প্রতিটি অ্যাকাউন্টে আলাদাভাবে প্রযোজ্য। সঞ্চয়, চলতি, লোন — সব অ্যাকাউন্টে আলাদা শুল্ক।</div>
+</div>
+
+<!-- NEW: Deposit Insurance Premium -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-teal">নতুন টপিক | New Topic</span>
+    <span class="badge badge-blue">আমানত বীমা প্রিমিয়াম</span>
+  </div>
+  <div class="q-title">Deposit Insurance Premium নির্ণয় (Deposit Insurance Act 2000)</div>
+
+  <div class="formula-box">
+    <div class="label">📌 সূত্র | Formula (Main Book — Deposit Insurance Act 2000, Module G)</div>
+    <div class="formula">Premium = Total Insured Deposits × Premium Rate %</div>
+    <div style="margin-top:6px; font-size:13px; color:var(--amber-text)">প্রতি ছয় মাসে একবার প্রদান করতে হয় | Paid half-yearly</div>
+  </div>
+
+  <table>
+    <tr><th>ব্যাংকের ক্যাটাগরি (CAMEL Rating)</th><th>প্রিমিয়াম হার</th></tr>
+    <tr><td>SCBs, DFIs, PCBs (EWS ও Problem Banks বাদে)</td><td class="highlight">০.০৮%</td></tr>
+    <tr><td>EWS Banks (Early Warning System)</td><td class="highlight">০.০৯%</td></tr>
+    <tr><td>Problem Banks</td><td class="highlight">০.১০%</td></tr>
+  </table>
+
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">নমুনা প্রশ্ন</div>একটি PCB ব্যাংক (EWS নয়)-এর মোট বীমাকৃত আমানত = ১,০০০ কোটি টাকা। অর্ধ-বার্ষিক প্রিমিয়াম কত?</div>
+    <div class="en"><div class="en-label">Sample Question</div>A PCB bank (non-EWS) has total insured deposits = BDT 1,000 crore. Calculate half-yearly insurance premium.</div>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">হার = ০.০৮% = ০.০০০৮</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">প্রিমিয়াম = ১,০০০ কোটি × ০.০০০৮ = <strong>০.৮০ কোটি = ৮০ লক্ষ টাকা</strong></div></div>
+  </div>
+</div>
+
+<!-- ===================== PART C ===================== -->
+<div class="section-title">⚖️ Part C — কেস স্টাডি সমাধান | Problem Solving / Case Study (20 × 1 = 20 Marks)</div>
+<p style="color:var(--text2); margin-bottom:1.5rem; font-size:14px;">যেকোনো ১টি কেস সমাধান করতে হবে। বিগত বছরের বিশ্লেষণ দেখে যেসব টপিক ৭ম পরীক্ষায় আসতে পারে।</p>
+
+<!-- CASE ANALYSIS -->
+<div class="card" style="background:var(--bg2);">
+  <h3 style="margin-top:0">📊 বিগত পরীক্ষার কেস বিশ্লেষণ | Past Exam Case Analysis</h3>
+  <table>
+    <tr><th>পরীক্ষা | Exam</th><th>কেস টপিক | Case Topic</th><th>আইন | Law</th></tr>
+    <tr><td>৯৬তম</td><td>Collecting Banker + Forged Cheque</td><td>NI Act 1881, Sec 131</td></tr>
+    <tr><td>৯৭তম</td><td>Dormant Account (Nazmul Karim case)</td><td>BCA 1991, Sec 35</td></tr>
+    <tr><td>৯৭তম</td><td>Willful Defaulter (সাধারণ)</td><td>BCA 1991</td></tr>
+    <tr><td>৯৮তম</td><td>Cheque Crossing + Account Operations</td><td>NI Act, Majority Act</td></tr>
+    <tr><td>৯৯তম</td><td>CTR/STR Suspicious Transaction Case</td><td>MLPA 2012</td></tr>
+    <tr><td>৫ম</td><td>Registration + Gift (Heba)</td><td>Registration Act 1908 + TPA 1882</td></tr>
+    <tr><td>৬ষ্ঠ</td><td>Cheque Dishonor Sec 138 (Iqbal Traders)</td><td>NI Act 1881, Sec 138</td></tr>
+    <tr><td>৬ষ্ঠ</td><td>Willful Default (Skyscraper Ltd.)</td><td>BCA 1991 (Amendment 2023)</td></tr>
+  </table>
+  <div class="tip">💡 ৭ম পরীক্ষায় সম্ভাব্য: Artha Rin Adalat Recovery Case, FERA Case, Mortgage/Hypothecation Case, Bankruptcy Case</div>
+</div>
+
+<!-- CASE 1: ARTHA RIN ADALAT -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-red">⭐⭐ অত্যন্ত গুরুত্বপূর্ণ | Most Important for 7th Exam</span>
+  </div>
+  <div class="q-title">কেস — অর্থঋণ আদালতে ঋণ আদায় | Artha Rin Adalat Loan Recovery Case</div>
+  <span class="law-ref">Artha Rin Adalat Ain, 2003 — Sec 4, 12, 17, 30, 33, 40, 41, 46, 47</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>নমুনা কেস পটভূমি | Sample Case Background:</strong><br>
+    M/S Rahim Enterprises, ABC Bank থেকে ২০১৯ সালে ৩ কোটি টাকা ঋণ নিয়েছিল। ঋণের জামানত হিসেবে ঢাকায় ৩.৫০ কোটি টাকার সম্পত্তি মর্টগেজ দেওয়া হয়েছিল। ২০২২ সালে ঋণ পরিশোধ বন্ধ হয়ে যায়। ব্যাংক বিভিন্ন প্রচেষ্টার পরেও আদায় সম্ভব হয়নি। এখন ব্যাংক আইনি পদক্ষেপ নিতে চায়।
+  </div>
+
+  <h3>উত্তর কাঠামো | Answer Framework</h3>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">i</div>
+      <div class="step-content">
+        <strong>মামলা দায়েরের পূর্বে ব্যাংকের দায়িত্ব | Bank's Pre-Suit Duty [Sec 12]</strong>
+        <div class="bilingual" style="margin-top:8px;">
+          <div class="bn"><div class="bn-label">বাংলা</div>জামানত বিক্রির পূর্বে মামলা করা যাবে না। প্রথমে Pledge, Hypothecation ও Mortgage সম্পত্তি বিক্রি করতে হবে। তারপরও আদায় না হলে মামলা করতে হবে।</div>
+          <div class="en"><div class="en-label">English</div>No suit before selling securities. Must first sell pledge, hypothecation and mortgage property. Only if still unrecovered, file suit.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">ii</div>
+      <div class="step-content">
+        <strong>মামলার মূল্য সীমা | Suit Value Limit [Sec 47]</strong><br>
+        সর্বোচ্চ মামলা মূল্য = মূলধন + সর্বোচ্চ মূলধনের ২০০% সুদ<br>
+        = ৩ কোটি + (৩ কোটি × ২) = ৩ + ৬ = <strong>৯ কোটি টাকা (সর্বোচ্চ)</strong>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">iii</div>
+      <div class="step-content">
+        <strong>মামলার নিষ্পত্তির সময়সীমা | Time Limit [Sec 17]</strong>
+        <table style="margin-top:8px;">
+          <tr><th>ধাপ | Step</th><th>সময়সীমা</th></tr>
+          <tr><td>প্রাথমিক শুনানি</td><td>৩০ দিন (বিশেষজ্ঞ থাকলে) / ৯০ দিন (সাধারণ)</td></tr>
+          <tr><td>রায়ের পর সুদ</td><td>১২% বার্ষিক</td></tr>
+          <tr><td>এক্সিকিউশন মামলা দাখিল</td><td>রায়ের ১ বছরের মধ্যে</td></tr>
+          <tr><td>নিলামের নোটিস</td><td>১৫ দিনের নোটিস</td></tr>
+          <tr><td>আপিল দাখিল</td><td>৬০ দিনের মধ্যে</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">iv</div>
+      <div class="step-content">
+        <strong>আপিল প্রক্রিয়া | Appeal Process [Sec 40-41]</strong>
+        <table style="margin-top:8px;">
+          <tr><th>রায়ের পরিমাণ | Decretal Amount</th><th>আপিল কোথায়?</th></tr>
+          <tr><td>৫০ লক্ষ টাকার কম</td><td>জেলা জজ আদালত</td></tr>
+          <tr><td>৫০ লক্ষ টাকা ও তদূর্ধ্ব</td><td>হাইকোর্ট বিভাগ</td></tr>
+          <tr><td colspan="2">আপিল করতে হলে রায়ের ৫০% অর্থ জমা দিতে হবে</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="flowchart">
+    <svg width="100%" viewBox="0 0 680 380">
+      <defs><marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+      <!-- Flow chart for Artha Rin Process -->
+      <rect x="240" y="10" width="200" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+      <text x="340" y="35" text-anchor="middle" font-size="13" font-weight="500" fill="#0C447C">ঋণ খেলাপি | Loan Default</text>
+      <line x1="340" y1="50" x2="340" y2="80" stroke="#888" stroke-width="1" marker-end="url(#ar1)"/>
+      <rect x="220" y="80" width="240" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+      <text x="340" y="105" text-anchor="middle" font-size="13" font-weight="500" fill="#633806">জামানত বিক্রি চেষ্টা | Try Sell Security</text>
+      <line x1="340" y1="120" x2="340" y2="150" stroke="#888" stroke-width="1" marker-end="url(#ar1)"/>
+      <rect x="210" y="150" width="260" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+      <text x="340" y="175" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">মামলা দায়ের | File Suit in Artha Rin</text>
+      <line x1="340" y1="190" x2="340" y2="220" stroke="#888" stroke-width="1" marker-end="url(#ar1)"/>
+      <rect x="210" y="220" width="260" height="40" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+      <text x="340" y="241" text-anchor="middle" font-size="13" font-weight="500" fill="#27500A">রায় | Decree</text>
+      <text x="340" y="255" text-anchor="middle" font-size="11" fill="#27500A">(১২% সুদ প্রযোজ্য | 12% Interest applies)</text>
+      <line x1="340" y1="260" x2="340" y2="290" stroke="#888" stroke-width="1" marker-end="url(#ar1)"/>
+      <rect x="200" y="290" width="280" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+      <text x="340" y="310" text-anchor="middle" font-size="13" font-weight="500" fill="#3C3489">এক্সিকিউশন/নিলাম | Execution/Auction</text>
+      <text x="340" y="325" text-anchor="middle" font-size="11" fill="#3C3489">(১ বছরের মধ্যে দাখিল করতে হবে)</text>
+      <!-- Time labels on right -->
+      <text x="490" y="105" font-size="11" fill="#888780">Sec 12</text>
+      <text x="490" y="175" font-size="11" fill="#888780">Sec 46 — ১ বছর সীমা</text>
+      <text x="490" y="245" font-size="11" fill="#888780">Sec 47 — সুদ সীমা</text>
+      <text x="490" y="310" font-size="11" fill="#888780">Sec 33 — ১৫ দিন নোটিস</text>
+    </svg>
+  </div>
+  <div class="answer-box">
+    <div class="label">✅ গুরুত্বপূর্ণ মনে রাখো</div>
+    <div style="font-size:14px; color:var(--green-text)">মামলার সর্বোচ্চ সীমা = মূলধনের ৩ গুণ (১+২) | রায়ের পর সুদ ১২% | আপিলে ১৬% | রিট মামলায় ২৫%</div>
+  </div>
+</div>
+
+<!-- CASE 2: COLLECTING BANKER + FORGED CHEQUE -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-red">⭐⭐ গুরুত্বপূর্ণ | Important — বারবার এসেছে</span>
+  </div>
+  <div class="q-title">কেস — Collecting Banker ও জাল চেক | Forged Signature Case</div>
+  <span class="law-ref">NI Act 1881 — Sec 131, 131B, 138 | Sec 85, 85A</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>নমুনা কেস:</strong> 'X' ব্যাংকে আঁকা ৩০,০০০ টাকার একটি Crossed Order Cheque 'P' ব্যাংক তার গ্রাহকের পক্ষে সংগ্রহ করেছে যার অনুকূলে চেকটি ইন্ডোর্স করা হয়েছিল। (i) Drawer-এর স্বাক্ষর জাল হলে (ii) Payee-এর ইন্ডোর্সমেন্ট জাল হলে — Payee Bank ও Collecting Bank-এর অবস্থান আলোচনা করো।
+  </div>
+
+  <h3>দৃশ্যকল্প ১ | Scenario 1: Drawer-এর স্বাক্ষর জাল | Forged Drawer's Signature</h3>
+  <table>
+    <tr><th>পক্ষ | Party</th><th>অবস্থান | Position</th><th>আইনি ভিত্তি</th></tr>
+    <tr><td>Payee Bank (X Bank)</td><td class="cross">❌ দায়ী — জাল স্বাক্ষর সনাক্ত না করতে পারার জন্য</td><td>Sec 85 NI Act</td></tr>
+    <tr><td>Collecting Bank (P Bank)</td><td class="tick">✅ দায়মুক্ত — Good faith-এ কাজ করেছে [যদি Negligence না থাকে]</td><td>Sec 131 NI Act</td></tr>
+    <tr><td>True Owner (Drawer)</td><td>ব্যাংকের বিরুদ্ধে দাবি করতে পারবেন</td><td>Common Law</td></tr>
+  </table>
+
+  <h3>দৃশ্যকল্প ২ | Scenario 2: Payee-এর ইন্ডোর্সমেন্ট জাল | Forged Endorsement</h3>
+  <table>
+    <tr><th>পক্ষ | Party</th><th>অবস্থান | Position</th><th>আইনি ভিত্তি</th></tr>
+    <tr><td>Payee Bank (X Bank)</td><td class="tick">✅ দায়মুক্ত — Good faith ও Without Negligence-এ পরিশোধ করেছে</td><td>Sec 128 NI Act</td></tr>
+    <tr><td>Collecting Bank (P Bank)</td><td class="cross">❌ সম্ভাব্য দায়ী — True Owner-এর পক্ষে টাকা নেয়নি</td><td>Sec 131 NI Act</td></tr>
+  </table>
+
+  <div class="bilingual">
+    <div class="bn"><div class="bn-label">Collecting Bank-এর সুরক্ষার শর্ত [Sec 131]</div>
+      ১. সদ্বিশ্বাসে (Good Faith) কাজ করতে হবে<br>
+      ২. অবহেলা ছাড়া (Without Negligence)<br>
+      ৩. তার নিজের গ্রাহকের জন্য সংগ্রহ করতে হবে<br>
+      ৪. Crossed Cheque হতে হবে
+    </div>
+    <div class="en"><div class="en-label">Protection for Collecting Bank [Sec 131]</div>
+      1. Must act in Good Faith<br>
+      2. Without Negligence<br>
+      3. Must collect for its own customer<br>
+      4. Cheque must be crossed
+    </div>
+  </div>
+  <div class="warning">⚠️ Negligence থাকলে Collecting Bank-এর সুরক্ষা নেই! Negligence = KYC না করা, অচেনা গ্রাহকের চেক নেওয়া, সন্দেহজনক ইন্ডোর্সমেন্ট গ্রহণ।</div>
+</div>
+
+<!-- CASE 3: MORTGAGE & HYPOTHECATION CASE -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-red">⭐⭐ নতুন সম্ভাবনা | New High Probability Topic for 7th</span>
+  </div>
+  <div class="q-title">কেস — বন্ধক ও হাইপোথেকেশন | Mortgage & Hypothecation Case</div>
+  <span class="law-ref">Transfer of Property Act 1882 — Sec 58, 59, 100 | Contract Act 1872 — Sec 172</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>নমুনা কেস:</strong> ABC Bank Mr. সালামকে ৫০ লক্ষ টাকা ঋণ দিয়েছে। তিনি ঢাকায় ৬০ লক্ষ টাকার একটি বাড়ি মর্টগেজ এবং ৩০ লক্ষ টাকার ব্যবসায়িক মজুদ হাইপোথেকেশন দিয়েছেন। ঋণ খেলাপি হলে ব্যাংক কীভাবে জামানত আদায় করবে এবং উভয় পদ্ধতির মধ্যে পার্থক্য কী?
+  </div>
+
+  <table>
+    <tr><th>বিষয় | Basis</th><th>মর্টগেজ | Mortgage [TPA Sec 58]</th><th>হাইপোথেকেশন | Hypothecation</th></tr>
+    <tr><td>সম্পদের ধরন</td><td>স্থাবর সম্পত্তি (জমি, বাড়ি)</td><td>চলমান সম্পদ (মজুদ, দেনা)</td></tr>
+    <tr><td>দখল</td><td>গ্রাহকের কাছে থাকে</td><td>গ্রাহকের কাছে থাকে</td></tr>
+    <tr><td>নিবন্ধন</td><td>বাধ্যতামূলক [Reg. Act 1908]</td><td>প্রয়োজন নেই</td></tr>
+    <tr><td>বিক্রির অধিকার</td><td>আদালতের অনুমতি লাগতে পারে</td><td>আদালতের অনুমতি লাগতে পারে</td></tr>
+    <tr><td>ব্যাংকের ঝুঁকি</td><td>কম (স্থায়ী সম্পদ)</td><td>বেশি (সম্পদ গ্রাহকের কাছে)</td></tr>
+  </table>
+
+  <h3>মর্টগেজ বনাম প্লেজের পার্থক্য | Mortgage vs Pledge</h3>
+  <table>
+    <tr><th>বিষয়</th><th>মর্টগেজ</th><th>প্লেজ [Contract Act Sec 172]</th></tr>
+    <tr><td>সম্পদের ধরন</td><td>স্থাবর সম্পত্তি</td><td>মূল্যবান জিনিস (সোনা, শেয়ার)</td></tr>
+    <tr><td>দখল</td><td>গ্রাহকের কাছে</td><td>ব্যাংকের কাছে হস্তান্তর</td></tr>
+    <tr><td>বিক্রির অধিকার</td><td>আদালত ছাড়া বিক্রি কঠিন</td><td>আদালত ছাড়া বিক্রি সম্ভব</td></tr>
+    <tr><td>ব্যাংকের নিরাপত্তা</td><td>তুলনামূলক কম</td><td>বেশি নিরাপদ</td></tr>
+  </table>
+
+  <div class="tip">💡 পরীক্ষায় ৪টি তুলনা: Fixed vs Floating Charge, Pledge vs Hypothecation, Mortgage vs Hypothecation, Primary Security vs Collateral Security আলাদাভাবে জানতে হবে।</div>
+</div>
+
+<!-- CASE 4: FERA/MONEY LAUNDERING COMBINED -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-red">⭐⭐ নতুন সম্ভাবনা | High Probability New Topic</span>
+  </div>
+  <div class="q-title">কেস — মানি লন্ডারিং ও FERA লঙ্ঘন | Money Laundering & FERA Violation</div>
+  <span class="law-ref">MLPA 2012 + FERA 1947 + ATA 2009</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>নমুনা কেস:</strong> Mr. Hasan একজন রপ্তানিকারক। তার অ্যাকাউন্টে বিভিন্ন সময়ে ছোট ছোট অনেক লেনদেন দেখা যাচ্ছে, মোট টাকার পরিমাণ তার আয়ের সাথে অসামঞ্জস্যপূর্ণ। তিনি বিদেশে পরিবারের কাছে হুন্ডির মাধ্যমে টাকা পাঠাচ্ছেন বলে সন্দেহ। ব্যাংক অফিসার হিসেবে আপনার করণীয় কী?
+  </div>
+
+  <h3>মানি লন্ডারিং-এর তিনটি ধাপ | 3 Stages of Money Laundering</h3>
+  <div style="display:flex; gap:12px; flex-wrap:wrap; margin:1rem 0;">
+    <div style="flex:1; min-width:160px; background:var(--red-bg); border-radius:10px; padding:12px; border:0.5px solid var(--red);">
+      <div style="font-weight:500; color:var(--red-text); font-size:13px; margin-bottom:4px;">১ — স্থাপন | Placement</div>
+      <div style="font-size:13px; color:var(--red-text)">অবৈধ অর্থ ব্যাংকিং ব্যবস্থায় প্রবেশ করানো</div>
+    </div>
+    <div style="flex:1; min-width:160px; background:var(--amber-bg); border-radius:10px; padding:12px; border:0.5px solid var(--amber);">
+      <div style="font-weight:500; color:var(--amber-text); font-size:13px; margin-bottom:4px;">২ — স্তরীকরণ | Layering</div>
+      <div style="font-size:13px; color:var(--amber-text)">জটিল লেনদেনে অর্থের উৎস গোপন করা</div>
+    </div>
+    <div style="flex:1; min-width:160px; background:var(--green-bg); border-radius:10px; padding:12px; border:0.5px solid var(--green);">
+      <div style="font-weight:500; color:var(--green-text); font-size:13px; margin-bottom:4px;">৩ — সংহতকরণ | Integration</div>
+      <div style="font-size:13px; color:var(--green-text)">অর্থ বৈধ অর্থনীতিতে ফিরিয়ে আনা</div>
+    </div>
+  </div>
+
+  <h3>ব্যাংক অফিসারের করণীয় | Bank Officer's Actions</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content"><strong>STR দাখিল করো</strong> — BFIU-তে সন্দেহজনক লেনদেন রিপোর্ট [MLPA 2012, Sec 25] — যত দ্রুত সম্ভব, সর্বোচ্চ ৩ কার্যদিবসের মধ্যে</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content"><strong>CTR যাচাই করো</strong> — ৭০ লক্ষের উপরে নগদ লেনদেন CTR জমা দিতে হবে [MLPA 2012, Sec 25]</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content"><strong>KYC/EDD আপডেট করো</strong> — Enhanced Due Diligence প্রয়োগ করো, আয়ের উৎস যাচাই করো</div></div>
+    <div class="step"><div class="step-num">৪</div><div class="step-content"><strong>হুন্ডির ক্ষেত্রে FERA ১৯৪৭ প্রয়োগ</strong> — অনুমোদিত মাধ্যম ছাড়া বৈদেশিক মুদ্রা লেনদেন বেআইনি [FERA 1947, Sec 4]</div></div>
+    <div class="step"><div class="step-num">৫</div><div class="step-content"><strong>রেকর্ড সংরক্ষণ</strong> — STR ও সংশ্লিষ্ট তথ্য কমপক্ষে ৫ বছর সংরক্ষণ করতে হবে</div></div>
+  </div>
+
+  <table>
+    <tr><th>অপরাধ | Offence</th><th>শাস্তি | Punishment</th><th>আইন | Law</th></tr>
+    <tr><td>মানি লন্ডারিং করা</td><td>৪-১২ বছর কারাদণ্ড + জরিমানা</td><td>MLPA 2012, Sec 4</td></tr>
+    <tr><td>মিথ্যা তথ্য দেওয়া</td><td>সর্বোচ্চ ২ বছর / ৫০,০০০ টাকা</td><td>MLPA 2012, Sec 8</td></tr>
+    <tr><td>রিপোর্ট না দেওয়া</td><td>সর্বোচ্চ ১ বছর / ২৫,০০০ টাকা</td><td>MLPA 2012, Sec 8</td></tr>
+    <tr><td>হুন্ডির মাধ্যমে বৈদেশিক মুদ্রা পাঠানো</td><td>আর্থিক জরিমানা + সম্পদ বাজেয়াপ্ত</td><td>FERA 1947</td></tr>
+  </table>
+</div>
+
+<!-- CASE 5: BANKRUPTCY CASE -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-amber">⭐ গুরুত্বপূর্ণ সম্ভাবনা | Important Probability</span>
+  </div>
+  <div class="q-title">কেস — দেউলিয়া আইন প্রয়োগ | Bankruptcy Act Case</div>
+  <span class="law-ref">Bankruptcy Act 1997 — Sec 9, 10, 18, 24, 31, 36</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>নমুনা কেস:</strong> Mr. Rahim একজন ব্যবসায়ী। তার মোট ঋণ ৫০ লক্ষ টাকা কিন্তু সম্পত্তির মূল্য মাত্র ২০ লক্ষ টাকা। দেউলিয়া ঘোষণার আগেই তিনি তার বাড়ির ১৫ লক্ষ টাকার সম্পত্তি তার ভাইয়ের নামে হস্তান্তর করেছেন। পাওনাদাররা কীভাবে আইনি পদক্ষেপ নেবেন?
+  </div>
+
+  <h3>পাওনাদারের মামলা দায়েরের ধাপ | Creditor's Filing Steps [Sec 9]</h3>
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content">শর্ত পূরণ: ঋণের পরিমাণ নূন্যতম <strong>১ লক্ষ টাকা</strong> | ঋণ স্বীকৃতি বা আদালতের ডিক্রি থাকতে হবে</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content">দেউলিয়া আদালতে আবেদন দাখিল — ঋণের বিবরণ ও প্রমাণসহ</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content">আদালত নোটিশ জারি → প্রতিবাদীর বক্তব্য শুনবেন → সাক্ষ্য-প্রমাণ গ্রহণ</div></div>
+    <div class="step"><div class="step-num">৪</div><div class="step-content">দেউলিয়া ঘোষণা → Official Receiver নিয়োগ → সম্পত্তি রিসিভারের তত্ত্বাবধানে</div></div>
+  </div>
+
+  <h3>প্রতারণামূলক সম্পত্তি হস্তান্তরের বিরুদ্ধে ব্যবস্থা | Fraudulent Transfer [Sec 18 + TPA Sec 53]</h3>
+  <table>
+    <tr><th>ব্যবস্থা | Measure</th><th>বিবরণ | Detail</th><th>আইন | Law</th></tr>
+    <tr><td>১. হস্তান্তর বাতিল</td><td>ভাইয়ের কাছে হস্তান্তর বাতিলযোগ্য — Sec 18 অনুযায়ী</td><td>Bankruptcy Act 1997, Sec 18</td></tr>
+    <tr><td>২. TPA Sec 53 প্রয়োগ</td><td>প্রতারণার উদ্দেশ্যে হস্তান্তর আইনত বাতিলযোগ্য</td><td>TPA 1882, Sec 53</td></tr>
+    <tr><td>৩. সম্পত্তি পুনরুদ্ধার</td><td>Official Receiver সম্পত্তি পুনরুদ্ধার করতে পারবেন</td><td>Bankruptcy Act, Sec 31</td></tr>
+    <tr><td>৪. তদন্ত আদেশ</td><td>আদালত লুকানো সম্পত্তি তদন্তের আদেশ দিতে পারবেন</td><td>Bankruptcy Act, Sec 18</td></tr>
+  </table>
+
+  <h3>দেউলিয়া ঘোষণার পরিণতি | Consequences of Bankruptcy [Sec 24]</h3>
+  <table>
+    <tr><th>পরিণতি | Consequence</th><th>বিবরণ</th></tr>
+    <tr><td>সম্পত্তি হস্তান্তর</td><td>সব সম্পত্তি Official Receiver-এর কাছে যায়</td></tr>
+    <tr><td>পদমর্যাদা হারানো</td><td>কোম্পানির পরিচালক হওয়া যাবে না</td></tr>
+    <tr><td>সংসদ নিষেধ</td><td>সংসদ সদস্য হওয়া যাবে না</td></tr>
+    <tr><td>নতুন ঋণ নিষিদ্ধ</td><td>কোনো প্রতিষ্ঠান থেকে ঋণ নেওয়া যাবে না</td></tr>
+    <tr><td>পাসপোর্ট স্থগিত</td><td>পাসপোর্ট স্থগিত হতে পারে</td></tr>
+  </table>
+</div>
+
+<!-- CASE 6: JOINT ACCOUNT/INCAPACITATED CUSTOMER -->
+<div class="card">
+  <div class="card-header">
+    <span class="badge badge-amber">⭐ বারবার এসেছে | Recurrent Topic</span>
+  </div>
+  <div class="q-title">কেস — অক্ষম গ্রাহকের অ্যাকাউন্ট | Incapacitated Customer Account Case</div>
+  <span class="law-ref">BCA 1991 | Majority Act 1875, Sec 3 | Contract Act 1872</span>
+
+  <div class="case-bg" style="margin-top:1rem;">
+    <strong>৯৭তম ও ৯৯তম পরীক্ষার অনুরূপ কেস:</strong> Mr. Hasan একটি চলতি অ্যাকাউন্ট পরিচালনা করছেন। তার স্ত্রী ব্রাঞ্চে এসে জানান যে তার স্বামী প্যারালাইসিসে আক্রান্ত এবং স্বাক্ষর করতে পারছেন না। চিকিৎসার জন্য তাৎক্ষণিকভাবে ১ লক্ষ টাকা দরকার। Branch Manager হিসেবে আপনি কী করবেন?
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">১</div><div class="step-content"><strong>অ্যাকাউন্ট পরিচালনার ধরন যাচাই করো:</strong> Survivor/Either-or clause আছে কি? যদি থাকে — স্ত্রী একাই তুলতে পারবেন।</div></div>
+    <div class="step"><div class="step-num">২</div><div class="step-content"><strong>Joint Account হলে:</strong> শুধুমাত্র Survivor clause থাকলে বা কোর্ট অর্ডার থাকলে পরিশোধ করুন।</div></div>
+    <div class="step"><div class="step-num">৩</div><div class="step-content"><strong>Power of Attorney:</strong> Mr. Hasan যদি সুস্থ থাকাকালে Power of Attorney দিয়ে থাকেন — তার ভিত্তিতে পরিশোধ সম্ভব।</div></div>
+    <div class="step"><div class="step-num">৪</div><div class="step-content"><strong>Court Order:</strong> স্ত্রী Court of Competent Jurisdiction থেকে Guardian হিসেবে নিযুক্ত হতে পারেন।</div></div>
+    <div class="step"><div class="step-num">৫</div><div class="step-content"><strong>Medical Certificate:</strong> ডাক্তারি সার্টিফিকেট ও ইনডেমনিটি বন্ড নিয়ে Head Office-এর পরামর্শ নিন।</div></div>
+  </div>
+
+  <div class="warning">⚠️ সরাসরি টাকা দেওয়া ঠিক হবে না — আইনি প্রক্রিয়া ছাড়া। ব্যাংক তৃতীয় পক্ষের দাবির মুখে পড়তে পারে।</div>
+</div>
+
+<!-- QUICK REFERENCE -->
+<div class="section-title">📋 দ্রুত আইনি রেফারেন্স | Quick Legal Reference</div>
+
+<div class="card">
+  <table>
+    <tr><th>আইন | Law</th><th>গুরুত্বপূর্ণ ধারা</th><th>বিষয়</th></tr>
+    <tr><td>NI Act 1881</td><td>Sec 138</td><td>চেক অসম্মান — ১ বছর কারাদণ্ড / চেকের ৩ গুণ জরিমানা</td></tr>
+    <tr><td>NI Act 1881</td><td>Sec 131</td><td>Collecting Banker-এর সুরক্ষা</td></tr>
+    <tr><td>MLPA 2012</td><td>Sec 4</td><td>মানি লন্ডারিং — ৪-১২ বছর</td></tr>
+    <tr><td>MLPA 2012</td><td>Sec 25</td><td>CTR/STR রিপোর্টিং বাধ্যবাধকতা</td></tr>
+    <tr><td>BCA 1991</td><td>Sec 13</td><td>মূলধন রক্ষণাবেক্ষণ (CAR)</td></tr>
+    <tr><td>BCA 1991</td><td>Sec 25</td><td>CRR — ৪%</td></tr>
+    <tr><td>BCA 1991</td><td>Sec 33</td><td>SLR — ১৩%</td></tr>
+    <tr><td>BCA 1991</td><td>Sec 35</td><td>দাবিহীন আমানত — ১০ বছর পর BB-তে</td></tr>
+    <tr><td>Artha Rin 2003</td><td>Sec 47</td><td>মামলার সর্বোচ্চ মূল্য = মূলধনের ৩ গুণ</td></tr>
+    <tr><td>Artha Rin 2003</td><td>Sec 33</td><td>নিলাম — ১৫ দিনের নোটিস</td></tr>
+    <tr><td>Bankruptcy Act 1997</td><td>Sec 9</td><td>ন্যূনতম ঋণ = ১ লক্ষ টাকা</td></tr>
+    <tr><td>Bankruptcy Act 1997</td><td>Sec 18</td><td>প্রতারণামূলক হস্তান্তর বাতিল</td></tr>
+    <tr><td>TPA 1882</td><td>Sec 122</td><td>হেবার সংজ্ঞা</td></tr>
+    <tr><td>TPA 1882</td><td>Sec 58</td><td>মর্টগেজের সংজ্ঞা</td></tr>
+    <tr><td>Registration Act 1908</td><td>Sec 17</td><td>বাধ্যতামূলক নিবন্ধনযোগ্য দলিল</td></tr>
+    <tr><td>FERA 1947</td><td>Sec 3-4</td><td>অনুমোদিত ডিলার — বৈদেশিক মুদ্রা নিয়ন্ত্রণ</td></tr>
+    <tr><td>Majority Act 1875</td><td>Sec 3</td><td>নাবালক = ১৮ বছরের কম</td></tr>
+    <tr><td>Deposit Insurance Act 2000</td><td>Premium</td><td>০.০৮% থেকে ০.১০% (CAMEL অনুযায়ী)</td></tr>
+  </table>
+</div>
+
+<div style="text-align:center; padding:2rem; color:var(--text2); font-size:14px;">
+  <strong style="color:var(--text)">পরীক্ষার জন্য শুভকামনা! Best of Luck for the 7th Banking Professional Examination!</strong><br>
+  <span>সূত্র: law_book.pdf + বিগত পরীক্ষার প্রশ্ন বিশ্লেষণ | Source: Main Book Analysis + Past Question Analysis</span>
+</div>
+
+</div>
+</body>
+</html>

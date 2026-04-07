@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPGB 7th Exam — Part C Case Studies Complete Guide</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap');
+:root{
+  --p:#1a3a6b;--s:#c8860a;--acc:#e63946;--g:#2a7f3f;--bg:#f8f6f0;
+  --card:#fff;--bdr:#d4c9a8;--dk:#1a1a2e;--mid:#3a3a5c;
+  --gold:#d4a017;--pur:#5a4b8c;--teal:#1d7a73;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Source Sans 3','Noto Serif Bengali',serif;background:var(--bg);color:var(--dk);line-height:1.75;font-size:15px;}
+
+/* MASTER HEADER */
+.mhdr{background:linear-gradient(135deg,#0d1b3e,#1a3a6b,#0d1b3e);color:#fff;padding:40px 28px;text-align:center;position:relative;overflow:hidden;}
+.mhdr::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.02) 10px,rgba(255,255,255,.02) 20px);}
+.mhdr .badge{display:inline-block;background:var(--gold);color:#1a1a2e;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 18px;border-radius:20px;margin-bottom:14px;position:relative;}
+.mhdr h1{font-family:'Playfair Display',serif;font-size:30px;font-weight:800;position:relative;margin-bottom:10px;}
+.mhdr p{opacity:.85;font-size:14px;position:relative;}
+.exam-info{display:flex;justify-content:center;gap:20px;margin-top:18px;flex-wrap:wrap;position:relative;}
+.einfo{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:10px 20px;text-align:center;}
+.einfo .num{font-size:22px;font-weight:800;color:var(--gold);}
+.einfo .lbl{font-size:11px;opacity:.75;letter-spacing:1px;}
+
+/* TOC */
+.toc{background:var(--p);padding:20px 26px;}
+.toc h2{font-size:12px;letter-spacing:3px;text-transform:uppercase;opacity:.7;color:#fff;margin-bottom:12px;}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:7px;}
+.toc-item{display:flex;align-items:center;gap:10px;padding:8px 12px;background:rgba(255,255,255,.08);border-radius:6px;border-left:3px solid var(--gold);font-size:12.5px;color:#fff;text-decoration:none;transition:background .2s;}
+.toc-item:hover{background:rgba(255,255,255,.16);}
+.mod-tag{background:var(--gold);color:#1a1a2e;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;white-space:nowrap;}
+.hot-tag{background:#e63946;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:auto;}
+
+.container{max-width:1200px;margin:0 auto;padding:26px 18px;}
+
+/* CASE HEADER */
+.case-hdr{background:linear-gradient(135deg,#8b1a1a,#b02020);color:#fff;border-radius:12px;padding:20px 24px;margin:32px 0 18px;position:relative;overflow:hidden;}
+.case-hdr::after{content:'';position:absolute;right:-20px;top:-20px;width:110px;height:110px;border:28px solid rgba(255,255,255,.1);border-radius:50%;}
+.case-hdr .lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;opacity:.8;}
+.case-hdr h2{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;margin-top:5px;}
+.case-hdr .sub{font-size:13px;opacity:.85;margin-top:5px;}
+.mod-colors{background:linear-gradient(135deg,#1a3a6b,#2d5a9e);}
+.mod-b-color{background:linear-gradient(135deg,#2a7f3f,#3aad58);}
+.mod-c-color{background:linear-gradient(135deg,#7b2d8b,#a640be);}
+.mod-d-color{background:linear-gradient(135deg,#c8680a,#e07a20);}
+.mod-e-color{background:linear-gradient(135deg,#1d7a73,#28afa5);}
+.mod-f-color{background:linear-gradient(135deg,#5a2d8b,#7a50b0);}
+.mod-g-color{background:linear-gradient(135deg,#1a5e30,#2a8a48);}
+.mod-j-color{background:linear-gradient(135deg,#2c3e80,#3d56b0);}
+
+/* QUESTION CARD */
+.qcard{background:var(--card);border-radius:14px;margin-bottom:24px;box-shadow:0 2px 14px rgba(0,0,0,.07);overflow:hidden;border:1px solid #e8e0d0;}
+.qhdr{padding:15px 20px;display:flex;align-items:flex-start;gap:12px;border-bottom:2px solid #f0ebe0;}
+.qnum{min-width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fff;flex-shrink:0;}
+.qtxt{flex:1;}
+.qtxt .bn{font-size:14.5px;font-weight:700;color:#8b1a1a;line-height:1.5;}
+.qtxt .en{font-size:12.5px;color:#666;margin-top:3px;font-style:italic;}
+.qmrk{background:#8b1a1a;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:12px;white-space:nowrap;align-self:flex-start;}
+.qbdy{padding:20px 22px;}
+
+/* PREDICTION */
+.pred{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:10px;margin-bottom:11px;}
+.hot{background:#ffecec;color:#c0392b;border:1px solid #ffcdd2;}
+.likely{background:#fff8e1;color:#c8860a;border:1px solid #ffe082;}
+.new-t{background:#e8f5e9;color:#2a7f3f;border:1px solid #c8e6c9;}
+
+/* LAW BADGE */
+.lb{display:inline-flex;align-items:center;gap:4px;background:#eef2ff;color:#3949ab;border:1px solid #c5cae9;font-size:11px;font-weight:600;padding:3px 10px;border-radius:18px;margin:3px 3px 3px 0;}
+
+/* BACKGROUND TABLE */
+.bg-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px;}
+.bg-table th{background:#8b1a1a;color:#fff;padding:9px 14px;text-align:left;font-weight:600;}
+.bg-table th:first-child{border-radius:8px 0 0 0;} .bg-table th:last-child{border-radius:0 8px 0 0;}
+.bg-table td{padding:9px 14px;border-bottom:1px solid #f0ebe0;vertical-align:top;}
+.bg-table tr:nth-child(even) td{background:#fdf5f5;}
+.bg-table tr:hover td{background:#fff0f0;}
+.bg-table tr:last-child td{border-bottom:none;}
+
+/* FLOW DIAGRAM */
+.flow-wrap{margin:14px 0;}
+.flow-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+.fbox{padding:9px 16px;border-radius:8px;font-size:12.5px;font-weight:600;text-align:center;color:#fff;min-width:100px;}
+.fb-red{background:#8b1a1a;} .fb-orange{background:var(--s);}
+.fb-blue{background:var(--p);} .fb-green{background:var(--g);}
+.fb-purple{background:var(--pur);} .fb-teal{background:var(--teal);}
+.farr{font-size:18px;color:#999;}
+
+/* ANSWER SECTION */
+.ans-hdr{background:linear-gradient(135deg,#fdf9f0,#fef3e2);border-left:4px solid var(--s);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0 10px;font-weight:700;font-size:14px;color:#7a4000;}
+.ans-star{text-align:center;font-size:14px;font-weight:700;color:#8b1a1a;margin:10px 0;padding:8px;background:#fff5f5;border-radius:8px;border:1px solid #ffcdd2;}
+
+/* LAW BASIS */
+.law-basis{background:#eef2ff;border:1px solid #c5cae9;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:13px;color:#3949ab;}
+
+/* CONDITION TABLE */
+.ctbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+.ctbl th{background:var(--p);color:#fff;padding:9px 13px;text-align:left;font-weight:600;}
+.ctbl th:first-child{border-radius:8px 0 0 0;} .ctbl th:last-child{border-radius:0 8px 0 0;}
+.ctbl td{padding:8px 13px;border-bottom:1px solid #f0ebe0;vertical-align:top;}
+.ctbl tr:nth-child(even) td{background:#fafaf8;}
+.ctbl tr:last-child td{border-bottom:none;}
+.tick{color:#2a7f3f;font-weight:700;font-size:15px;}
+.cross{color:#e63946;font-weight:700;font-size:15px;}
+.warn-icon{color:var(--s);font-weight:700;font-size:15px;}
+
+/* VERDICT */
+.verdict{border-radius:12px;padding:14px 18px;margin:12px 0;display:flex;gap:12px;align-items:flex-start;}
+.v-yes{background:#e8f5e9;border:2px solid var(--g);}
+.v-no{background:#ffebee;border:2px solid var(--acc);}
+.v-warn{background:#fff8e1;border:2px solid var(--s);}
+.v-icon{font-size:28px;flex-shrink:0;}
+.v-title{font-weight:700;font-size:14px;margin-bottom:4px;}
+.v-detail{font-size:13px;}
+
+/* BILINGUAL */
+.bil{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--bdr);border-radius:10px;overflow:hidden;margin:12px 0;}
+.bil-bn{background:#fdf9f0;padding:14px;border-right:1px solid var(--bdr);}
+.bil-en{background:#f0f6ff;padding:14px;}
+.bil-hdr{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.6;margin-bottom:7px;padding-bottom:5px;border-bottom:1px solid var(--bdr);}
+.bil-bn .bil-hdr{color:#8b5e00;} .bil-en .bil-hdr{color:#1a3a6b;}
+
+/* HIGHLIGHT */
+.hl{border-left:4px solid;padding:11px 15px;border-radius:0 8px 8px 0;margin:10px 0;font-size:13px;}
+.hl-info{border-color:var(--p);background:#eef2ff;color:var(--p);}
+.hl-warn{border-color:var(--s);background:#fff8e1;color:#7a4000;}
+.hl-success{border-color:var(--g);background:#e8f5e9;color:#1a5e30;}
+.hl-danger{border-color:var(--acc);background:#ffebee;color:#8b0000;}
+
+/* POINT LIST */
+.pts{margin:8px 0;padding:0;list-style:none;}
+.pts li{padding:6px 11px;margin-bottom:5px;border-radius:6px;font-size:13px;display:flex;gap:9px;align-items:flex-start;}
+.pts li::before{content:'◆';font-size:10px;color:var(--s);flex-shrink:0;margin-top:4px;}
+.pts.bn li{background:#fdf9f0;} .pts.en li{background:#f0f6ff;}
+.pts.pun li{background:#fff5f5;} .pts.def li{background:#f0fff4;}
+
+/* ALT TABLE */
+.alt-tbl{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+.alt-tbl th{background:#1a3a6b;color:#fff;padding:9px 13px;text-align:left;}
+.alt-tbl td{padding:8px 13px;border-bottom:1px solid #e8e0d0;vertical-align:top;}
+.alt-tbl tr:nth-child(even) td{background:#fafaf8;}
+.alt-tbl tr:last-child td{border-bottom:none;}
+
+/* INFO BOX */
+.ibox{background:linear-gradient(135deg,#f0f6ff,#e8f0fe);border:1px solid #c5cae9;border-radius:10px;padding:13px 16px;margin:11px 0;}
+.ibox-lbl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#3949ab;margin-bottom:5px;}
+.ibox-bn{color:#2c3e80;font-weight:600;font-size:14px;line-height:1.6;}
+.ibox-en{color:#1a1a4a;font-size:13.5px;margin-top:6px;}
+
+/* SUB-Q HEADER */
+.subq{background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:10px 16px;margin:16px 0 10px;font-size:14px;font-weight:700;color:#7a4000;}
+.subq .pts-lbl{background:#ffc107;color:#7a4000;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;margin-left:8px;}
+
+/* DIVIDER */
+.div-line{height:2px;background:linear-gradient(to right,transparent,var(--bdr),transparent);margin:20px 0;}
+
+/* FOOTER */
+.mftr{background:var(--dk);color:#fff;padding:22px 26px;text-align:center;margin-top:35px;font-size:12.5px;}
+
+@media(max-width:700px){
+.bil{grid-template-columns:1fr;}
+.bil-bn{border-right:none;border-bottom:1px solid var(--bdr);}
+.mhdr h1{font-size:22px;}
+.toc-grid{grid-template-columns:1fr;}
+.exam-info{gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- MASTER HEADER -->
+<div class="mhdr">
+  <div class="badge">JAIBB • LPGB • ৭ম পরীক্ষা ২০২৫</div>
+  <h1>Part C — Problem Solving / Case Study<br><span style="color:#ffd166;font-size:23px">মডিউল ওয়াইজ সম্পূর্ণ কেস গাইড</span></h1>
+  <p>৬ষ্ঠ পরীক্ষার ফরম্যাটে • আইনের ধারা সহ • বাংলা ও ইংরেজি • ফ্লোচার্ট ও টেবিল সহ</p>
+  <div class="exam-info">
+    <div class="einfo"><div class="num">10</div><div class="lbl">কেস স্টাডি</div></div>
+    <div class="einfo"><div class="num">20</div><div class="lbl">মার্কস</div></div>
+    <div class="einfo"><div class="num">A–L</div><div class="lbl">সকল মডিউল</div></div>
+    <div class="einfo"><div class="num">96–6th</div><div class="lbl">পরীক্ষা বিশ্লেষণ</div></div>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h2>📋 কেস তালিকা — Case Index</h2>
+  <div class="toc-grid">
+    <a class="toc-item" href="#c1"><span class="mod-tag">MOD B</span>কেস ১: চেক অসম্মান — NI Act ধারা ১৩৮<span class="hot-tag">🔥HOT</span></a>
+    <a class="toc-item" href="#c2"><span class="mod-tag">MOD A</span>কেস ২: ইচ্ছাকৃত খেলাপি — Willful Default<span class="hot-tag">🔥HOT</span></a>
+    <a class="toc-item" href="#c3"><span class="mod-tag">MOD C</span>কেস ৩: মানি লন্ডারিং — সন্দেহজনক লেনদেন</a>
+    <a class="toc-item" href="#c4"><span class="mod-tag">MOD E</span>কেস ৪: দেউলিয়া আইন — প্রতারণামূলক হস্তান্তর</a>
+    <a class="toc-item" href="#c5"><span class="mod-tag">MOD G</span>কেস ৫: Dormant হিসাব — নিখোঁজ হিসাবধারী<span class="hot-tag">🔥HOT</span></a>
+    <a class="toc-item" href="#c6"><span class="mod-tag">MOD B</span>কেস ৬: Collecting Bank — জাল স্বাক্ষর চেক</a>
+    <a class="toc-item" href="#c7"><span class="mod-tag">MOD G</span>কেস ৭: যৌথ হিসাব — মৃত্যু ও Nominee দ্বন্দ্ব</a>
+    <a class="toc-item" href="#c8"><span class="mod-tag">MOD A</span>কেস ৮: অর্থঋণ আদালত — ব্যাংকের ঋণ আদায়</a>
+    <a class="toc-item" href="#c9"><span class="mod-tag">MOD E</span>কেস ৯: নিবন্ধন আইন — হেবা দলিল ও সম্পত্তি</a>
+    <a class="toc-item" href="#c10"><span class="mod-tag">MOD F</span>কেস ১০: ব্যাংকার-গ্রাহক — Garnishee Order</a>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 1: CHEQUE DISHONOUR NI ACT SEC 138       -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr" id="c1">
+  <div class="lbl">Module B — NI Act 1881 | কেস ১ | Case 1</div>
+  <h2>⚖️ চেক অসম্মান — Cheque Dishonour (NI Act 1881, ধারা ১৩৮)</h2>
+  <div class="sub">পরীক্ষায় এই ধরনের প্রশ্ন বারবার আসে — ৬ষ্ঠ পরীক্ষায় হুবহু এসেছিল</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:#8b1a1a">৭</div>
+    <div class="qtxt">
+      <div class="bn">কেস ১: Sufia Enterprise বনাম Mr. Alam — চেক অসম্মান</div>
+      <div class="en">Case 1: Sufia Enterprise vs Mr. Alam — Cheque Dishonour under NI Act 1881</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred hot">🔥 পরীক্ষায় আসবেই</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ NI Act 1881, Sec 138</span>
+      <span class="lb">⚖️ Sec 139 — Defence</span>
+      <span class="lb">⚖️ Sec 140 — Cognizance</span>
+      <span class="lb">⚖️ Artha Rin Adalat Ain 2003</span>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="ibox">
+      <div class="ibox-lbl">📋 ঘটনার পটভূমি | Case Background</div>
+      <div class="ibox-bn">Sufia Enterprise কাঁচামাল বিক্রি করে Mr. Alam-কে ৫,০০,০০০ টাকায়। Mr. Alam পেমেন্টের জন্য XYZ Bank-এ আঁকা একটি চেক দেন। কিন্তু চেকটি "তহবিল অপর্যাপ্ত" কারণে ফেরত আসে। Sufia Enterprise আইনি ব্যবস্থা নিতে চায়।</div>
+      <div class="ibox-en">Sufia Enterprise sells raw materials worth Tk. 5,00,000 to Mr. Alam. Mr. Alam issues a cheque drawn on XYZ Bank. The cheque is returned marked "Insufficient Funds". Sufia Enterprise wants to take legal action.</div>
+    </div>
+
+    <table class="bg-table">
+      <tr><th>তারিখ | Date</th><th>ঘটনা | Event</th></tr>
+      <tr><td><strong>০৫ মার্চ ২০২৫</strong></td><td>Mr. Alam Sufia Enterprise-কে ৫,০০,০০০ টাকার চেক ইস্যু করেন (XYZ Bank-এ আঁকা)</td></tr>
+      <tr><td><strong>০৭ মার্চ ২০২৫</strong></td><td>Sufia Enterprise চেক উপস্থাপন করে</td></tr>
+      <tr><td><strong>১০ মার্চ ২০২৫</strong></td><td>চেক "অপর্যাপ্ত তহবিল" কারণে ফেরত আসে</td></tr>
+      <tr><td><strong>১৮ মার্চ ২০২৫</strong></td><td>Sufia Enterprise ধারা ১৩৮ অনুযায়ী লিখিত নোটিশ পাঠায়</td></tr>
+      <tr><td><strong>০২ এপ্রিল ২০২৫</strong></td><td>নোটিশের মেয়াদ শেষ (১৮ মার্চ + ১৫ দিন = ০২ এপ্রিল)</td></tr>
+      <tr><td><strong>০৮ এপ্রিল ২০২৫</strong></td><td>Mr. Alam পরিশোধ না করায় Sufia Enterprise মামলা দায়ের করে</td></tr>
+    </table>
+
+    <div class="flow-wrap">
+      <div class="flow-row">
+        <div class="fbox fb-blue" style="font-size:11px">চেক ইস্যু<br>০৫ মার্চ</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-orange" style="font-size:11px">উপস্থাপন<br>০৭ মার্চ</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-red" style="font-size:11px">ফেরত<br>১০ মার্চ</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-purple" style="font-size:11px">নোটিশ<br>১৮ মার্চ</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-green" style="font-size:11px">মামলা<br>০৮ এপ্রিল</div>
+      </div>
+      <p style="text-align:center;font-size:12px;color:#999;margin-top:4px">📊 ঘটনা → উপস্থাপন → অসম্মান → নোটিশ → পরিশোধে ব্যর্থতা → মামলা</p>
+    </div>
+
+    <!-- SUB-Q (i) -->
+    <div class="subq">(i) ধারা ১৩৮-এর অপরাধ গঠনের শর্তসমূহ — এই ঘটনায় সব শর্ত পূরণ হয়েছে কি? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Essential conditions for Section 138 offence — Do facts satisfy all conditions? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Negotiable Instruments Act (NI Act), 1881 — Section 138 (চেক অসম্মানের শাস্তি)</div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📖 মূল ধারণা</div>
+      <div class="ibox-bn">NI Act 1881-এর ধারা ১৩৮ অনুযায়ী, চেক অসম্মান একটি ফৌজদারি অপরাধ — তবে শুধুমাত্র তখনই যখন ৬টি নির্দিষ্ট শর্ত পূরণ হয়।</div>
+      <div class="ibox-en">Per Section 138 of NI Act 1881, dishonour of cheque is a criminal offence — but ONLY when all 6 specific conditions are satisfied.</div>
+    </div>
+
+    <table class="ctbl">
+      <tr><th>শর্ত | Condition</th><th>আইনি দাবি | Legal Requirement</th><th>এই ঘটনায় | In This Case</th><th>পূরণ? | Met?</th></tr>
+      <tr>
+        <td>১. বৈধ চেক</td>
+        <td>অবশ্যই একটি বৈধ চেক হতে হবে</td>
+        <td>XYZ Bank-এ আঁকা বৈধ চেক ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+      <tr>
+        <td>২. ঋণ পরিশোধের জন্য ইস্যু</td>
+        <td>ঋণ বা দায়বদ্ধতা পরিশোধের জন্য হতে হবে</td>
+        <td>পণ্যের ৫ লক্ষ টাকার জন্য ইস্যু ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+      <tr>
+        <td>৩. সময়মতো উপস্থাপন</td>
+        <td>ইস্যুর তারিখ থেকে ৬ মাসের মধ্যে</td>
+        <td>২ দিনের মধ্যেই উপস্থাপন (০৭ মার্চ) ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+      <tr>
+        <td>৪. তহবিল অপর্যাপ্ততায় ফেরত</td>
+        <td>ব্যাংক "অপর্যাপ্ত তহবিল" কারণে ফেরত দেবে</td>
+        <td>"Insufficient Funds" কারণে ফেরত ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+      <tr>
+        <td>৫. ৩০ দিনের মধ্যে নোটিশ</td>
+        <td>ফেরতের ৩০ দিনের মধ্যে লিখিত নোটিশ</td>
+        <td>৮ দিনের মধ্যে নোটিশ (১৮ মার্চ) ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+      <tr>
+        <td>৬. ১৫ দিনে পরিশোধ না করা</td>
+        <td>নোটিশের ১৫ দিনের মধ্যে পরিশোধ না করা</td>
+        <td>Mr. Alam পরিশোধ করেননি ✓</td>
+        <td><span class="tick">✅ হ্যাঁ</span></td>
+      </tr>
+    </table>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">সিদ্ধান্ত: ধারা ১৩৮-এর সব ৬টি শর্ত পূরণ হয়েছে</div>
+        <div class="v-detail">→ Conclusion: All 6 conditions of Section 138 are satisfied. This constitutes a complete criminal offence. Sufia Enterprise can successfully prosecute Mr. Alam.</div>
+      </div>
+    </div>
+
+    <!-- SUB-Q (ii) -->
+    <div class="subq">(ii) Sufia Enterprise কি আইনি পদ্ধতি মেনে চলেছে? সময়সীমা গণনা করে দেখাও। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) Did Sufia Enterprise follow legal procedure? Show with timeline calculations. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: NI Act 1881, Section 138 — সময়সীমার বিধান</div>
+
+    <table class="ctbl">
+      <tr><th>ঘটনা | Event</th><th>তারিখ | Date</th><th>আইনি সীমা | Legal Limit</th><th>মেনে চলা হয়েছে? | Complied?</th></tr>
+      <tr><td>চেক ইস্যু</td><td>০৫ মার্চ ২০২৫</td><td>—</td><td>—</td></tr>
+      <tr><td>চেক উপস্থাপন</td><td>০৭ মার্চ ২০২৫</td><td>ইস্যুর ৬ মাসের মধ্যে</td><td><span class="tick">✅ মাত্র ২ দিন পরে</span></td></tr>
+      <tr><td>চেক ফেরত</td><td>১০ মার্চ ২০২৫</td><td>—</td><td>—</td></tr>
+      <tr><td>নোটিশ পাঠানো</td><td>১৮ মার্চ ২০২৫</td><td>ফেরতের ৩০ দিনের মধ্যে</td><td><span class="tick">✅ ৮ দিনের মধ্যে</span></td></tr>
+      <tr><td>নোটিশের মেয়াদ শেষ</td><td>০২ এপ্রিল ২০২৫</td><td>নোটিশ থেকে ১৫ দিন</td><td>১৮ মার্চ + ১৫ দিন = ০২ এপ্রিল ✅</td></tr>
+      <tr><td>মামলা দায়ের</td><td>০৮ এপ্রিল ২০২৫</td><td>মেয়াদ শেষের পরে</td><td><span class="tick">✅ ০২ এপ্রিলের পরে সঠিক</span></td></tr>
+    </table>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">সিদ্ধান্ত: Sufia Enterprise সমস্ত আইনি পদ্ধতি সঠিকভাবে মেনে চলেছে</div>
+        <div class="v-detail">→ All legal steps completed within prescribed time limits. The complaint is legally maintainable.</div>
+      </div>
+    </div>
+
+    <!-- SUB-Q (iii) -->
+    <div class="subq">(iii) Mr. Alam-এর আইনি পরিণতি ও সম্ভাব্য প্রতিরক্ষা কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) Legal consequences for Mr. Alam + possible defences he can raise. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: NI Act 1881, Section 138 — শাস্তি; Sections 139, 140 — প্রতিরক্ষা</div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">⚖️ Mr. Alam-এর আইনি পরিণতি (শাস্তি)</div>
+        <ul class="pts pun">
+          <li><strong>শাস্তি ১:</strong> সর্বোচ্চ ১ বছরের কারাদণ্ড [NI Act 1881, Sec 138]</li>
+          <li><strong>শাস্তি ২:</strong> চেকের দ্বিগুণ পরিমাণ পর্যন্ত জরিমানা — সর্বোচ্চ ১০,০০,০০০ টাকা</li>
+          <li><strong>শাস্তি ৩:</strong> উভয় দণ্ড একসাথে হতে পারে</li>
+          <li><strong>শাস্তি ৪:</strong> ক্ষতিপূরণের আদেশ — Sufia Enterprise-কে পরিশোধ</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">🛡️ সম্ভাব্য প্রতিরক্ষা (Defences — Sec 139)</div>
+        <ul class="pts def">
+          <li><strong>Defence 1:</strong> Cheque issued under duress/threat — must be proved [Sec 139]</li>
+          <li><strong>Defence 2:</strong> No actual debt or liability existed between parties</li>
+          <li><strong>Defence 3:</strong> Notice was not properly served/received</li>
+          <li><strong>Defence 4:</strong> Cheque was forged or materially altered</li>
+          <li><strong>Defence 5:</strong> Amount in cheque differs from actual debt</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SUB-Q (iv) -->
+    <div class="subq">(iv) ধারা ১৩৮-এর মামলা ব্যর্থ হলে Sufia Enterprise-এর বিকল্প আইনি পথ কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Alternative legal options for Sufia Enterprise if Section 138 case fails. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="alt-tbl">
+      <tr><th>বিকল্প পথ | Alternative</th><th>আইন | Law</th><th>বাংলা বিবরণ</th><th>English Explanation</th></tr>
+      <tr>
+        <td>১. দেওয়ানি মামলা</td>
+        <td>Contract Act 1872</td>
+        <td>অর্থ আদালতে মামলা করে চেকের পরিমাণ + সুদ দাবি করা</td>
+        <td>Civil suit in Money Court for cheque amount + interest</td>
+      </tr>
+      <tr>
+        <td>২. অর্থঋণ আদালত</td>
+        <td>Artha Rin Adalat Ain 2003</td>
+        <td>অর্থঋণ আদালতে মামলা দায়ের করে ঋণ আদায়</td>
+        <td>File suit in Artha Rin Adalat for debt recovery</td>
+      </tr>
+      <tr>
+        <td>৩. দেউলিয়া আইন</td>
+        <td>Bankruptcy Act 1997</td>
+        <td>Mr. Alam-কে দেউলিয়া ঘোষণার আবেদন (যদি ৫ লক্ষ+ হয়)</td>
+        <td>Apply to declare Mr. Alam bankrupt</td>
+      </tr>
+      <tr>
+        <td>৪. সালিশি/আপোষ</td>
+        <td>ADR Provisions (Artha Rin Sec 22)</td>
+        <td>আদালতের বাইরে সমঝোতার মাধ্যমে অর্থ উদ্ধার</td>
+        <td>Recover money through out-of-court ADR settlement</td>
+      </tr>
+    </table>
+
+    <div class="hl hl-success"><strong>📌 গুরুত্বপূর্ণ:</strong> ধারা ১৩৮-এর ফৌজদারি মামলা এবং দেওয়ানি মামলা একসাথে চলতে পারে। ফৌজদারি মামলায় শাস্তি হয়, দেওয়ানি মামলায় অর্থ ফেরত পাওয়া যায়।<br>→ Criminal case (Sec 138) and civil suit can run simultaneously. Criminal = punishment; Civil = money recovery.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 2: WILLFUL DEFAULTER                     -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-colors" id="c2">
+  <div class="lbl">Module A — BCA 1991 (Amendment 2023) | কেস ২ | Case 2</div>
+  <h2>🏦 ইচ্ছাকৃত খেলাপি — M/S Rainbow Construction Ltd.</h2>
+  <div class="sub">৬ষ্ঠ পরীক্ষার কেস ২-এর অনুরূপ — ৭ম পরীক্ষায় ভিন্ন কোম্পানি ও পরিস্থিতিতে আসতে পারে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--p)">৮</div>
+    <div class="qtxt">
+      <div class="bn">কেস ২: ইচ্ছাকৃত খেলাপি — M/S Rainbow Construction Ltd.</div>
+      <div class="en">Case 2: Willful Default by M/S Rainbow Construction Ltd.</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ BCA 1991 (Amendment 2023)</span>
+      <span class="lb">BB BRPD Circular — Willful Defaulter</span>
+      <span class="lb">⚖️ Companies Act 1994</span>
+    </div>
+
+    <table class="bg-table">
+      <tr><th>তথ্য | Information</th><th>বিবরণ | Details</th></tr>
+      <tr><td>ঋণগ্রহীতা</td><td>M/S Rainbow Construction Ltd. — একটি নির্মাণ কোম্পানি</td></tr>
+      <tr><td>ঋণের পরিমাণ</td><td>৩০০ কোটি টাকা — DEF Bank থেকে (২০২১ সালে)</td></tr>
+      <tr><td>উদ্দেশ্য</td><td>চট্টগ্রামে আবাসিক প্রকল্প নির্মাণ</td></tr>
+      <tr><td>সমস্যা ১</td><td>জানুয়ারি ২০২৪ থেকে ঋণ পরিশোধে খেলাপি</td></tr>
+      <tr><td>সমস্যা ২</td><td>ঋণের অর্থের বড় অংশ বিদেশে পাঠানো হয়েছে</td></tr>
+      <tr><td>সমস্যা ৩</td><td>পরিচালকরা নিজের আরেকটি ব্যবসায় অর্থ সরিয়েছেন</td></tr>
+      <tr><td>সমস্যা ৪</td><td>প্রকল্প স্থানে কোনো নির্মাণ কাজ হয়নি</td></tr>
+      <tr><td>সমস্যা ৫</td><td>খেলাপির পরেও পরিচালকরা বিলাসবহুল গাড়ি কিনেছেন</td></tr>
+    </table>
+
+    <div class="flow-wrap">
+      <div class="flow-row">
+        <div class="fbox fb-blue" style="font-size:11px">ঋণ গ্রহণ<br>২০২১</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-orange" style="font-size:11px">অর্থ সরানো<br>২০২২-২৩</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-red" style="font-size:11px">খেলাপি<br>জানু ২০২৪</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-purple" style="font-size:11px">তদন্ত<br>ব্যাংক</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-green" style="font-size:11px">Willful<br>Defaulter ঘোষণা</div>
+      </div>
+    </div>
+
+    <!-- (i) DEFINITION -->
+    <div class="subq">(i) বাংলাদেশ ব্যাংকের নির্দেশনা অনুযায়ী ইচ্ছাকৃত খেলাপির সংজ্ঞা ও বৈশিষ্ট্য বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Define willful defaulter as per Bangladesh Bank guidelines and identify characteristics. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Bank Company Act 1991 (Amendment 2023); Bangladesh Bank BRPD Circular on Willful Defaulter</div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📖 ইচ্ছাকৃত খেলাপির সংজ্ঞা | Definition</div>
+      <div class="ibox-bn">ইচ্ছাকৃত খেলাপি হলেন এমন ঋণগ্রহীতা যিনি আর্থিক সক্ষমতা থাকা সত্ত্বেও ইচ্ছাকৃতভাবে ঋণ পরিশোধ করেন না এবং/অথবা ঋণের অর্থ উদ্দিষ্ট উদ্দেশ্যে ব্যবহার না করে অন্যত্র সরিয়ে নেন।</div>
+      <div class="ibox-en">A willful defaulter is a borrower who, despite having financial capability, deliberately refuses to repay the loan AND/OR diverts loan funds from the stated purpose to other uses.</div>
+    </div>
+
+    <table class="ctbl">
+      <tr><th>#</th><th>ইচ্ছাকৃত খেলাপির বৈশিষ্ট্য (বাংলা)</th><th>Characteristics (English)</th></tr>
+      <tr><td>১</td><td>সক্ষমতা থাকা সত্ত্বেও ইচ্ছাকৃতভাবে ঋণ পরিশোধ না করা</td><td>Deliberately not repaying despite having financial capability</td></tr>
+      <tr><td>২</td><td>ঋণের অর্থ উদ্দিষ্ট উদ্দেশ্যে ব্যবহার না করে অন্যত্র সরানো</td><td>Diverting loan funds from the stated purpose</td></tr>
+      <tr><td>৩</td><td>ব্যাংকের অনুমতি ছাড়াই জামানত বিক্রি বা নষ্ট করা</td><td>Selling/damaging collateral without bank's permission</td></tr>
+      <tr><td>৪</td><td>মিথ্যা তথ্য দিয়ে ঋণ গ্রহণ করা</td><td>Obtaining loan through fraudulent information</td></tr>
+      <tr><td>৫</td><td>পরিচালকের পারিবারিক প্রতিষ্ঠানে ঋণের অর্থ স্থানান্তর</td><td>Directors transferring funds to own/family-owned companies</td></tr>
+    </table>
+
+    <!-- (ii) CLASSIFICATION JUSTIFICATION -->
+    <div class="subq">(ii) কোন কোন কারণে ABC Bank M/S Rainbow Construction-কে ইচ্ছাকৃত খেলাপি ঘোষণা করেছে? প্রমাণ চিহ্নিত করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) Identify and explain actions justifying willful defaulter classification. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>প্রমাণ | Evidence Found</th><th>সংজ্ঞার সাথে সম্পর্ক | Link to Definition</th><th>বৈশিষ্ট্য # |</th></tr>
+      <tr>
+        <td>বিদেশে অর্থ পাচার</td>
+        <td>ঋণের অর্থ উদ্দিষ্ট উদ্দেশ্যে ব্যবহার হয়নি</td>
+        <td><span class="tick">বৈশিষ্ট্য ২</span></td>
+      </tr>
+      <tr>
+        <td>পরিচালকের ব্যবসায় অর্থ সরানো</td>
+        <td>পরিচালকের নিজের প্রতিষ্ঠানে তহবিল স্থানান্তর</td>
+        <td><span class="tick">বৈশিষ্ট্য ৫</span></td>
+      </tr>
+      <tr>
+        <td>প্রকল্পে কোনো নির্মাণ নেই</td>
+        <td>ঋণের উদ্দেশ্য (চট্টগ্রাম আবাসন) পূরণ হয়নি</td>
+        <td><span class="tick">বৈশিষ্ট্য ২</span></td>
+      </tr>
+      <tr>
+        <td>বিলাসবহুল গাড়ি কেনা</td>
+        <td>সক্ষমতা আছে কিন্তু পরিশোধ করছেন না</td>
+        <td><span class="tick">বৈশিষ্ট্য ১</span></td>
+      </tr>
+    </table>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">DEF Bank সঠিকভাবে Willful Defaulter ঘোষণা করেছে</div>
+        <div class="v-detail">→ সকল ৪টি প্রমাণ BB BRPD Circular-এর সংজ্ঞার শর্ত পূরণ করে। ঘোষণা বৈধ ও সঠিক।</div>
+      </div>
+    </div>
+
+    <!-- (iii) IMPACT -->
+    <div class="subq">(iii) ইচ্ছাকৃত খেলাপি ঘোষণার পরে M/S Rainbow Construction-এর ভবিষ্যৎ ব্যবসায়িক কার্যক্রমে কী প্রভাব পড়বে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) How does willful defaulter classification impact future operations? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">❌ প্রভাবসমূহ (বাংলা)</div>
+        <ul class="pts pun">
+          <li><strong>প্রভাব ১:</strong> কোনো ব্যাংক বা আর্থিক প্রতিষ্ঠান থেকে নতুন ঋণ পাবে না</li>
+          <li><strong>প্রভাব ২:</strong> CIB রিপোর্টে Willful Defaulter হিসেবে তালিকাভুক্তি</li>
+          <li><strong>প্রভাব ৩:</strong> পরিচালকরা অন্য কোনো ব্যাংকের পরিচালক হতে পারবেন না</li>
+          <li><strong>প্রভাব ৪:</strong> কোম্পানির নাম সরকারি গেজেটে প্রকাশ</li>
+          <li><strong>প্রভাব ৫:</strong> বিদেশ ভ্রমণে বাধা আসতে পারে</li>
+          <li><strong>প্রভাব ৬:</strong> ব্যবসায়িক সুনাম সম্পূর্ণ ধ্বংস</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">✅ Same Group Sister Concern?</div>
+        <ul class="pts en">
+          <li>Sister concerns of the defaulted group → also ineligible for fresh loans</li>
+          <li>BB guidelines extend restriction to all group companies</li>
+          <li>CIB report covers the entire group's information</li>
+          <li>Only possible with separate authority approval in special cases</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (iv) DIRECTORS' LIABILITY -->
+    <div class="subq">(iv) M/S Rainbow Construction-এর পরিচালকরা কি ব্যক্তিগতভাবে দায়ী হবেন? কারণসহ ব্যাখ্যা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Should directors be held personally liable? Justify with reasons. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: BCA 1991 (Amendment 2023); Companies Act 1994; BRPD Guidelines</div>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">হ্যাঁ — পরিচালকরা ব্যক্তিগতভাবে দায়ী হবেন</div>
+        <div class="v-detail">→ YES — Directors should be held personally liable.</div>
+      </div>
+    </div>
+
+    <ul class="pts bn">
+      <li><strong>কারণ ১:</strong> পরিচালকরা ইচ্ছাকৃতভাবে ঋণের অর্থ সরিয়েছেন — এটি প্রত্যক্ষ জালিয়াতি [BCA 1991 Amendment 2023]</li>
+      <li><strong>কারণ ২:</strong> নিজের ব্যবসায় অর্থ সরানো = স্বার্থসংঘাত ও Fiduciary Duty লঙ্ঘন</li>
+      <li><strong>কারণ ৩:</strong> BCA 1991 (Amendment 2023) অনুযায়ী পরিচালকরা ব্যক্তিগতভাবে দায়ী হতে পারেন</li>
+      <li><strong>কারণ ৪:</strong> ঋণ গ্রহণে মিথ্যা তথ্য দিলে ফৌজদারি দায় আসতে পারে</li>
+      <li><strong>কারণ ৫:</strong> এটি "Piercing the Corporate Veil"-এর উপযুক্ত কেস — কোম্পানির পর্দা সরিয়ে পরিচালকদের সরাসরি দায়ী করা হবে</li>
+    </ul>
+
+    <div class="hl hl-info"><strong>📌 Piercing the Corporate Veil মানে কী?</strong> সাধারণত কোম্পানির ঋণে পরিচালকরা ব্যক্তিগতভাবে দায়ী হন না। কিন্তু যখন প্রতারণা বা ইচ্ছাকৃত অপব্যবহার প্রমাণ হয়, আদালত "কোম্পানির আড়াল" সরিয়ে পরিচালকদের সরাসরি দায়ী করে — এটিই Piercing the Corporate Veil।<br>→ Normally directors are not personally liable for company debts. But when fraud is proven, courts pierce the corporate veil to make directors personally liable.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 3: MONEY LAUNDERING / STR               -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-c-color" id="c3">
+  <div class="lbl">Module C — MLPA 2012 | কেস ৩ | Case 3</div>
+  <h2>💰 মানি লন্ডারিং — সন্দেহজনক লেনদেন ও STR</h2>
+  <div class="sub">৯৯তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় নতুন ভ্যারিয়েশনে আসবে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--pur)">৯</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৩: Mr. Reza-র রহস্যজনক লেনদেন — মানি লন্ডারিং তদন্ত</div>
+      <div class="en">Case 3: Mr. Reza's Mysterious Transactions — Money Laundering Investigation</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ MLPA 2012, Sec 25 — STR</span>
+      <span class="lb">⚖️ Sec 4 — মানি লন্ডারিং শাস্তি</span>
+      <span class="lb">BFIU Guidelines — CTR</span>
+      <span class="lb">BB KYC Guidelines</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background</div>
+      <div class="ibox-bn">Mr. Reza একজন ছোট মুদি দোকানদার। তার সঞ্চয় হিসাব পরিচালনায় তিনি জানিয়েছিলেন দৈনিক লেনদেন হবে সর্বোচ্চ ২ লক্ষ টাকা। কিন্তু গত ৬ মাসে লক্ষ্য করা গেছে প্রতিদিন ১৫-২০ লক্ষ টাকার নগদ লেনদেন হচ্ছে। কখনো একদিনে ৩-৪টি আলাদা ছোট ছোট জমা হচ্ছে। কিছু লেনদেন উচ্চ ঝুঁকিপূর্ণ দেশের সাথে সংযুক্ত।</div>
+      <div class="ibox-en">Mr. Reza is a small grocery shop owner. He stated max daily transactions of Tk. 2 lakh. But over 6 months, Tk. 15-20 lakh daily cash transactions observed. Sometimes 3-4 separate small deposits in one day. Some transactions linked to high-risk countries.</div>
+    </div>
+
+    <table class="bg-table">
+      <tr><th>লেনদেনের ধরন | Transaction Type</th><th>স্বাভাবিক? | Normal?</th><th>সন্দেহজনক কারণ | Suspicious Reason</th></tr>
+      <tr><td>দৈনিক ১৫-২০ লক্ষ নগদ জমা</td><td><span class="cross">❌</span></td><td>ছোট মুদির দোকানে এত টাকার ব্যবসা অসম্ভব</td></tr>
+      <tr><td>একদিনে ৩-৪ বার ছোট জমা</td><td><span class="cross">❌</span></td><td>Structuring — CTR এড়াতে ছোট ছোট ভাগ করা</td></tr>
+      <tr><td>উচ্চ ঝুঁকি দেশে লেনদেন</td><td><span class="cross">❌</span></td><td>মুদি দোকানদারের বিদেশি লেনদেন কেন?</td></tr>
+      <tr><td>ঘোষিত আয়ের সাথে অসামঞ্জস্য</td><td><span class="cross">❌</span></td><td>KYC-তে ঘোষিত আয়ের চেয়ে বহুগুণ বেশি</td></tr>
+    </table>
+
+    <!-- (i) -->
+    <div class="subq">(i) সন্দেহজনক লেনদেনের সূচকসমূহ চিহ্নিত করুন এবং CTR ও STR এর পার্থক্য বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Identify indicators of suspicious transactions. Distinguish CTR and STR. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: MLPA 2012, Sec 25; BFIU Guidelines on CTR & STR</div>
+
+    <ul class="pts bn">
+      <li><strong>সূচক ১:</strong> গ্রাহকের আয়ের সাথে অসামঞ্জস্যপূর্ণ বড় নগদ লেনদেন</li>
+      <li><strong>সূচক ২:</strong> একই দিনে একাধিক ছোট লেনদেন (Structuring) — CTR এড়াতে</li>
+      <li><strong>সূচক ৩:</strong> উচ্চ ঝুঁকিপূর্ণ দেশের সাথে অস্বাভাবিক লেনদেন</li>
+      <li><strong>সূচক ৪:</strong> লেনদেনের উদ্দেশ্য বলতে অস্বীকার বা অস্পষ্ট উত্তর</li>
+      <li><strong>সূচক ৫:</strong> Transaction Profile-এর সাথে বাস্তব লেনদেনের বিশাল পার্থক্য</li>
+    </ul>
+
+    <table class="ctbl">
+      <tr><th>বিষয় | Subject</th><th>CTR (Cash Transaction Report)</th><th>STR (Suspicious Transaction Report)</th></tr>
+      <tr><td>পূর্ণ নাম</td><td>Cash Transaction Report</td><td>Suspicious Transaction Report</td></tr>
+      <tr><td>পরিমাণ সীমা</td><td>৭০ লক্ষ টাকার উপরে নগদ লেনদেন</td><td>কোনো নির্দিষ্ট সীমা নেই</td></tr>
+      <tr><td>রিপোর্ট করার কারণ</td><td>স্বয়ংক্রিয় — পরিমাণের উপর ভিত্তিতে</td><td>সন্দেহজনক মনে হলে যেকোনো পরিমাণে</td></tr>
+      <tr><td>সময়সীমা</td><td>লেনদেনের ৩ কার্যদিবসের মধ্যে</td><td>সন্দেহ হলে যত দ্রুত সম্ভব</td></tr>
+      <tr><td>জমাদানের স্থান</td><td>BFIU (Bangladesh Financial Intelligence Unit)</td><td>BFIU-তে সরাসরি</td></tr>
+      <tr><td>আইনি ভিত্তি</td><td>MLPA 2012, Sec 25</td><td>MLPA 2012, Sec 25</td></tr>
+    </table>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) ব্যাংকার হিসেবে আপনি STR দাখিলের কী পদ্ধতি অনুসরণ করবেন? ধাপে ধাপে বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) What procedure will you follow to submit STR? Describe step by step. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="flow-wrap">
+      <div style="display:grid;grid-template-columns:1fr;gap:8px;max-width:600px;margin:0 auto;">
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:10px 14px;">
+          <div style="min-width:32px;height:32px;background:var(--pur);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">১</div>
+          <div><strong style="color:var(--pur)">সন্দেহজনক লেনদেন চিহ্নিত করুন</strong><br><span style="font-size:12.5px;color:#555">Compliance Officer রেকর্ড করেন → লেনদেনের ধরন বিশ্লেষণ করুন</span></div>
+        </div>
+        <div style="text-align:center;color:#999">↓</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:10px 14px;">
+          <div style="min-width:32px;height:32px;background:var(--pur);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">২</div>
+          <div><strong style="color:var(--pur)">STR প্রস্তুত করুন BFIU ফরম্যাটে</strong><br><span style="font-size:12.5px;color:#555">গ্রাহক ও লেনদেনের বিবরণ + সমেহের কারণ স্পষ্টভাবে লিখুন</span></div>
+        </div>
+        <div style="text-align:center;color:#999">↓</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:10px 14px;">
+          <div style="min-width:32px;height:32px;background:var(--pur);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">৩</div>
+          <div><strong style="color:var(--pur)">CEO/MD-এর অনুমোদন নিন</strong><br><span style="font-size:12.5px;color:#555">প্রতিষ্ঠানের প্রধান নির্বাহীর লিখিত অনুমোদন বাধ্যতামূলক</span></div>
+        </div>
+        <div style="text-align:center;color:#999">↓</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:10px 14px;">
+          <div style="min-width:32px;height:32px;background:var(--pur);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">৪</div>
+          <div><strong style="color:var(--pur)">BFIU-তে অনলাইনে জমা দিন</strong><br><span style="font-size:12.5px;color:#555">যত দ্রুত সম্ভব — গ্রাহককে জানাবেন না (Tipping Off নিষিদ্ধ)</span></div>
+        </div>
+        <div style="text-align:center;color:#999">↓</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:10px 14px;">
+          <div style="min-width:32px;height:32px;background:var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;">৫</div>
+          <div><strong style="color:var(--g)">রেকর্ড ৫ বছর সংরক্ষণ করুন [MLPA 2012, Sec 25]</strong><br><span style="font-size:12.5px;color:#555">STR-এর কপি ন্যূনতম ৫ বছর সংরক্ষণ বাধ্যতামূলক</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) মানি লন্ডারিংয়ের তিনটি ধাপ বর্ণনা করুন এবং Mr. Reza কোন ধাপে আছেন বলে মনে হয়? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) Describe three stages of money laundering. Which stage is Mr. Reza likely in? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: MLPA 2012, Sec 2(v) — মানি লন্ডারিংয়ের সংজ্ঞা</div>
+
+    <table class="ctbl">
+      <tr><th>ধাপ | Stage</th><th>বাংলা নাম</th><th>English Name</th><th>ব্যাখ্যা</th></tr>
+      <tr>
+        <td>ধাপ ১</td>
+        <td><strong>স্থাপন (Placement)</strong></td>
+        <td>Placement</td>
+        <td>অবৈধ অর্থ ব্যাংকিং ব্যবস্থায় প্রবেশ করানো — নগদ জমা, ছোট ছোট ভাগে (Structuring)</td>
+      </tr>
+      <tr>
+        <td>ধাপ ২</td>
+        <td><strong>স্তরীকরণ (Layering)</strong></td>
+        <td>Layering</td>
+        <td>জটিল লেনদেনের মাধ্যমে অর্থের উৎস গোপন করা — বিভিন্ন হিসাবে স্থানান্তর</td>
+      </tr>
+      <tr>
+        <td>ধাপ ৩</td>
+        <td><strong>সংহতকরণ (Integration)</strong></td>
+        <td>Integration</td>
+        <td>অর্থ বৈধভাবে অর্থনীতিতে প্রবেশ করানো — ব্যবসায় বিনিয়োগ</td>
+      </tr>
+    </table>
+
+    <div class="verdict v-warn">
+      <div class="v-icon">⚠️</div>
+      <div>
+        <div class="v-title">Mr. Reza সম্ভবত ধাপ ১ (Placement) ও ধাপ ২ (Layering)-এ আছেন</div>
+        <div class="v-detail">ছোট ছোট জমা (Structuring) = Placement ধাপ। উচ্চ ঝুঁকি দেশে লেনদেন = Layering ধাপ। উভয় কার্যক্রম একসাথে চলছে।</div>
+      </div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) মানি লন্ডারিংয়ের শাস্তি কী? ব্যাংকের রিপোর্টিং সংস্থার দায়িত্ব বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Punishment for money laundering? Describe reporting organization's responsibilities. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>অপরাধের ধরন</th><th>শাস্তি (বাংলা)</th><th>Punishment (English)</th><th>আইনি ধারা</th></tr>
+      <tr><td>মানি লন্ডারিং সংঘটন</td><td>৪ থেকে ১২ বছরের কারাদণ্ড</td><td>4 to 12 years imprisonment</td><td>MLPA 2012, Sec 4</td></tr>
+      <tr><td>মিথ্যা তথ্য প্রদান</td><td>সর্বোচ্চ ২ বছর কারাদণ্ড বা ৫০,০০০ টাকা জরিমানা</td><td>Max 2 years or Tk. 50,000 fine</td><td>MLPA 2012, Sec 8</td></tr>
+      <tr><td>রিপোর্ট দাখিলে ব্যর্থতা</td><td>সর্বোচ্চ ১ বছর বা ২৫,০০০ টাকা জরিমানা</td><td>Max 1 year or Tk. 25,000 fine</td><td>MLPA 2012, Sec 7</td></tr>
+      <tr><td>অপরাধে জড়িত অর্থ</td><td>দ্বিগুণ পর্যন্ত জরিমানা + বাজেয়াপ্ত</td><td>Fine up to double + confiscation</td><td>MLPA 2012, Sec 4</td></tr>
+    </table>
+
+    <div class="hl hl-danger"><strong>⚠️ Tipping Off নিষিদ্ধ:</strong> STR জমার কথা গ্রাহক Mr. Reza-কে জানানো আইনত নিষিদ্ধ। ব্যাংকার স্বাভাবিকভাবে কাজ চালিয়ে যাবেন এবং BFIU তদন্ত করবে।<br>→ Tipping Off is ILLEGAL under MLPA 2012. Continue normal banking while BFIU investigates.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 4: BANKRUPTCY ACT — FRAUDULENT TRANSFER  -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-e-color" id="c4">
+  <div class="lbl">Module E — Bankruptcy Act 1997 | কেস ৪ | Case 4</div>
+  <h2>⚖️ দেউলিয়া আইন — প্রতারণামূলক সম্পত্তি হস্তান্তর</h2>
+  <div class="sub">৯৮তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় আসার সম্ভাবনা বেশি</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--teal)">১০</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৪: Mr. Hossain-এর দেউলিয়া ঘোষণা ও প্রতারণামূলক সম্পত্তি হস্তান্তর</div>
+      <div class="en">Case 4: Mr. Hossain's Bankruptcy Declaration and Fraudulent Property Transfer</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred likely">⭐ আসতে পারে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ Bankruptcy Act 1997, Sec 9</span>
+      <span class="lb">⚖️ Sec 18 — Fraudulent Transfer</span>
+      <span class="lb">⚖️ TPA 1882, Sec 53</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background</div>
+      <div class="ibox-bn">Mr. Hossain একজন ব্যবসায়ী। তার কাছে PQR Bank-এর ৮০ লক্ষ টাকা পাওনা আছে। গত ৬ মাস থেকে ঋণ পরিশোধ বন্ধ। বাংলাদেশ ব্যাংকের তদন্তে দেখা গেছে: (ক) Mr. Hossain তার ঢাকার বাড়ি মাত্র ১ লক্ষ টাকায় তার ভাইকে বিক্রি করেছেন (বাজার মূল্য ৫০ লক্ষ), (খ) তার ব্যাংক হিসাব থেকে প্রায় সব অর্থ উত্তোলন করা হয়েছে, (গ) সে দেশ ছেড়ে যাওয়ার চেষ্টা করছেন।</div>
+      <div class="ibox-en">Mr. Hossain owes PQR Bank Tk. 80 lakh. Loan default for 6 months. Investigation reveals: (a) He sold his Dhaka house for Tk. 1 lakh to his brother (market value Tk. 50 lakh), (b) Most funds withdrawn from bank account, (c) He is trying to leave the country.</div>
+    </div>
+
+    <!-- (i) CREDITOR'S PROCEDURE -->
+    <div class="subq">(i) PQR Bank কীভাবে Bankruptcy Act 1997-এর অধীনে মামলা দায়ের করতে পারে? শর্তসমূহ কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) How can PQR Bank file suit under Bankruptcy Act 1997? What are the conditions? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Bankruptcy Act 1997 — Sections 9, 10, 12</div>
+
+    <table class="ctbl">
+      <tr><th>শর্ত | Condition</th><th>আইনি দাবি | Legal Requirement</th><th>এই কেসে | In This Case</th><th>পূরণ? | Met?</th></tr>
+      <tr><td>নূন্যতম ঋণের পরিমাণ</td><td>সর্বনিম্ন ৫ লক্ষ টাকা [Sec 9(1)]</td><td>৮০ লক্ষ টাকা ✓</td><td><span class="tick">✅ হ্যাঁ</span></td></tr>
+      <tr><td>দেউলিয়ার কার্যক্রম প্রমাণ</td><td>আইনে নির্ধারিত কার্যক্রমের প্রমাণ</td><td>সম্পত্তি সরানো + দেশ ছাড়ার চেষ্টা ✓</td><td><span class="tick">✅ হ্যাঁ</span></td></tr>
+      <tr><td>সময়সীমা</td><td>দেউলিয়ার কার্যক্রম থেকে ১ বছরের মধ্যে [Sec 12]</td><td>সাম্প্রতিক ঘটনা ✓</td><td><span class="tick">✅ হ্যাঁ</span></td></tr>
+      <tr><td>আদালত</td><td>জেলা আদালতে মামলা দায়ের</td><td>মামলা করা যাবে</td><td><span class="tick">✅ হ্যাঁ</span></td></tr>
+    </table>
+
+    <div class="flow-wrap">
+      <div class="flow-row">
+        <div class="fbox fb-blue" style="font-size:11px">আবেদন দাখিল<br>জেলা আদালত</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-orange" style="font-size:11px">নোটিশ জারি<br>প্রতিবাদীকে</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-red" style="font-size:11px">শুনানি<br>আদালতে</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-purple" style="font-size:11px">দেউলিয়া ঘোষণা<br>বিচারক</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-green" style="font-size:11px">Receiver নিয়োগ<br>সম্পত্তি বিক্রি</div>
+      </div>
+    </div>
+
+    <!-- (ii) FRAUDULENT TRANSFER -->
+    <div class="subq">(ii) Mr. Hossain-এর সম্পত্তি হস্তান্তর কি প্রতারণামূলক? আইনি ব্যবস্থা কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) Is Mr. Hossain's property transfer fraudulent? What legal measures are available? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Bankruptcy Act 1997, Section 18; Transfer of Property Act 1882, Section 53</div>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">হ্যাঁ — সম্পত্তি হস্তান্তর স্পষ্টতই প্রতারণামূলক</div>
+        <div class="v-detail">→ YES — The property transfer is clearly fraudulent. Reasons: ৫০ লক্ষ টাকার সম্পত্তি মাত্র ১ লক্ষে বিক্রি = বাজারমূল্যের ২% → স্বজনের কাছে বিক্রি = সন্দেহজনক → ঋণ খেলাপির সময়ে হস্তান্তর = পাওনাদারকে ঠকানোর উদ্দেশ্য স্পষ্ট।</div>
+      </div>
+    </div>
+
+    <ul class="pts bn">
+      <li><strong>ব্যবস্থা ১:</strong> প্রতারণামূলক হস্তান্তর বাতিল করা [Bankruptcy Act 1997, Section 18] — Official Receiver সম্পত্তি পুনরুদ্ধার করতে পারবেন</li>
+      <li><strong>ব্যবস্থা ২:</strong> TPA 1882, Section 53 প্রয়োগ — পাওনাদারকে প্রতারণার উদ্দেশ্যে হস্তান্তর বাতিলযোগ্য</li>
+      <li><strong>ব্যবস্থা ৩:</strong> Official Receiver নিয়োগ করে সম্পত্তি সংরক্ষণ</li>
+      <li><strong>ব্যবস্থা ৪:</strong> লুকানো সম্পত্তি তদন্তের আদেশ</li>
+      <li><strong>ব্যবস্থা ৫:</strong> Mr. Hossain-এর পাসপোর্ট আটকের আবেদন</li>
+    </ul>
+
+    <!-- (iii) CONSEQUENCES -->
+    <div class="subq">(iii) দেউলিয়া ঘোষণার পরে Mr. Hossain-এর আইনি পরিণতি কী হবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) What are the legal consequences for Mr. Hossain after bankruptcy declaration? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>পরিণতি | Consequence</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th></tr>
+      <tr><td>সম্পত্তি হস্তান্তর</td><td>সকল সম্পত্তি Official Receiver-এর কাছে যাবে</td><td>All property goes to Official Receiver</td></tr>
+      <tr><td>পদমর্যাদা হারানো</td><td>কোম্পানির পরিচালক হওয়া যাবে না</td><td>Cannot be company director</td></tr>
+      <tr><td>সংসদ নিষেধ</td><td>সংসদ সদস্য হওয়া যাবে না</td><td>Cannot be Member of Parliament</td></tr>
+      <tr><td>নতুন ঋণ নিষিদ্ধ</td><td>কোনো প্রতিষ্ঠান থেকে নতুন ঋণ নেওয়া যাবে না</td><td>Cannot take fresh loan from any institution</td></tr>
+      <tr><td>পাসপোর্ট স্থগিত</td><td>পাসপোর্ট স্থগিত হতে পারে</td><td>Passport may be suspended</td></tr>
+      <tr><td>আদালতে হাজিরা</td><td>আদালতের নির্দেশে হাজির থাকতে হবে</td><td>Must attend on court summons</td></tr>
+    </table>
+
+    <!-- (iv) BANK'S ALTERNATIVES -->
+    <div class="subq">(iv) দেউলিয়া আইন ছাড়াও PQR Bank-এর ঋণ আদায়ের বিকল্প আইনি পথ কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Alternative legal options for PQR Bank to recover loan besides Bankruptcy Act. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="alt-tbl">
+      <tr><th>#</th><th>বিকল্প পথ</th><th>আইন</th><th>বাংলা ব্যাখ্যা</th><th>English</th></tr>
+      <tr><td>১</td><td>অর্থঋণ আদালত</td><td>Artha Rin Adalat Ain 2003</td><td>দ্রুত বিচার ও জামানত নিলামে বিক্রি</td><td>Fast court process + auction of collateral</td></tr>
+      <tr><td>২</td><td>সিভিল মামলা</td><td>Contract Act 1872</td><td>দেওয়ানি আদালতে অর্থ আদায়ের মামলা</td><td>Civil suit for money recovery</td></tr>
+      <tr><td>৩</td><td>জামানত বিক্রি</td><td>Artha Rin Sec 12(3)</td><td>পাওয়ার অব অ্যাটর্নি ছাড়াই জামানত বিক্রি</td><td>Sell collateral without PoA</td></tr>
+      <tr><td>৪</td><td>সালিশি</td><td>Artha Rin Sec 22</td><td>আদালতের যেকোনো পর্যায়ে আপোষ</td><td>Arbitration at any stage</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 5: DORMANT ACCOUNT                       -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-g-color" id="c5">
+  <div class="lbl">Module G/J — General Banking | কেস ৫ | Case 5</div>
+  <h2>💤 Dormant হিসাব — হঠাৎ দাবিদার উপস্থিত</h2>
+  <div class="sub">৯৭তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় নতুন ভ্যারিয়েশনে আসতে পারে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--g)">১১</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৫: Dormant হিসাব — Rahim সাহেবের পরিবারের দাবি</div>
+      <div class="en">Case 5: Dormant Account — Family claim over Mr. Rahim's account</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">BB BRPD Circular No. 23/2021</span>
+      <span class="lb">⚖️ BCA 1991, Sec 35</span>
+      <span class="lb">BB KYC Guidelines</span>
+    </div>
+
+    <table class="bg-table">
+      <tr><th>তথ্য | Information</th><th>বিবরণ | Details</th></tr>
+      <tr><td>হিসাব</td><td>Mr. Abdul Rahim ও Mrs. Jahanara Rahim-এর যৌথ সঞ্চয় হিসাব (Either or Survivor)</td></tr>
+      <tr><td>Dormant কবে থেকে</td><td>২০১৬ সাল থেকে কোনো লেনদেন নেই</td></tr>
+      <tr><td>দাবিদার</td><td>Rifat Rahim (২৫ বছর বয়সী) — ২০২৪ সালে আসেন</td></tr>
+      <tr><td>দাবিদারের দাবি ১</td><td>হিসাবের Statement দেখান</td></tr>
+      <tr><td>দাবিদারের দাবি ২</td><td>মা Mrs. Jahanara ২০১৪ সালে মারা গেছেন</td></tr>
+      <tr><td>দাবিদারের দাবি ৩</td><td>বাবা Mr. Abdul Rahim ২০১৮ সালে দেশের বাইরে চলে গেছেন — নিখোঁজ</td></tr>
+      <tr><td>দাবিদারের দাবি ৪</td><td>তিনি একমাত্র সন্তান, সম্পত্তির উত্তরাধিকারী</td></tr>
+      <tr><td>অনুরোধ</td><td>হিসাবের সম্পূর্ণ ব্যালেন্স তুলতে চান</td></tr>
+    </table>
+
+    <!-- (i) -->
+    <div class="subq">(i) Dormant Account কখন হয় এবং পুনরুজ্জীবনের পদ্ধতি কী? এই হিসাবের বর্তমান অবস্থা কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) When does dormant account occur, how to reactivate, and what is the current status of this account? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: BB BRPD Circular No. 23/2021; BCA 1991, Section 35</div>
+
+    <table class="ctbl">
+      <tr><th>হিসাবের ধরন</th><th>Inoperative কবে</th><th>Dormant কবে</th><th>এই হিসাবে</th></tr>
+      <tr><td>Savings Account</td><td>৬ মাস লেনদেন না হলে</td><td>আরও ১২ মাস = মোট ১৮ মাস পরে</td><td>২০১৬ থেকে = ৮ বছরের বেশি Dormant ✓</td></tr>
+      <tr><td>Unclaimed Deposit</td><td colspan="2">১০ বছর লেনদেন না হলে → BB-তে পাঠানো [BCA Sec 35]</td><td>২০১৬ + ১০ = ২০২৬ সালে BB-তে যাবে (এখনো হয়নি)</td></tr>
+    </table>
+
+    <div class="verdict v-warn">
+      <div class="v-icon">⚠️</div>
+      <div>
+        <div class="v-title">হিসাবটি এখন সম্পূর্ণ Dormant অবস্থায় আছে</div>
+        <div class="v-detail">২০২৬ সালে ১০ বছর পূর্ণ হলে BB-তে Unclaimed Deposit হিসেবে পাঠাতে হবে [BCA 1991, Sec 35]</div>
+      </div>
+    </div>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) Branch Manager হিসেবে Rifat Rahim-এর দাবির ক্ষেত্রে আপনি কী পদক্ষেপ নেবেন? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) As Branch Manager, what steps will you take regarding Rifat Rahim's claim? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:8px;max-width:650px;">
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:10px 14px;">
+        <div style="min-width:30px;height:30px;background:var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;flex-shrink:0;">১</div>
+        <div><strong style="color:var(--g)">পরিচয় কঠোরভাবে যাচাই করুন</strong><br><span style="font-size:12.5px">NID যাচাই + জন্ম সনদ + পারিবারিক সম্পর্কের প্রমাণ + CPV (বাড়িতে গিয়ে যাচাই)</span></div>
+      </div>
+      <div style="text-align:center;color:#999;font-size:18px;">↓</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#fff8e1;border:1px solid #ffcc80;border-radius:8px;padding:10px 14px;">
+        <div style="min-width:30px;height:30px;background:var(--s);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;flex-shrink:0;">২</div>
+        <div><strong style="color:#7a4000">মায়ের মৃত্যু যাচাই করুন</strong><br><span style="font-size:12.5px">মৃত্যু সনদ (Death Certificate) যাচাই করুন — কারণ "Either or Survivor" হিসাবে Survivor = বাবা Mr. Rahim</span></div>
+      </div>
+      <div style="text-align:center;color:#999;font-size:18px;">↓</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#ffebee;border:1px solid #ef9a9a;border-radius:8px;padding:10px 14px;">
+        <div style="min-width:30px;height:30px;background:var(--acc);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;flex-shrink:0;">৩</div>
+        <div><strong style="color:#8b0000">বাবার নিখোঁজ অবস্থা সমস্যা</strong><br><span style="font-size:12.5px">বাবা জীবিত আছেন কিনা নিশ্চিত নয় → মৃত্যু অনুমানের আদেশ (Presumption of Death) লাগবে → আদালতের Succession Certificate অবশ্যই প্রয়োজন</span></div>
+      </div>
+      <div style="text-align:center;color:#999;font-size:18px;">↓</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:10px 14px;">
+        <div style="min-width:30px;height:30px;background:var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;flex-shrink:0;">৪</div>
+        <div><strong style="color:var(--g)">Legal Department ও Head Office-কে জানান</strong><br><span style="font-size:12.5px">জটিল আইনি বিষয় → ব্যাংকের আইন বিভাগের পরামর্শ নিন</span></div>
+      </div>
+    </div>
+
+    <div class="verdict v-no">
+      <div class="v-icon">❌</div>
+      <div>
+        <div class="v-title">এখনই Rifat Rahim-কে অর্থ দেওয়া যাবে না</div>
+        <div class="v-detail">→ Rifat Rahim cannot receive the money immediately. He needs to produce: (1) Mother's death certificate, (2) Court order declaring father legally dead (Presumption of Death), (3) Succession Certificate from court.</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) Dormant Account-এ কী কী সতর্কতা অবলম্বন করতে হয়? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) What precautions must be taken for Dormant Account operations? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>ধাপ | Step</th><th>সতর্কতা (বাংলা)</th><th>Precaution (English)</th></tr>
+      <tr><td>ধাপ ১</td><td>পরিচয় কঠোরভাবে যাচাই করুন — NID, পাসপোর্ট বা জন্ম সনদ</td><td>Strictly verify identity — NID, passport or birth certificate</td></tr>
+      <tr><td>ধাপ ২</td><td>CPV (Contact Point Verification) করুন — বাড়িতে গিয়ে যাচাই</td><td>Conduct CPV — physically verify at customer's address</td></tr>
+      <tr><td>ধাপ ৩</td><td>KYC সম্পূর্ণ আপডেট করুন — ছবি, স্বাক্ষর ও সব তথ্য</td><td>Update KYC completely — photo, signature and all information</td></tr>
+      <tr><td>ধাপ ৪</td><td>শাখা প্রধানের লিখিত অনুমোদন নিন</td><td>Obtain Branch Manager's written approval</td></tr>
+      <tr><td>ধাপ ৫</td><td>পুনরায় চালু হওয়ার পরে লেনদেন সতর্কতার সাথে পর্যবেক্ষণ করুন</td><td>Monitor transactions carefully after reactivation</td></tr>
+      <tr><td>ধাপ ৬</td><td>সন্দেহজনক হলে STR দাখিল করুন [MLPA 2012, Sec 25]</td><td>Submit STR if circumstances appear suspicious</td></tr>
+    </table>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) BCA 1991-এর ধারা ৩৫ অনুযায়ী Unclaimed Deposit সম্পর্কে বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Describe Unclaimed Deposit as per BCA 1991, Section 35. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Bank Company Act 1991, Section 35</div>
+
+    <ul class="pts bn">
+      <li><strong>বিধান:</strong> ১০ বছর কোনো লেনদেন না হলে এবং গ্রাহকের কোনো সন্ধান না পেলে — সেই আমানত Bangladesh Bank-এ পাঠাতে হবে [BCA 1991, Sec 35]</li>
+      <li><strong>নোটিশ:</strong> ব্যাংক BB-তে পাঠানোর ৩ মাস আগে গ্রাহককে নোটিশ দিতে হবে (SMS, ইমেইল বা চিঠিতে)</li>
+      <li><strong>দাবি:</strong> BB-তে পাঠানোর পরেও গ্রাহক বা তার উত্তরাধিকারী দাবি করলে আদালতের আদেশে অর্থ পাবেন</li>
+      <li><strong>ব্যতিক্রম:</strong> কিছু হিসাব BB-তে পাঠানো যায় না — যেমন: মামলাধীন হিসাব, Garnishee Order প্রযোজ্য হিসাব</li>
+      <li><strong>এই কেসে:</strong> ২০১৬ + ১০ বছর = ২০২৬ সালে এই হিসাব Unclaimed হবে — এখনো সময় আছে</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 6: COLLECTING BANK — FORGED SIGNATURE    -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-b-color" id="c6">
+  <div class="lbl">Module B/I — NI Act 1881 | কেস ৬ | Case 6</div>
+  <h2>🏦 Collecting Bank — জাল স্বাক্ষর ও এন্ডোর্সমেন্ট জালিয়াতি</h2>
+  <div class="sub">৯৬তম ও ৯৯তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় আসার সম্ভাবনা বেশি</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--g)">১২</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৬: P Bank বনাম X Bank — Crossed Order Cheque সংগ্রহে জালিয়াতি</div>
+      <div class="en">Case 6: P Bank vs X Bank — Fraud in collecting crossed order cheque</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred likely">⭐ আসতে পারে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ NI Act 1881, Sec 131 — Statutory Protection</span>
+      <span class="lb">⚖️ Sec 85 — Order Cheque</span>
+      <span class="lb">⚖️ Sec 123-131 — Crossing</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background</div>
+      <div class="ibox-bn">X Bank-এ আঁকা ৩০,০০০ টাকার একটি Crossed Order Cheque P Bank সংগ্রহ করে P Bank-এর গ্রাহক কামালের জন্য যার পক্ষে Payee চেকটি Endorse করেছিলেন। কিন্তু পরে জানা যায়: (i) Drawer-এর স্বাক্ষর জালিয়াতি করা হয়েছে, (ii) Payee-এর Endorsement জালিয়াতি করা হয়েছে। X Bank এবং P Bank উভয়ের অবস্থান বিশ্লেষণ করুন।</div>
+      <div class="ibox-en">P bank collects a Tk. 30,000 crossed order cheque drawn on X bank for P bank's customer Kamal in whose favour it was endorsed by the payee. Later it's found: (i) Drawer's signature was forged, (ii) Payee's endorsement was forged. Discuss positions of X Bank (payee bank) and P Bank (collecting bank).</div>
+    </div>
+
+    <!-- (i) DRAWER'S SIGNATURE FORGED -->
+    <div class="subq">(i) Drawer-এর স্বাক্ষর জাল হলে X Bank (Paying Bank) ও P Bank (Collecting Bank)-এর অবস্থান কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) If drawer's signature is forged — position of X Bank (paying bank) and P Bank (collecting bank). <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: NI Act 1881, Section 85 (Order Cheque), Section 131 (Statutory Protection)</div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">🏦 X Bank (Paying Bank)-এর অবস্থান</div>
+        <ul class="pts bn">
+          <li><strong>নিয়ম:</strong> Forged signature-এ payment = payment in due course নয়</li>
+          <li><strong>পরিণতি:</strong> X Bank দায়ী — টাকা Drawer-এর হিসাব থেকে কাটা যাবে না</li>
+          <li><strong>কারণ:</strong> Forgery কোনো title দেয় না — "Forgery confers no title"</li>
+          <li><strong>ব্যতিক্রম:</strong> Drawer নিজে অবহেলা করলে — X Bank দায়মুক্ত হতে পারে</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">🏦 P Bank (Collecting Bank)'s Position</div>
+        <ul class="pts en">
+          <li><strong>Rule:</strong> If endorsement is genuine, P Bank may get statutory protection under Sec 131</li>
+          <li><strong>Condition:</strong> P Bank must prove it collected in good faith and without negligence</li>
+          <li><strong>Key:</strong> P Bank's liability depends on whether it verified the endorsee's identity properly</li>
+          <li><strong>Risk:</strong> If P Bank failed KYC, it loses statutory protection</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (ii) ENDORSEMENT FORGED -->
+    <div class="subq">(ii) Payee-এর Endorsement জাল হলে উভয় ব্যাংকের অবস্থান কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) If payee's endorsement is forged — position of both banks. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>ব্যাংক</th><th>অবস্থান (বাংলা)</th><th>Position (English)</th><th>দায়ী?</th></tr>
+      <tr>
+        <td><strong>X Bank</strong><br>(Paying Bank)</td>
+        <td>Endorsement জাল হলেও Drawer-এর স্বাক্ষর আসল। Sec 85(1) অনুযায়ী যদি Payment in Due Course হয় তাহলে X Bank দায়মুক্ত হতে পারে।</td>
+        <td>If payment was in due course (good faith, without negligence), X Bank is discharged under Sec 85(1) — forged endorsement is between holder and endorser, not bank's concern.</td>
+        <td><span class="tick">সম্ভাব্য দায়মুক্ত</span></td>
+      </tr>
+      <tr>
+        <td><strong>P Bank</strong><br>(Collecting Bank)</td>
+        <td>P Bank-এর গ্রাহক কামাল জাল Endorsement-এ চেক পেয়েছে। P Bank-কে প্রমাণ করতে হবে সে সৎভাবে ও অবহেলা ছাড়া কাজ করেছে [Sec 131]। গ্রাহক যাচাই না করলে দায়ী হবে।</td>
+        <td>P Bank must prove good faith collection under Sec 131. If KYC of Kamal was properly done and endorsement appeared genuine, P Bank gets statutory protection. But if negligent → liable.</td>
+        <td><span class="warn-icon">⚠️ যাচাই-সাপেক্ষ</span></td>
+      </tr>
+    </table>
+
+    <!-- (iii) STATUTORY PROTECTION -->
+    <div class="subq">(iii) Collecting Banker-এর বৈধানিক সুরক্ষার শর্তসমূহ কী? [NI Act 1881, Section 131] <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) What are conditions for Collecting Banker's statutory protection under Section 131? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: NI Act 1881, Section 131 — Collecting Bank Statutory Protection</div>
+
+    <table class="ctbl">
+      <tr><th>#</th><th>সুরক্ষার শর্ত (বাংলা)</th><th>Condition for Protection (English)</th><th>এই কেসে?</th></tr>
+      <tr><td>১</td><td>গ্রাহকের পক্ষে সংগ্রহ করতে হবে (Agent হিসেবে)</td><td>Must collect for a customer (as agent)</td><td>হ্যাঁ — কামালের জন্য সংগ্রহ ✓</td></tr>
+      <tr><td>২</td><td>Crossed Cheque সংগ্রহ করতে হবে</td><td>Must be a crossed cheque</td><td>হ্যাঁ — Crossed Cheque ✓</td></tr>
+      <tr><td>৩</td><td>সৎভাবে কাজ করতে হবে (Good Faith)</td><td>Must act in good faith</td><td>প্রমাণ করতে হবে</td></tr>
+      <tr><td>৪</td><td>অবহেলা ছাড়া কাজ করতে হবে (Without Negligence)</td><td>Must act without negligence</td><td>KYC ঠিকমতো করলে ✓</td></tr>
+    </table>
+
+    <div class="hl hl-warn"><strong>⚠️ গুরুত্বপূর্ণ:</strong> Collecting Banker-এর সুরক্ষা নির্ভর করে KYC-এর উপর। গ্রাহকের পরিচয় ঠিকমতো যাচাই না করলে "Negligence" প্রমাণ হয় এবং সুরক্ষা হারাতে হয়।<br>→ Protection depends on KYC quality. Failure to verify customer's identity = negligence = loss of protection.</div>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) Negotiation ও Assignment-এর মধ্যে পার্থক্য কী? এই কেসে কোনটি প্রযোজ্য? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Distinguish Negotiation and Assignment. Which is applicable in this case? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>বিষয়</th><th>Negotiation</th><th>Assignment</th></tr>
+      <tr><td>মালিকানা</td><td>HDC হলে আরও ভালো মালিকানা পেতে পারে</td><td>Assignee কখনো Assignor-এর চেয়ে ভালো মালিকানা পায় না</td></tr>
+      <tr><td>পদ্ধতি</td><td>Endorsement ও Delivery দিয়ে</td><td>লিখিত দলিল ও নোটিশ দিয়ে</td></tr>
+      <tr><td>দায়</td><td>Endorser দায়বদ্ধ থাকেন</td><td>Assignor দায়মুক্ত</td></tr>
+      <tr><td>HDC সুবিধা</td><td>HDC হওয়া সম্ভব</td><td>HDC হওয়া যায় না</td></tr>
+      <tr><td>এই কেসে</td><td colspan="2"><strong>Negotiation প্রযোজ্য</strong> — কারণ Endorsement ও Delivery দিয়ে হস্তান্তর হয়েছে। কিন্তু Endorsement জাল হওয়ায় Negotiation অকার্যকর।</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 7: JOINT ACCOUNT — DEATH & NOMINEE      -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-g-color" id="c7">
+  <div class="lbl">Module G — Account Operations | কেস ৭ | Case 7</div>
+  <h2>👥 যৌথ হিসাব — মৃত্যু ও Nominee দ্বন্দ্ব</h2>
+  <div class="sub">৯৮তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় নতুন পরিস্থিতিতে আসতে পারে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--g)">১৩</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৭: Mr. Kamal-এর মৃত্যুর পরে যৌথ হিসাব ও Nominee দ্বন্দ্ব</div>
+      <div class="en">Case 7: Joint account after Mr. Kamal's death — Nominee vs Legal Heirs conflict</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred likely">⭐ আসতে পারে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">BB KYC Guidelines</span>
+      <span class="lb">Succession Laws</span>
+      <span class="lb">BB BRPD Guidelines — Joint Account</span>
+    </div>
+
+    <table class="bg-table">
+      <tr><th>তথ্য | Information</th><th>বিবরণ | Details</th></tr>
+      <tr><td>হিসাব</td><td>Mr. Kamal ও Mrs. Rekha (Either or Survivor) সঞ্চয় হিসাব | ব্যালেন্স: ৫,০০,০০০ টাকা</td></tr>
+      <tr><td>Nominee</td><td>Mrs. Rekha (স্ত্রী) — ২য় স্ত্রী</td></tr>
+      <tr><td>Mr. Kamal মারা গেছেন</td><td>মৃত্যু সনদ সহ জানানো হয়েছে</td></tr>
+      <tr><td>দাবিদার ১</td><td>Mrs. Rekha (২য় স্ত্রী) — Nominee হিসেবে পুরো টাকা চান</td></tr>
+      <tr><td>দাবিদার ২</td><td>Mr. Kamal-এর ১ম স্ত্রী-র ২ সন্তান — উত্তরাধিকারী হিসেবে অর্ধেক চান</td></tr>
+      <tr><td>দাবিদার ৩</td><td>Mr. Kamal-এর বৃদ্ধা মা — ভরণপোষণের জন্য দাবি করছেন</td></tr>
+    </table>
+
+    <!-- (i) -->
+    <div class="subq">(i) "Either or Survivor" হিসাবের ক্ষেত্রে মৃত্যু হলে কী নিয়ম প্রযোজ্য? Survivor ও Nominee-র পার্থক্য কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Rules for "Either or Survivor" account on death? Difference between Survivor and Nominee? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>বিষয়</th><th>Survivor (বেঁচে থাকা সদস্য)</th><th>Nominee (মনোনীত ব্যক্তি)</th></tr>
+      <tr><td>সংজ্ঞা</td><td>যৌথ হিসাবের জীবিত সদস্য</td><td>হিসাবধারী যাকে মনোনীত করেছেন</td></tr>
+      <tr><td>এই কেসে</td><td>Mrs. Rekha = Survivor (২য় স্ত্রী, যৌথ হিসাবের সদস্য)</td><td>Mrs. Rekha = Nominee (একই ব্যক্তি উভয় ভূমিকায়)</td></tr>
+      <tr><td>অধিকার</td><td>Either or Survivor-এ Survivor সম্পূর্ণ ব্যালেন্স পাওয়ার অধিকার পান</td><td>Nominee Trustee হিসেবে অর্থ পান — উত্তরাধিকারীদের দিতে বাধ্য নন সরাসরি</td></tr>
+      <tr><td>আইনি দাবি</td><td>Survivor-এর দাবি তাৎক্ষণিকভাবে গ্রহণযোগ্য</td><td>Nominee vs Legal Heirs-এর দ্বন্দ্বে আদালতের সিদ্ধান্ত লাগতে পারে</td></tr>
+    </table>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) Branch Manager হিসেবে আপনি কীভাবে এই পরিস্থিতি মোকাবেলা করবেন? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) As Branch Manager, how will you handle this situation? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <ul class="pts bn">
+      <li><strong>পদক্ষেপ ১:</strong> তাৎক্ষণিকভাবে হিসাবে সকল লেনদেন বন্ধ করুন — "Deceased" চিহ্নিত করুন</li>
+      <li><strong>পদক্ষেপ ২:</strong> সকল দাবিদারের দাবি ও কাগজপত্র সংগ্রহ করুন</li>
+      <li><strong>পদক্ষেপ ৩:</strong> Mrs. Rekha = Survivor + Nominee হওয়ায় তার দাবি শক্তিশালী — কিন্তু একাধিক দাবিদার থাকায় সরাসরি দেওয়া ঝুঁকিপূর্ণ</li>
+      <li><strong>পদক্ষেপ ৪:</strong> ব্যাংকের Legal Department ও Head Office-কে জানান</li>
+      <li><strong>পদক্ষেপ ৫:</strong> Indemnity Bond নিন — Mrs. Rekha যদি অর্থ পান এবং পরে সমস্যা হয় তাহলে ক্ষতিপূরণ দেওয়ার প্রতিশ্রুতি</li>
+    </ul>
+
+    <div class="verdict v-warn">
+      <div class="v-icon">⚠️</div>
+      <div>
+        <div class="v-title">এখনই কাউকে সম্পূর্ণ অর্থ দেওয়া ঝুঁকিপূর্ণ</div>
+        <div class="v-detail">→ Multiple claimants exist. Best approach: Get Indemnity Bond + Succession Certificate + Legal Department's approval before payment. If still unclear → court directive needed.</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) ১ম স্ত্রীর সন্তানরা কি এই হিসাবে দাবি করতে পারবে? আইনি ভিত্তি ব্যাখ্যা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) Can 1st wife's children claim this account? Explain legal basis. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">⚖️ আইনি বিশ্লেষণ (বাংলা)</div>
+        <ul class="pts bn">
+          <li>"Either or Survivor" হিসাবে Survivor = Mrs. Rekha সম্পূর্ণ ব্যালেন্স পাবেন — ব্যাংকিং আইনে এটি স্বীকৃত</li>
+          <li>তবে উত্তরাধিকার আইন (Muslim Personal Law বা অন্যান্য) অনুযায়ী সন্তানরাও উত্তরাধিকারী</li>
+          <li>Nominee vs Legal Heirs-এর দ্বন্দ্বে আদালত সিদ্ধান্ত দেবে</li>
+          <li>ব্যাংক শুধু Survivor/Nominee-কে দেওয়ার পরে দায়মুক্ত — উত্তরাধিকারী দাবি আদালতে নিষ্পত্তি হবে</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">✅ Practical Approach</div>
+        <ul class="pts en">
+          <li>Either or Survivor → Survivor (Mrs. Rekha) has primary right to the balance</li>
+          <li>Children can claim through inheritance law — but that's between them and Mrs. Rekha, not the bank</li>
+          <li>Bank's duty: Pay the Survivor (Mrs. Rekha) after proper verification + Indemnity Bond</li>
+          <li>Bank is discharged once payment made to legitimate Survivor/Nominee</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) যৌথ হিসাব পরিচালনায় ব্যাংকারের কী বিশেষ সতর্কতা প্রয়োজন? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) What special precautions does a banker need in operating joint accounts? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="alt-tbl">
+      <tr><th>বিষয়</th><th>Either or Survivor</th><th>Joint (All Must Sign)</th></tr>
+      <tr><td>পরিচালনা</td><td>যেকোনো একজন একা পরিচালনা করতে পারেন</td><td>সকলের স্বাক্ষর একসাথে লাগবে</td></tr>
+      <tr><td>একজনের মৃত্যু</td><td>Survivor পুরো অর্থ পাবেন (মৃত্যু সনদ দিয়ে)</td><td>Succession Certificate ছাড়া দেওয়া যাবে না</td></tr>
+      <tr><td>Stop Payment</td><td>যেকোনো একজন Stop Payment দিতে পারেন</td><td>সকলের সম্মতি প্রয়োজন</td></tr>
+      <tr><td>ব্যাংকারের সতর্কতা</td><td>মৃত্যুর খবর পেলে তাৎক্ষণিক লেনদেন বন্ধ</td><td>একজনের স্বাক্ষর না থাকলে কোনো লেনদেন না</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 8: ARTHA RIN ADALAT                      -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-colors" id="c8">
+  <div class="lbl">Module A — Artha Rin Adalat Ain 2003 | কেস ৮ | Case 8</div>
+  <h2>⚖️ অর্থঋণ আদালত — ব্যাংকের ঋণ আদায় প্রক্রিয়া</h2>
+  <div class="sub">৯৮তম ও ৯৯তম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় নতুন কেস আসতে পারে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--p)">১৪</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৮: ABC Bank PLC বনাম Mr. X — অর্থঋণ আদালতে ঋণ আদায়</div>
+      <div class="en">Case 8: ABC Bank PLC vs Mr. X — Loan recovery through Artha Rin Adalat</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ Artha Rin Adalat Ain 2003</span>
+      <span class="lb">Sec 4 — Minimum Tk 1 Lakh</span>
+      <span class="lb">Sec 12(3) — Mortgage Sale</span>
+      <span class="lb">Amendment 2010</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background</div>
+      <div class="ibox-bn">Mr. X ABC Bank PLC-এর কাছে ৪ কোটি টাকা ঋণী — খেলাপি হিসেবে চিহ্নিত। জামানত হিসেবে ৩.৫ কোটি টাকার সম্পত্তি বন্ধক রাখা ছিল। ব্যাংক অর্থঋণ আদালতে মামলা করতে চায়।</div>
+      <div class="ibox-en">Mr. X owes ABC Bank PLC Tk. 4 crore — marked as defaulted. Collateral security of Tk. 3.5 crore was mortgaged. Bank wants to file suit in Artha Rin Adalat.</div>
+    </div>
+
+    <!-- (i) -->
+    <div class="subq">(i) অর্থঋণ আদালত আইন ২০০৩-এর প্রধান বিধানসমূহ কী? ব্যাংক কীভাবে মামলা দায়ের করবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Main provisions of Artha Rin Adalat Ain 2003? How will bank file the suit? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Artha Rin Adalat Ain 2003 — Sections 4, 7, 10, 17, 28</div>
+
+    <table class="ctbl">
+      <tr><th>বিষয়</th><th>বিধান (বাংলা)</th><th>Provision (English)</th><th>ধারা</th></tr>
+      <tr><td>নূন্যতম পরিমাণ</td><td>সর্বনিম্ন ১ লক্ষ টাকা</td><td>Minimum Tk. 1,00,000</td><td>Sec 4</td></tr>
+      <tr><td>সমন</td><td>১৫ দিনের মধ্যে সার্ভ করতে হবে</td><td>Served within 15 days</td><td>Sec 7</td></tr>
+      <tr><td>লিখিত জবাব</td><td>৪০ দিনের মধ্যে (বাড়ানো যায় ২০ দিন)</td><td>Within 40 days (extendable 20 days)</td><td>Sec 10</td></tr>
+      <tr><td>নিষ্পত্তির সময়</td><td>৯০ দিনের মধ্যে (বিশেষজ্ঞ থাকলে ৩০)</td><td>Within 90 days (30 if expert)</td><td>Sec 17</td></tr>
+      <tr><td>রায়</td><td>শুনানির ১০ দিনের মধ্যে</td><td>Within 10 days of hearing</td><td>Sec 16</td></tr>
+      <tr><td>নিষ্পত্তি মামলা</td><td>৩৬০ দিনের মধ্যে</td><td>Within 360 days</td><td>Sec 28</td></tr>
+    </table>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) অর্থঋণ আদালতে মামলার পদ্ধতি ধাপে ধাপে বর্ণনা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) Describe step-by-step procedure of suit in Artha Rin Adalat. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="flow-wrap">
+      <div class="flow-row">
+        <div class="fbox fb-blue" style="font-size:11px">মামলা দায়ের<br>Sec 4</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-orange" style="font-size:11px">সমন জারি<br>১৫ দিন</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-purple" style="font-size:11px">লিখিত জবাব<br>৪০ দিন</div>
+      </div>
+      <div style="text-align:center;color:#999;font-size:18px;">↓</div>
+      <div class="flow-row">
+        <div class="fbox fb-teal" style="font-size:11px">শুনানি<br>৯০ দিন</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-red" style="font-size:11px">রায়<br>১০ দিন</div>
+        <div class="farr">→</div>
+        <div class="fbox fb-green" style="font-size:11px">নিলাম বিক্রি<br>৩৬০ দিন</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) ব্যাংক কি Power of Attorney ছাড়াই জামানত বিক্রি করতে পারে? ২০১০-এর সংশোধনী ব্যাখ্যা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) Can bank sell mortgage without Power of Attorney? Explain 2010 Amendment. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Artha Rin Adalat Ain 2003, Section 12(3) — 2010 Amendment</div>
+
+    <div class="verdict v-yes">
+      <div class="v-icon">✅</div>
+      <div>
+        <div class="v-title">হ্যাঁ — ২০১০ সংশোধনীতে এটি সম্ভব হয়েছে</div>
+        <div class="v-detail">→ YES — Per the 2010 Amendment (Section 12(3)), banks/FIs CAN sell the mortgage property even without Power of Attorney being offered by the borrower. This was a landmark amendment to help banks recover loans faster.</div>
+      </div>
+    </div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">📋 ২০১০ সংশোধনীর গুরুত্বপূর্ণ পরিবর্তন</div>
+        <ul class="pts bn">
+          <li>PoA ছাড়াই জামানত বিক্রি সম্ভব [Sec 12(3)]</li>
+          <li>যেকোনো পর্যায়ে সালিশির মাধ্যমে নিষ্পত্তি [Sec 22]</li>
+          <li>নিষ্পত্তি মামলার সময় ১৮০ → ৩৬০ দিন [Sec 28]</li>
+          <li>নিলামে আমানত: ১০ লক্ষ পর্যন্ত ২০%, ১০-৫০ লক্ষে ১৫%, ৫০+ লক্ষে ১০%</li>
+          <li>সুদের হার: সাধারণ ১২%, আপিলে ১৬%, হাইকোর্টে ১৮%</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">📊 This Case Analysis</div>
+        <ul class="pts en">
+          <li>Loan = Tk. 4 crore → above Tk. 50 lakh threshold for High Court appeal</li>
+          <li>Collateral = Tk. 3.5 crore → Bank can sell this via court order</li>
+          <li>Shortfall = 4 - 3.5 = 0.5 crore → Bank must pursue further for this amount</li>
+          <li>Bank can also pursue bankruptcy proceedings for the remaining amount</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) আপিল ও রিভিশনের বিধান কী? আপিলের জন্য কত শতাংশ জমা দিতে হবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) What are the provisions for appeal and revision? What percentage must be deposited for appeal? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th>বিষয়</th><th>আপিল (Appeal) — Sec 41</th><th>রিভিশন (Revision) — Sec 42</th></tr>
+      <tr><td>জমার পরিমাণ</td><td>ডিক্রির পরিমাণের ৫০%</td><td>ডিক্রির পরিমাণের ৭৫%</td></tr>
+      <tr><td>আদালত</td><td>৫০ লক্ষ পর্যন্ত: জেলা জজ | ৫০ লক্ষের বেশি: হাইকোর্ট</td><td>হাইকোর্ট</td></tr>
+      <tr><td>নিষ্পত্তির সময়</td><td>৯০ দিন (বাড়ানো যায় ৩০ দিন)</td><td>৬০ দিন (বাড়ানো যায় ৩০ দিন)</td></tr>
+      <tr><td>এই কেসে</td><td>৪ কোটি = ৫০ লক্ষের বেশি → হাইকোর্টে আপিল</td><td>৭৫% = ৩ কোটি জমা দিতে হবে</td></tr>
+    </table>
+
+    <div class="hl hl-info"><strong>📌 গুরুত্বপূর্ণ:</strong> আপিলে সুদের হার ১৬% এবং হাইকোর্টে ১৮%। Writ Petition করে আদেশ পেলে কিন্তু রায় বিরুদ্ধে গেলে সুদ হবে ২৫%।<br>→ Appeal interest rate: 16% | High Court: 18% | Writ discharged: 25%</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 9: REGISTRATION ACT — GIFT DEED          -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-e-color" id="c9">
+  <div class="lbl">Module E — Registration Act 1908 + TPA 1882 | কেস ৯ | Case 9</div>
+  <h2>📋 নিবন্ধন আইন — হেবা দলিল ও সম্পত্তি হস্তান্তর</h2>
+  <div class="sub">৫ম পরীক্ষায় এসেছে — ৭ম পরীক্ষায় আসার সম্ভাবনা বেশি</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--teal)">১৫</div>
+    <div class="qtxt">
+      <div class="bn">কেস ৯: Mr. Rahman-এর হেবা — রাজশাহী ও ময়মনসিংহের জমি উপহার</div>
+      <div class="en">Case 9: Mr. Rahman's Gift (Heba) — Land in Rajshahi and Mymensingh</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred likely">⭐ আসতে পারে</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">⚖️ Registration Act 1908, Sec 17</span>
+      <span class="lb">⚖️ TPA 1882, Sec 122 — Gift</span>
+      <span class="lb">⚖️ Sec 123 — Registration of Gift</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background (৫ম পরীক্ষার হুবহু)</div>
+      <div class="ibox-bn">Mr. Rahman, একজন বাংলাদেশি মুসলিম নাগরিক, Mr. Kamal-কে দুটি জমি হেবা করেছেন — একটি রাজশাহী জেলায়, অন্যটি ময়মনসিংহে। প্রতিটি জমির মূল্য ১০ লক্ষ টাকা। Mr. Rahman নিবন্ধনের বিষয়ে আপনার পরামর্শ চান।</div>
+      <div class="ibox-en">Mr. Rahman, a Bangladeshi Muslim, gifts two pieces of land to Mr. Kamal — one in Rajshahi, one in Mymensingh. Each land is worth Tk. 10 lakh. Mr. Rahman seeks your advice on registration.</div>
+    </div>
+
+    <!-- (i) -->
+    <div class="subq">(i) হেবার সংজ্ঞা কী? বৈধ হেবার অপরিহার্য উপাদানসমূহ কী কী? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) Define gift (Heba). What are the essential elements of a valid gift? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Transfer of Property Act, 1882 — Sections 122, 123, 124, 126</div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📖 হেবার সংজ্ঞা — Section 122</div>
+      <div class="ibox-bn">হেবা হলো কোনো বিদ্যমান সম্পত্তি বিনিময় ছাড়াই স্বেচ্ছায় অন্য ব্যক্তিকে দেওয়া। দাতাকে Donor এবং গ্রহীতাকে Donee বলে।</div>
+      <div class="ibox-en">A gift is the voluntary transfer of existing property to another person without any consideration. The giver is called the Donor and the receiver is called the Donee [Section 122, TPA 1882].</div>
+    </div>
+
+    <table class="ctbl">
+      <tr><th>উপাদান | Element</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th><th>ধারা</th></tr>
+      <tr><td>১. দাতা (Donor)</td><td>সুস্থ মস্তিষ্কের প্রাপ্তবয়স্ক, স্বেচ্ছায় দিতে হবে</td><td>Must be major, sound mind, voluntary transfer</td><td>Sec 122</td></tr>
+      <tr><td>২. গ্রহীতা (Donee)</td><td>যেকোনো ব্যক্তি, অপ্রাপ্তবয়স্কও হতে পারে</td><td>Any person, even minor can be donee</td><td>Sec 122</td></tr>
+      <tr><td>৩. বিদ্যমান সম্পত্তি</td><td>শুধু বিদ্যমান সম্পত্তি হেবা করা যায়, ভবিষ্যৎ নয়</td><td>Only existing property, not future property</td><td>Sec 122</td></tr>
+      <tr><td>৪. বিনিময়হীনতা</td><td>হেবায় কোনো বিনিময় থাকবে না</td><td>No consideration in gift</td><td>Sec 122</td></tr>
+      <tr><td>৫. গ্রহণযোগ্যতা</td><td>গ্রহীতাকে দাতার জীবদ্দশায় গ্রহণ করতে হবে</td><td>Donee must accept during donor's lifetime</td><td>Sec 122</td></tr>
+      <tr><td>৬. হস্তান্তর</td><td>সম্পত্তির মালিকানা প্রকৃতপক্ষে হস্তান্তর হতে হবে</td><td>Title must actually transfer</td><td>Sec 123</td></tr>
+      <tr><td>৭. নিবন্ধন (অস্থাবর)</td><td>অস্থাবর সম্পত্তির হেবা বাধ্যতামূলকভাবে নিবন্ধিত হতে হবে</td><td>Immovable property gift MUST be registered</td><td>Sec 123</td></tr>
+    </table>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) Mr. Rahman-কে নিবন্ধনের বিষয়ে কী পরামর্শ দেবেন? উভয় জমির নিবন্ধন কোথায় করতে হবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) What advice will you give Mr. Rahman on registration? Where must each land be registered? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Registration Act 1908, Section 17 — Compulsory Registration; Section 28 — Place of Registration</div>
+
+    <table class="ctbl">
+      <tr><th>জমি | Land</th><th>নিবন্ধনের স্থান (বাংলা)</th><th>Where to Register (English)</th><th>বাধ্যতামূলক?</th></tr>
+      <tr>
+        <td><strong>রাজশাহীর জমি</strong><br>(মূল্য ১০ লক্ষ)</td>
+        <td>রাজশাহী জেলার Sub-Registrar Office-এ নিবন্ধন করতে হবে</td>
+        <td>Must be registered at Sub-Registrar Office in Rajshahi where property is situated</td>
+        <td><span class="tick">✅ বাধ্যতামূলক</span></td>
+      </tr>
+      <tr>
+        <td><strong>ময়মনসিংহের জমি</strong><br>(মূল্য ১০ লক্ষ)</td>
+        <td>ময়মনসিংহ জেলার Sub-Registrar Office-এ আলাদাভাবে নিবন্ধন করতে হবে</td>
+        <td>Must be registered separately at Sub-Registrar Office in Mymensingh</td>
+        <td><span class="tick">✅ বাধ্যতামূলক</span></td>
+      </tr>
+    </table>
+
+    <div class="hl hl-warn"><strong>⚠️ গুরুত্বপূর্ণ পরামর্শ:</strong> উভয় জমির মূল্য ১০০ টাকার বেশি → হেবা দলিল বাধ্যতামূলকভাবে নিবন্ধন করতে হবে [Registration Act 1908, Sec 17]। একটি রাজশাহীর জন্য, অন্যটি ময়মনসিংহের জন্য আলাদা দলিল তৈরি ও আলাদা আলাদা Sub-Registrar Office-এ নিবন্ধন করতে হবে।</div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) নিবন্ধন না করলে কী আইনি পরিণতি হবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) What are the legal consequences if the gift deed is not registered? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: Registration Act 1908, Section 49 — Effect of Non-Registration</div>
+
+    <table class="ctbl">
+      <tr><th>#</th><th>পরিণতি (বাংলা)</th><th>Consequence (English)</th></tr>
+      <tr><td>১</td><td>দলিল কোনো আইনি কার্যকারিতা পাবে না</td><td>Document has no legal effect whatsoever</td></tr>
+      <tr><td>২</td><td>অস্থাবর সম্পত্তির মালিকানা হস্তান্তর হবে না</td><td>Title to immovable property does NOT transfer</td></tr>
+      <tr><td>৩</td><td>আদালতে প্রমাণ হিসেবে গ্রহণযোগ্য হবে না</td><td>Cannot be admitted as evidence in court</td></tr>
+      <tr><td>৪</td><td>তৃতীয় পক্ষের বিরুদ্ধে দাবি প্রতিষ্ঠা করা যাবে না</td><td>Cannot establish claim against third parties</td></tr>
+      <tr><td>৫</td><td>ব্যাংক ঋণের জন্য জামানত হিসেবে ব্যবহার করা কঠিন</td><td>Difficult to use as bank loan collateral</td></tr>
+    </table>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) হেবা প্রত্যাহার করা যায় কি? কখন হেবা বাতিল হয়? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) Can a gift be revoked? When does a gift become void? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: TPA 1882, Sections 126 (Revocation), 127 (Onerous Gift)</div>
+
+    <div class="bil">
+      <div class="bil-bn">
+        <div class="bil-hdr">🔄 হেবা প্রত্যাহারের নিয়ম (Section 126)</div>
+        <ul class="pts bn">
+          <li><strong>সাধারণ নিয়ম:</strong> হেবা সম্পন্ন হলে সাধারণত প্রত্যাহার করা যায় না</li>
+          <li><strong>ব্যতিক্রম ১:</strong> উভয় পক্ষের সম্মতিতে প্রত্যাহার সম্ভব</li>
+          <li><strong>ব্যতিক্রম ২:</strong> শর্তযুক্ত হেবায় — শর্ত লঙ্ঘন হলে বাতিল</li>
+          <li><strong>ব্যতিক্রম ৩:</strong> জবরদস্তি, প্রতারণায় হেবা → বাতিলযোগ্য</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-hdr">❌ When Gift Becomes Void</div>
+        <ul class="pts en">
+          <li>Gift of future property is VOID [Sec 122]</li>
+          <li>Gift with condition of donee's survival at donor's death = testamentary gift = VOID</li>
+          <li>Gift made without free consent (under coercion/fraud) = voidable</li>
+          <li>Gift deed not registered (for immovable) = NO legal effect [RA 1908, Sec 49]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- CASE 10: BANKER-CUSTOMER GARNISHEE ORDER     -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="case-hdr mod-f-color" id="c10">
+  <div class="lbl">Module F/H — Banker-Customer Relationship | কেস ১০ | Case 10</div>
+  <h2>⚖️ ব্যাংকার-গ্রাহক — Garnishee Order ও গ্রাহকের হিসাব জব্দ</h2>
+  <div class="sub">নতুন কেস — ৭ম পরীক্ষায় আসার সম্ভাবনা আছে</div>
+</div>
+
+<div class="qcard">
+  <div class="qhdr">
+    <div class="qnum" style="background:var(--pur)">১৬</div>
+    <div class="qtxt">
+      <div class="bn">কেস ১০: Garnishee Order — Mr. Amin-এর হিসাব জব্দ ও চেক প্রত্যাখ্যান</div>
+      <div class="en">Case 10: Garnishee Order — Mr. Amin's account attachment and cheque dishonour</div>
+    </div>
+    <div class="qmrk">২০ মার্কস</div>
+  </div>
+  <div class="qbdy">
+    <span class="pred new-t">🆕 ৭ম পরীক্ষায় নতুন</span>
+    <div style="margin-bottom:12px">
+      <span class="lb">Civil Procedure Code — Garnishee</span>
+      <span class="lb">⚖️ NI Act 1881, Sec 31 — Wrongful Dishonour</span>
+      <span class="lb">Contract Act 1872</span>
+    </div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📋 কেসের তথ্য | Case Background</div>
+      <div class="ibox-bn">Mr. Amin-এর একটি পরিচিত ব্যাংক শাখায় ১০ লক্ষ টাকার ক্রেডিট ব্যালেন্স আছে। আদালত Judgment Creditor Mr. Salam-এর অনুরোধে Mr. Amin-এর (Judgment Debtor) বিরুদ্ধে ৭ লক্ষ টাকার একটি Garnishee Order জারি করেছে। এরপর Mr. Amin তার ব্যাংকে ৮ লক্ষ টাকার একটি চেক উপস্থাপন করেন।</div>
+      <div class="ibox-en">Mr. Amin has Tk. 10 lakh credit balance in his bank account. Court issues a Garnishee Order for Tk. 7 lakh against Mr. Amin (Judgment Debtor) on request of Mr. Salam (Judgment Creditor). After receiving the order, Mr. Amin presents a cheque for Tk. 8 lakh at his bank.</div>
+    </div>
+
+    <!-- (i) -->
+    <div class="subq">(i) Garnishee Order কী? এর দুটি প্রকার বর্ণনা করুন। এই কেসে ব্যাংক কীভাবে Order পাবে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(i) What is Garnishee Order? Describe its two types. How does bank receive the order? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📖 Garnishee Order সংজ্ঞা</div>
+      <div class="ibox-bn">Garnishee Order হলো আদালত কর্তৃক রায়প্রাপ্ত পাওনাদারের (Judgment Creditor) অনুরোধে, রায়প্রাপ্ত দেনাদারের (Judgment Debtor/ব্যাংক গ্রাহক) ব্যাংক হিসাব জব্দ করার আদেশ — যাতে সেই হিসাবের অর্থ পাওনাদারকে পরিশোধ করা যায়।</div>
+      <div class="ibox-en">A Garnishee Order is issued by court in favor of judgment creditor (Mr. Salam) upon a third party (bank), attaching money owed by the bank to its customer (judgment debtor = Mr. Amin) to satisfy the decree.</div>
+    </div>
+
+    <table class="ctbl">
+      <tr><th>প্রকার | Type</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th></tr>
+      <tr>
+        <td><strong>Order Nisi</strong><br>(প্রাথমিক আদেশ)</td>
+        <td>প্রাথমিক আদেশ — ব্যাংককে গ্রাহকের হিসাব কেন জব্দ না করা হবে তার কারণ দেখাতে বলে এবং লেনদেন সাময়িক বন্ধ রাখতে বলে</td>
+        <td>Preliminary order — requires bank to stop payment and show cause why customer's balance should not be attached</td>
+      </tr>
+      <tr>
+        <td><strong>Order Absolute</strong><br>(চূড়ান্ত আদেশ)</td>
+        <td>চূড়ান্ত আদেশ — ব্যাংককে নির্দিষ্ট পরিমাণ অর্থ সরাসরি Judgment Creditor (Mr. Salam)-কে দেওয়ার আদেশ</td>
+        <td>Final order — directs bank to pay specified amount directly to judgment creditor (Mr. Salam)</td>
+      </tr>
+    </table>
+
+    <!-- (ii) -->
+    <div class="subq">(ii) ব্যাংক কি Mr. Amin-এর ৮ লক্ষ টাকার চেক পরিশোধ করতে পারবে? ব্যাখ্যা করুন। <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(ii) Can the bank honour Mr. Amin's cheque for Tk. 8 lakh? Explain. <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <div style="background:#fff;border-radius:10px;padding:14px;border:1px solid #e8e0d0;margin:12px 0;">
+      <p style="font-size:13px;margin-bottom:10px"><strong>হিসাব বিশ্লেষণ:</strong></p>
+      <table class="ctbl">
+        <tr><th>পরিমাণ</th><th>বিবরণ</th></tr>
+        <tr><td>মোট ব্যালেন্স</td><td>১০,০০,০০০ টাকা</td></tr>
+        <tr><td>Garnishee Order (জব্দ)</td><td>৭,০০,০০০ টাকা</td></tr>
+        <tr><td>অবশিষ্ট মুক্ত ব্যালেন্স</td><td>১০,০০,০০০ − ৭,০০,০০০ = <strong>৩,০০,০০০ টাকা</strong></td></tr>
+        <tr><td>Mr. Amin-এর চেক</td><td>৮,০০,০০০ টাকা</td></tr>
+        <tr><td>ব্যালেন্স যথেষ্ট?</td><td><span class="cross">❌ না — মুক্ত ব্যালেন্স মাত্র ৩ লক্ষ, চেক ৮ লক্ষ</span></td></tr>
+      </table>
+    </div>
+
+    <div class="verdict v-no">
+      <div class="v-icon">❌</div>
+      <div>
+        <div class="v-title">ব্যাংক ৮ লক্ষ টাকার চেক পরিশোধ করতে পারবে না</div>
+        <div class="v-detail">→ Garnishee Order-এর ৭ লক্ষ জব্দের পরে মুক্ত ব্যালেন্স মাত্র ৩ লক্ষ। চেকের পরিমাণ ৮ লক্ষ। ব্যাংক "Insufficient Funds" বলে চেক ফেরত দেবে। এতে Mr. Amin ব্যাংকের বিরুদ্ধে দাবি করতে পারবে না কারণ এটি বৈধ Garnishee Order-এর কারণে।</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="subq">(iii) Garnishee Order-এর বৈশিষ্ট্যসমূহ বর্ণনা করুন। কোন ক্ষেত্রে Order প্রযোজ্য নয়? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iii) Describe features of Garnishee Order. When is Order NOT applicable? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+
+    <table class="ctbl">
+      <tr><th></th><th>Garnishee Order প্রযোজ্য ক্ষেত্র ✅</th><th>Garnishee Order প্রযোজ্য নয় ❌</th></tr>
+      <tr><td>১</td><td>Credit balance account-এ সম্পূর্ণ বা নির্দিষ্ট পরিমাণ আটক হয়</td><td>Overdraft Account-এ প্রযোজ্য নয়</td></tr>
+      <tr><td>২</td><td>Income Tax defaulter-দের বিরুদ্ধেও জারি হতে পারে</td><td>Collection-এ পাঠানো চেক/বিল — এখনো cleared হয়নি</td></tr>
+      <tr><td>৩</td><td>Head Office-এ জারি হলে সব শাখায় প্রযোজ্য</td><td>Order জারির পরে জমাকৃত অর্থ (যদি Order-এ উল্লেখ না থাকে)</td></tr>
+      <tr><td>৪</td><td>বিদেশে থাকা সম্পদ</td><td>বিদেশে রক্ষিত সম্পদে প্রযোজ্য নয়</td></tr>
+      <tr><td>৫</td><td></td><td>Safe custody-তে রাখা সম্পদে প্রযোজ্য নয়</td></tr>
+      <tr><td>৬</td><td></td><td>যৌথ হিসাবে যদি শুধু একজন Judgment Debtor হন</td></tr>
+    </table>
+
+    <!-- (iv) -->
+    <div class="subq">(iv) ব্যাংকার কখন Wrongful Dishonour করার জন্য দায়ী হবেন? ক্ষতিপূরণ সম্পর্কে NI Act কী বলে? <span class="pts-lbl">[৫ মার্কস]</span></div>
+    <div class="subq" style="background:#e3f2fd;border-color:#90caf9;color:#0d2c6a;">(iv) When is banker liable for Wrongful Dishonour? What does NI Act say about compensation? <span class="pts-lbl" style="background:#90caf9;color:#0d2c6a;">[5 Marks]</span></div>
+
+    <div class="ans-star">★ উত্তর ★ | ★ Answer ★</div>
+    <div class="law-basis">⚖️ আইনি ভিত্তি: NI Act 1881, Section 31 — Liability for Wrongful Dishonour</div>
+
+    <div class="ibox">
+      <div class="ibox-lbl">📖 Section 31 — NI Act 1881</div>
+      <div class="ibox-bn">"পর্যাপ্ত তহবিল থাকা সত্ত্বেও বৈধভাবে দাবি করা হলে চেক পরিশোধ না করলে, ব্যাংকারকে Drawer-এর ক্ষতি বা লোকসানের ক্ষতিপূরণ দিতে হবে।"</div>
+      <div class="ibox-en">"The drawee of a cheque having sufficient funds of the drawer in his hands, properly applicable to the payment of such cheque, must pay when duly required to do so, and in default must compensate the drawer for any loss or damage caused." — Section 31, NI Act 1881</div>
+    </div>
+
+    <table class="ctbl">
+      <tr><th>ব্যাংকার দায়ী হবেন যখন | Banker is Liable When</th><th>ব্যাংকার দায়মুক্ত যখন | Banker is Discharged When</th></tr>
+      <tr><td>পর্যাপ্ত তহবিল থাকা সত্ত্বেও ভুলে চেক ফেরত দেওয়া হয়</td><td>Garnishee Order-এর কারণে চেক ফেরত দেওয়া হয়</td></tr>
+      <tr><td>সিস্টেমের ভুলে ব্যালেন্স ভুল দেখানো হয়</td><td>Stop Payment Order দেওয়া আছে</td></tr>
+      <tr><td>কর্মকর্তার অবহেলায় পর্যাপ্ত তহবিল থাকলেও চেক আটকানো হয়</td><td>গ্রাহক নিজেই অবহেলা করলে (প্রতারণামূলক চেক)</td></tr>
+      <tr><td>এই কেসে</td><td colspan="1"><span class="tick">✅ Garnishee Order-এর কারণে চেক ফেরত = ব্যাংক দায়মুক্ত</span></td></tr>
+    </table>
+
+    <div class="hl hl-success"><strong>✅ চূড়ান্ত উপসংহার:</strong> এই কেসে ব্যাংক সঠিকভাবে কাজ করেছে। Garnishee Order থাকায় চেক ফেরত দেওয়া আইনসম্মত। Mr. Amin ব্যাংকের বিরুদ্ধে কোনো ক্ষতিপূরণ দাবি করতে পারবেন না। আদালতের Order পালন করা ব্যাংকের আইনি বাধ্যবাধকতা।<br>→ Bank acted correctly. Returning cheque due to Garnishee Order is legally justified. Mr. Amin has no claim against the bank. Following court orders is bank's legal obligation.</div>
+  </div>
+</div>
+
+<!-- FINAL MASTER TIP -->
+<div style="background:linear-gradient(135deg,#0d1b3e,#1a3a6b);color:#fff;border-radius:14px;padding:26px 28px;margin:32px 0;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:20px;color:#ffd166;margin-bottom:16px">🎯 ২০-তে ২০ পাওয়ার চূড়ান্ত কৌশল | Ultimate Strategy for 20/20</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">★ উত্তর ★</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">প্রতিটি sub-question শুরুতে লিখুন — পরীক্ষক খুঁজে পাবেন সহজে</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">⚖️</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">আইনের ধারা উল্লেখ করুন — "NI Act 1881, Sec 138" — এটি সবচেয়ে বেশি নম্বর দেয়</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">📊</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">টেবিল দিন — শর্তের টেবিল + ✅/❌ = পরিষ্কার উত্তর = বেশি নম্বর</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">📅</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">Timeline দিন — তারিখ ও দিন গণনা করে দেখান = (ii) সাব-কোয়েশ্চনে ৫ নম্বর নিশ্চিত</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">✅❌</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">স্পষ্ট Verdict দিন — "হ্যাঁ/না + কারণ" = পরিষ্কার উপসংহার = বেশি নম্বর</div>
+    </div>
+    <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:14px;border-left:3px solid #ffd166;">
+      <div class="" style="font-size:26px;font-weight:800;color:#ffd166;line-height:1;">বাং + Eng</div>
+      <div style="font-size:12px;margin-top:5px;opacity:.9;">উভয় ভাষায় লিখুন — double impression = পরীক্ষক বেশি সন্তুষ্ট</div>
+    </div>
+  </div>
+  <div style="margin-top:16px;background:rgba(255,255,255,.1);border-radius:10px;padding:14px;font-size:13px;">
+    <strong style="color:#ffd166">💡 মার্কস বন্টন কৌশল:</strong> প্রতিটি কেসে ৪টি সাব-প্রশ্ন × ৫ মার্কস = ২০ মার্কস।
+    (i) = সংজ্ঞা + শর্ত টেবিল (৫) | (ii) = Timeline/পদ্ধতি (৫) | (iii) = পরিণতি/প্রতিরক্ষা (৫) | (iv) = বিকল্প/তুলনা (৫).
+    প্রতিটিতে ন্যূনতম ৩টি পয়েন্ট লিখুন + আইনের ধারা উল্লেখ করুন।
+  </div>
+</div>
+
+</div><!-- end container -->
+
+<div class="mftr">
+  <strong>JAIBB — Laws and Practice of General Banking (LPGB) | Subject Code: 104 | 7th Banking Professional Examination 2025</strong><br>
+  Part C — Problem Solving / Case Study | Module A to L — Complete Case Guide<br>
+  <span style="opacity:.6;font-size:11px;display:block;margin-top:5px">Law Book: Sabbir Hassanul Islam | Past Exams 96th–6th Analyzed | Format: 6th Exam Style | All section references from original laws</span>
+</div>
+</body>
+</html>

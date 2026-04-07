@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPGB — Part D & E Complete Guide | 7th Exam</title>
+<style>
+:root{--bg:#fff;--bg2:#f5f4f0;--bg3:#eceae4;--text:#1a1a18;--text2:#5a5956;--text3:#888780;--bdr:rgba(0,0,0,.1);--bdr2:rgba(0,0,0,.18);--blue:#185FA5;--blue-bg:#E6F1FB;--blue-t:#0C447C;--green:#3B6D11;--green-bg:#EAF3DE;--green-t:#27500A;--amber:#BA7517;--amber-bg:#FAEEDA;--amber-t:#633806;--teal:#0F6E56;--teal-bg:#E1F5EE;--teal-t:#085041;--red:#A32D2D;--red-bg:#FCEBEB;--red-t:#501313;--purple:#534AB7;--purple-bg:#EEEDFE;--purple-t:#3C3489;--coral:#993C1D;--coral-bg:#FAECE7;--coral-t:#4A1B0C}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1a18;--bg2:#242420;--bg3:#2e2e2a;--text:#e8e6de;--text2:#a0a09a;--text3:#6a6a64;--bdr:rgba(255,255,255,.08);--bdr2:rgba(255,255,255,.18);--blue:#85B7EB;--blue-bg:#0C447C;--blue-t:#B5D4F4;--green:#97C459;--green-bg:#27500A;--green-t:#C0DD97;--amber:#EF9F27;--amber-bg:#633806;--amber-t:#FAC775;--teal:#5DCAA5;--teal-bg:#085041;--teal-t:#9FE1CB;--red:#F09595;--red-bg:#791F1F;--red-t:#F7C1C1;--purple:#AFA9EC;--purple-bg:#3C3489;--purple-t:#CECBF6;--coral:#F0997B;--coral-bg:#711B13;--coral-t:#F5C4B3}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:2rem 1.2rem 5rem}
+.hdr{text-align:center;padding:2rem;background:var(--blue-bg);border-radius:16px;margin-bottom:2rem;border:.5px solid var(--bdr)}
+.hdr h1{font-size:22px;font-weight:500;color:var(--blue-t);margin-bottom:6px}
+.hdr p{font-size:14px;color:var(--text2)}
+.sec{font-size:19px;font-weight:500;color:var(--text);margin:2.5rem 0 1rem;padding:12px 16px;background:var(--bg2);border-radius:10px;border-left:4px solid var(--blue)}
+.card{background:var(--bg);border:.5px solid var(--bdr);border-radius:14px;padding:1.4rem;margin-bottom:1.4rem}
+.card-hd{display:flex;align-items:center;gap:10px;margin-bottom:.9rem;flex-wrap:wrap}
+.badge{font-size:11px;font-weight:500;padding:3px 8px;border-radius:12px;white-space:nowrap}
+.b-mod{background:var(--purple-bg);color:var(--purple-t)}
+.b-imp{background:var(--red-bg);color:var(--red-t)}
+.b-past{background:var(--green-bg);color:var(--green-t)}
+.b-new{background:var(--amber-bg);color:var(--amber-t)}
+.b-tip{background:var(--teal-bg);color:var(--teal-t)}
+.qtitle{font-size:16px;font-weight:500;color:var(--text)}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:13.5px}
+th{background:var(--bg2);padding:8px 11px;text-align:left;border:.5px solid var(--bdr2);font-weight:500;font-size:13px}
+td{padding:8px 11px;border:.5px solid var(--bdr);vertical-align:top}
+tr:nth-child(even) td{background:var(--bg2)}
+.law{display:inline-block;background:var(--purple-bg);color:var(--purple-t);font-size:11px;padding:2px 7px;border-radius:4px;font-weight:500;margin:2px}
+.tip{background:var(--teal-bg);border:1px solid var(--teal);border-radius:8px;padding:9px 13px;margin:8px 0;font-size:13px;color:var(--teal-t)}
+.warn{background:var(--amber-bg);border:1px solid var(--amber);border-radius:8px;padding:9px 13px;margin:8px 0;font-size:13px;color:var(--amber-t)}
+.bi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:.8rem 0}
+@media(max-width:580px){.bi{grid-template-columns:1fr}}
+.bn{background:var(--blue-bg);border-radius:8px;padding:10px;font-size:13px}
+.en{background:var(--green-bg);border-radius:8px;padding:10px;font-size:13px}
+.lbl{font-size:10px;font-weight:500;margin-bottom:4px}
+.bn .lbl{color:var(--blue-t)}.en .lbl{color:var(--green-t)}
+h3{font-size:14px;font-weight:500;margin:.8rem 0 .4rem;color:var(--text)}
+.hl{background:var(--amber-bg);padding:1px 4px;border-radius:3px;font-weight:500;color:var(--amber-t)}
+.tick{color:var(--green);font-weight:500}
+.cross{color:var(--red);font-weight:500}
+.num-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:.6rem 0}
+.nbox{background:var(--bg2);border-radius:8px;padding:10px;font-size:13px}
+.nbox-lbl{font-size:11px;color:var(--text2);margin-bottom:3px}
+.nbox-val{font-size:15px;font-weight:500;color:var(--text)}
+.qbox{background:var(--bg2);border-radius:10px;padding:1rem;margin:.7rem 0}
+.qbox-q{font-size:14px;font-weight:500;color:var(--text);margin-bottom:.5rem}
+.qbox-a{font-size:13.5px;color:var(--text)}
+.divider{height:1px;background:var(--bdr);margin:1.5rem 0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:.8rem 0}
+@media(max-width:580px){.row2{grid-template-columns:1fr}}
+.col-blue{background:var(--blue-bg);border-radius:10px;padding:12px}
+.col-green{background:var(--green-bg);border-radius:10px;padding:12px}
+.col-title{font-size:12px;font-weight:500;margin-bottom:6px}
+.col-blue .col-title{color:var(--blue-t)}.col-green .col-title{color:var(--green-t)}
+ul{padding-left:1.2rem;margin:.4rem 0}
+ul li{margin-bottom:3px;font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hdr">
+  <h1>JAIBB LPGB (Subject Code: 104)</h1>
+  <p>৭ম ব্যাংকিং পেশাদার পরীক্ষা প্রস্তুতি | 7th Banking Professional Exam Preparation</p>
+  <p style="margin-top:6px;font-weight:500;color:var(--blue-t)">Part D — Understanding Terminology (Compare/Distinguish) + Part E — Short Questions</p>
+  <p style="font-size:13px;color:var(--text2);margin-top:4px">সকল ১২টি মডিউল (A–L) কভার করা হয়েছে | All 12 Modules (A–L) Covered</p>
+</div>
+
+<!-- ===== PART D ===== -->
+<div class="sec">⚖️ Part D — Understanding Terminology: Compare & Contrast (2×5=10 Marks)</div>
+<p style="color:var(--text2);font-size:13px;margin-bottom:1.5rem">যেকোনো ৫টির উত্তর দিতে হবে | Answer any 5. প্রতিটিতে ন্যূনতম ৮-১০টি পার্থক্য দিন।</p>
+
+<!-- HOW TO ANSWER IF UNKNOWN -->
+<div class="card" style="background:var(--amber-bg);border-color:var(--amber)">
+  <div class="card-hd"><span class="badge b-tip">💡 পরীক্ষায় অজানা প্রশ্ন আসলে কী করবেন?</span></div>
+  <div class="bi">
+    <div class="bn"><div class="lbl">বাংলা গাইডলাইন</div>
+      <ul><li>প্রথমে দুটো বিষয়ের সংজ্ঞা দিন</li><li>তারপর একটি ছোট তুলনা টেবিল তৈরি করুন</li><li>আইনগত ধারা উল্লেখ করুন</li><li>উদাহরণ দিন</li><li>শেষে একটি সারসংক্ষেপ লিখুন</li></ul>
+    </div>
+    <div class="en"><div class="lbl">English Guideline</div>
+      <ul><li>First define both terms</li><li>Create a comparison table</li><li>Mention legal sections</li><li>Give practical examples</li><li>Write a brief conclusion</li></ul>
+    </div>
+  </div>
+  <div style="font-size:13px;color:var(--amber-t);margin-top:8px">⚠️ কখনো খালি রাখবেন না। টেবিল আকারে ৫টি পয়েন্ট লিখলেও নম্বর পাবেন। সংজ্ঞা + উদাহরণ + আইন = পূর্ণ নম্বর।</div>
+</div>
+
+<!-- MODULE A -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module A — Financial Institutions Related Laws</h2>
+
+<!-- 1. Scheduled vs Non-Scheduled Bank -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module A</span>
+    <span class="badge b-imp">⭐ গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Scheduled Bank বনাম Non-Scheduled Bank</span>
+  </div>
+  <div class="law">BCA 1991, Sec 5 | BB Order 1972, Article 2(j)</div>
+  <table>
+    <tr><th>#</th><th>বিষয় | Basis</th><th>🏦 Scheduled Bank</th><th>🏛️ Non-Scheduled Bank</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা | Definition</td><td>BB Order 1972 এর তফসিলে অন্তর্ভুক্ত ব্যাংক</td><td>তফসিলে অন্তর্ভুক্ত নয় এমন ব্যাংক</td></tr>
+    <tr><td>২</td><td>CRR | Cash Reserve</td><td>BB-তে ৪% CRR রাখতে হবে [BCA Sec 25]</td><td>CRR বাধ্যবাধকতা নেই</td></tr>
+    <tr><td>৩</td><td>SLR | Liquid Assets</td><td>১৩% SLR রাখতে হবে [BCA Sec 33]</td><td>SLR বাধ্যবাধকতা নেই</td></tr>
+    <tr><td>৪</td><td>CAR | Capital Ratio</td><td>ন্যূনতম ১০% CAR রক্ষা বাধ্যতামূলক</td><td>এই নিয়ম প্রযোজ্য নয়</td></tr>
+    <tr><td>৫</td><td>Clearinghouse</td><td>ক্লিয়ারিং হাউসে অংশগ্রহণ করতে পারে</td><td>সাধারণত পারে না</td></tr>
+    <tr><td>৬</td><td>বাংলাদেশ ব্যাংকের তদারকি</td><td>সরাসরি BB-এর তদারকিতে</td><td>সীমিত তদারকি</td></tr>
+    <tr><td>৭</td><td>Lender of Last Resort</td><td>BB থেকে জরুরি ঋণ পাওয়ার সুবিধা</td><td>এই সুবিধা নেই</td></tr>
+    <tr><td>৮</td><td>উদাহরণ | Examples</td><td>Sonali, Dutch Bangla, BRAC Bank ইত্যাদি</td><td>Grameen Bank (specialized)</td></tr>
+    <tr><td>৯</td><td>লাইসেন্স | License</td><td>BB থেকে লাইসেন্স নিতে হয় [BCA Sec 31]</td><td>ভিন্ন আইনে পরিচালিত</td></tr>
+    <tr><td>১০</td><td>Interbank Borrowing</td><td>আন্তঃব্যাংক ঋণ বাজারে অংশগ্রহণ করতে পারে</td><td>সীমিত</td></tr>
+  </table>
+</div>
+
+<!-- 2. CRR vs SLR -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module A</span>
+    <span class="badge b-past">৯৬-৯৯তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">CRR বনাম SLR</span>
+  </div>
+  <div class="law">BCA 1991, Sec 25 (CRR) | Sec 33 (SLR)</div>
+  <table>
+    <tr><th>#</th><th>বিষয় | Basis</th><th>💰 CRR (Cash Reserve Ratio)</th><th>📊 SLR (Statutory Liquidity Ratio)</th></tr>
+    <tr><td>১</td><td>পূর্ণ নাম</td><td>Cash Reserve Ratio — নগদ সংরক্ষণ অনুপাত</td><td>Statutory Liquidity Ratio — বিধিবদ্ধ তারল্য অনুপাত</td></tr>
+    <tr><td>২</td><td>আইনি ধারা</td><td>BCA 1991, Section 25</td><td>BCA 1991, Section 33</td></tr>
+    <tr><td>৩</td><td>বর্তমান হার</td><td class="hl">৪% (Bi-weekly avg) | দৈনিক সর্বনিম্ন ৩.৫%</td><td class="hl">১৩% (conventional) | ৫.৫% (Islamic)</td></tr>
+    <tr><td>৪</td><td>অন্তর্ভুক্ত সম্পদ</td><td>শুধুমাত্র নগদ অর্থ (Cash only)</td><td>নগদ + সোনা + সরকারি অনুমোদিত সিকিউরিটি</td></tr>
+    <tr><td>৫</td><td>জমার স্থান</td><td>বাংলাদেশ ব্যাংকে জমা রাখতে হয়</td><td>ব্যাংক নিজের কাছে রাখতে পারে (BB-তে নয়)</td></tr>
+    <tr><td>৬</td><td>সুদ প্রাপ্তি</td><td>BB কোনো সুদ দেয় না</td><td>সরকারি সিকিউরিটিতে সুদ পাওয়া যায়</td></tr>
+    <tr><td>৭</td><td>উদ্দেশ্য</td><td>তারল্য নিশ্চিত ও মুদ্রাস্ফীতি নিয়ন্ত্রণ</td><td>আর্থিক স্থিতিশীলতা নিশ্চিত করা</td></tr>
+    <tr><td>৮</td><td>ঘাটতির শাস্তি</td><td>Bank Rate + ৫% দণ্ড সুদ</td><td>Prevailing Special Repo Rate-এ দৈনিক জরিমানা</td></tr>
+    <tr><td>৯</td><td>ভিত্তি</td><td>Total Demand & Time Liabilities (TDTL)</td><td>Total Demand & Time Liabilities (TDTL)</td></tr>
+    <tr><td>১০</td><td>রিপোর্টিং</td><td>মাসিক DOS-এ জমা দিতে হয়</td><td>মাসিক DOS-এ জমা দিতে হয়</td></tr>
+  </table>
+  <div class="tip">💡 মনে রাখো: CRR = শুধু Cash, SLR = Cash + Gold + Securities | CRR BB-তে, SLR নিজের কাছে</div>
+</div>
+
+<!-- 3. Bank vs NBFI -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module A</span>
+    <span class="badge b-imp">⭐⭐ গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Commercial Bank বনাম Non-Bank Financial Institution (NBFI)</span>
+  </div>
+  <div class="law">BCA 1991 | Financial Institutions Act 1993</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🏦 Commercial Bank</th><th>🏢 NBFI (Non-Bank FI)</th></tr>
+    <tr><td>১</td><td>পরিচালনা আইন</td><td>Bank Company Act, 1991</td><td>Financial Institutions Act, 1993</td></tr>
+    <tr><td>২</td><td>আমানত গ্রহণ</td><td>চাহিদা মাত্র (On Demand) আমানত নিতে পারে</td><td>কমপক্ষে ১ বছরের মেয়াদী আমানত নিতে পারে</td></tr>
+    <tr><td>৩</td><td>চেক ইস্যু</td><td>চেক ইস্যু করতে পারে ও ক্লিয়ারিং করে</td><td>চেক ইস্যু করতে পারে না</td></tr>
+    <tr><td>৪</td><td>Current Account</td><td>চলতি হিসাব খুলতে পারে</td><td>পারে না</td></tr>
+    <tr><td>৫</td><td>CRR/SLR</td><td>CRR ও SLR রাখতে বাধ্য</td><td>ভিন্ন নিয়ম, কম কঠোর</td></tr>
+    <tr><td>৬</td><td>লাইসেন্স</td><td>BB — BCA Sec 31</td><td>BB — FIA 1993 Sec 4</td></tr>
+    <tr><td>৭</td><td>ক্রেডিট তৈরি</td><td>ঋণ দিয়ে নতুন আমানত তৈরি করতে পারে</td><td>এই ক্ষমতা নেই</td></tr>
+    <tr><td>৮</td><td>অস্থাবর সম্পত্তি</td><td>Paid-up capital ও reserve-এর ২৫% পর্যন্ত</td><td>Paid-up capital ও reserve-এর ১০% পর্যন্ত</td></tr>
+    <tr><td>৯</td><td>শাখা খোলা</td><td>দেশ-বিদেশে শাখা খুলতে পারে [BCA Sec 32]</td><td>সীমিত</td></tr>
+    <tr><td>১০</td><td>লাইসেন্সবিহীন শাস্তি</td><td>কঠোর শাস্তি BCA Sec 31</td><td>FIA 1993 — সর্বোচ্চ ৫ বছর/৫ লক্ষ টাকা</td></tr>
+  </table>
+</div>
+
+<!-- MODULE B -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module B — Negotiable Instruments Laws</h2>
+
+<!-- 4. Promissory Note vs Bill of Exchange -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B</span>
+    <span class="badge b-past">৯৭তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Promissory Note বনাম Bill of Exchange</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 4 (PN) | Sec 5 (BoE)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📝 Promissory Note (প্রতিজ্ঞাপত্র)</th><th>📋 Bill of Exchange (বিনিময় বিল)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞাগত ধারা</td><td>NI Act, Section 4</td><td>NI Act, Section 5</td></tr>
+    <tr><td>২</td><td>পক্ষ সংখ্যা</td><td>দুটি পক্ষ — Maker ও Payee</td><td>তিনটি পক্ষ — Drawer, Drawee ও Payee</td></tr>
+    <tr><td>৩</td><td>প্রকৃতি</td><td>প্রতিশ্রুতি (Promise to Pay)</td><td>আদেশ (Order to Pay)</td></tr>
+    <tr><td>৪</td><td>গ্রহণযোগ্যতা (Acceptance)</td><td>Acceptance প্রয়োজন নেই</td><td>Drawee-এর Acceptance প্রয়োজন</td></tr>
+    <tr><td>৫</td><td>দায় (Liability)</td><td>Maker প্রধানভাবে দায়ী (Primary Liability)</td><td>Drawer গৌণভাবে দায়ী (Secondary Liability)</td></tr>
+    <tr><td>৬</td><td>অসম্মানের নোটিশ</td><td>Maker-কে Notice দেওয়া প্রয়োজন নেই</td><td>সকল পক্ষকে Dishonor Notice দিতে হয়</td></tr>
+    <tr><td>৭</td><td>Protest</td><td>Protest করার দরকার নেই</td><td>বিদেশি বিলে Protest আবশ্যক</td></tr>
+    <tr><td>৮</td><td>ব্যাংকার ইস্যু</td><td>ব্যাংক ইস্যু করে না (ব্যক্তি করে)</td><td>ব্যাংক ইস্যু করতে পারে (বিল অব এক্সচেঞ্জ)</td></tr>
+    <tr><td>৯</td><td>সম্পর্ক</td><td>Maker ও Payee-এর সরাসরি সম্পর্ক</td><td>Drawer ও Acceptor-এর সরাসরি সম্পর্ক</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>"আমি Karim-কে ১ লক্ষ টাকা দেব"</td><td>"Rahim, Karim-কে ১ লক্ষ টাকা দাও"</td></tr>
+  </table>
+</div>
+
+<!-- 5. Cheque vs Bill of Exchange -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-past">৯৮তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Cheque বনাম Bill of Exchange</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 6 (Cheque) | Sec 5 (BoE)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>✅ Cheque (চেক)</th><th>📋 Bill of Exchange (বিনিময় বিল)</th></tr>
+    <tr><td>১</td><td>Drawee কে?</td><td>সর্বদা একটি ব্যাংক</td><td>যেকোনো ব্যক্তি বা প্রতিষ্ঠান হতে পারে</td></tr>
+    <tr><td>২</td><td>পরিশোধের সময়</td><td>শুধুমাত্র Demand-এ প্রদেয়</td><td>Demand বা নির্দিষ্ট মেয়াদ পরে প্রদেয়</td></tr>
+    <tr><td>৩</td><td>Acceptance</td><td>Acceptance প্রয়োজন নেই</td><td>Usance বিলে Acceptance প্রয়োজন</td></tr>
+    <tr><td>৪</td><td>Grace Period</td><td>কোনো Grace Period নেই</td><td>৩ দিনের Grace Period আছে</td></tr>
+    <tr><td>৫</td><td>Crossing</td><td>চেক Crossing করা যায় [Sec 123-131]</td><td>বিলে Crossing ব্যবস্থা নেই</td></tr>
+    <tr><td>৬</td><td>Stop Payment</td><td>Drawer চাইলে পেমেন্ট বন্ধ করতে পারেন</td><td>এটি সম্ভব নয়</td></tr>
+    <tr><td>৭</td><td>Stamp</td><td>Stamp-এর প্রয়োজন নেই</td><td>মূল্য ও মেয়াদ অনুযায়ী Stamp প্রয়োজন</td></tr>
+    <tr><td>৮</td><td>Dishonor Notice</td><td>আগের পক্ষদের দায়ী করতে Notice দরকার নেই</td><td>সকল পক্ষকে Dishonor Notice দিতে হয়</td></tr>
+    <tr><td>৯</td><td>Protest</td><td>Protest করার দরকার নেই</td><td>বিদেশি বিলে Protest বাধ্যতামূলক</td></tr>
+    <tr><td>১০</td><td>উদ্দেশ্য</td><td>স্থানীয় ও তাৎক্ষণিক পেমেন্টের জন্য</td><td>বাণিজ্যিক ঋণ ও আন্তর্জাতিক বাণিজ্যে</td></tr>
+  </table>
+</div>
+
+<!-- 6. Holder vs Holder in Due Course -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-past">৯৭তম ও ৯৯তম এসেছে</span>
+    <span class="qtitle">Holder বনাম Holder in Due Course (HDC)</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 8 (Holder) | Sec 9 (HDC)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>👤 Holder (সাধারণ ধারক)</th><th>⭐ Holder in Due Course (যোগ্য ধারক)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>যে ব্যক্তি instrument ধারণ করে এবং আদায় করার অধিকার রাখে</td><td>যে ব্যক্তি মূল্য দিয়ে, সদ্বিশ্বাসে, মেয়াদোত্তীর্ণ হওয়ার আগে এবং ত্রুটিপূর্ণ শিরোনাম না জেনে instrument গ্রহণ করে</td></tr>
+    <tr><td>২</td><td>মূল্য (Consideration)</td><td>বিনা মূল্যে গ্রহণ করলেও Holder হওয়া যায়</td><td>অবশ্যই মূল্য দিতে হবে (For Value)</td></tr>
+    <tr><td>৩</td><td>সদ্বিশ্বাস (Good Faith)</td><td>আবশ্যক নয়</td><td>সদ্বিশ্বাসে গ্রহণ করতে হবে</td></tr>
+    <tr><td>৪</td><td>সময় (Before Maturity)</td><td>মেয়াদের পরেও Holder হওয়া যায়</td><td>মেয়াদ শেষ হওয়ার আগেই গ্রহণ করতে হবে</td></tr>
+    <tr><td>৫</td><td>ত্রুটিমুক্ত শিরোনাম</td><td>আগের পক্ষের দোষ প্রভাব ফেলতে পারে</td><td>আগের পক্ষের দোষ তার অধিকারকে প্রভাবিত করতে পারে না</td></tr>
+    <tr><td>৬</td><td>অধিকারের শ্রেষ্ঠত্ব</td><td>সীমিত অধিকার</td><td>সত্যিকার মালিকের চেয়েও ভালো শিরোনাম পায়</td></tr>
+    <tr><td>৭</td><td>মামলা করার অধিকার</td><td>সীমিত শর্তে মামলা করতে পারে</td><td>নিজের নামে সকল পক্ষের বিরুদ্ধে মামলা করতে পারে</td></tr>
+    <tr><td>৮</td><td>Defect পরিশোধন</td><td>ত্রুটি পরিশোধন হয় না</td><td>তার হাত দিয়ে যাওয়ার পরে instrument-এর ত্রুটি পরিশোধন হয়</td></tr>
+    <tr><td>৯</td><td>Forgery</td><td>Forged instrument-এ দায়বদ্ধ হতে পারে</td><td>জাল instrument সম্পর্কে না জানলে সুরক্ষিত</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>কেউ উপহারে চেক পেয়েছেন</td><td>কেউ চেক কিনে নিয়েছেন মূল্য দিয়ে</td></tr>
+  </table>
+</div>
+
+<!-- 7. Holder for Value vs Holder in Due Course -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Holder for Value বনাম Holder in Due Course</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 8, 9</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>💵 Holder for Value</th><th>⭐ Holder in Due Course (HDC)</th></tr>
+    <tr><td>১</td><td>মূল্য প্রদান</td><td>মূল্য দিয়েছে কিন্তু HDC-র সকল শর্ত পূরণ করেনি</td><td>মূল্য দিয়েছে এবং HDC-র সকল শর্ত পূরণ করেছে</td></tr>
+    <tr><td>২</td><td>সদ্বিশ্বাস</td><td>সদ্বিশ্বাস থাকতেও পারে, নাও থাকতে পারে</td><td>অবশ্যই সদ্বিশ্বাসে গ্রহণ করতে হবে</td></tr>
+    <tr><td>৩</td><td>ত্রুটিমুক্ত শিরোনাম</td><td>ত্রুটিপূর্ণ শিরোনামও থাকতে পারে</td><td>ত্রুটিমুক্ত শিরোনাম পায়</td></tr>
+    <tr><td>৪</td><td>মেয়াদ</td><td>মেয়াদোত্তীর্ণ হওয়ার পরেও হতে পারে</td><td>মেয়াদ শেষ হওয়ার আগেই নিতে হবে</td></tr>
+    <tr><td>৫</td><td>Collecting Banker</td><td>Collecting banker-ও Holder for Value হতে পারে</td><td>Collecting banker HDC-র সব সুবিধা পায়</td></tr>
+    <tr><td>৬</td><td>অধিকার</td><td>HDC-র সকল অধিকার নাও পেতে পারে</td><td>সবচেয়ে বেশি অধিকার ভোগ করে</td></tr>
+    <tr><td>৭</td><td>সুরক্ষা | Protection</td><td>সীমিত সুরক্ষা পায়</td><td>সর্বোচ্চ সুরক্ষা পায়</td></tr>
+    <tr><td>৮</td><td>আইনগত মর্যাদা</td><td>HDC-র নিচে</td><td>সর্বোচ্চ মর্যাদা</td></tr>
+  </table>
+</div>
+
+<!-- 8. Conditional vs Restrictive Endorsement -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Conditional Endorsement বনাম Restrictive Endorsement</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 52 (Conditional) | Sec 50/51 (Restrictive)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🔀 Conditional Endorsement</th><th>🔒 Restrictive Endorsement</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>পরিশোধ কোনো শর্তের উপর নির্ভরশীল</td><td>Instrument-এর আরও হস্তান্তর নিষিদ্ধ</td></tr>
+    <tr><td>২</td><td>আইনি ধারা</td><td>NI Act, Sec 52</td><td>NI Act, Sec 50/51</td></tr>
+    <tr><td>৩</td><td>Negotiability</td><td>Negotiability প্রভাবিত হয় না সরাসরি</td><td>Negotiability সম্পূর্ণ বন্ধ হয়</td></tr>
+    <tr><td>৪</td><td>উদাহরণ</td><td>"Pay Rahim if he delivers goods"</td><td>"Pay Rahim only" বা "Not Negotiable"</td></tr>
+    <tr><td>৫</td><td>পরিশোধের শর্ত</td><td>শর্ত পূরণ হলে পরিশোধ হবে</td><td>শুধু নির্দিষ্ট ব্যক্তিকে পরিশোধ</td></tr>
+    <tr><td>৬</td><td>ঝুঁকি</td><td>শর্ত না মানলে ব্যাংক সমস্যায় পড়তে পারে</td><td>ব্যাংকের জন্য নিরাপদ</td></tr>
+    <tr><td>৭</td><td>হস্তান্তরযোগ্যতা</td><td>হস্তান্তরযোগ্য থাকতে পারে</td><td>আরও হস্তান্তর করা যায় না</td></tr>
+    <tr><td>৮</td><td>ব্যবহার</td><td>বিশেষ ক্ষেত্রে শর্তসাপেক্ষ পেমেন্টে</td><td>নিরাপত্তার জন্য "Account Payee" চেকে</td></tr>
+  </table>
+</div>
+
+<!-- 9. Assignment vs Endorsement -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-imp">গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Assignment বনাম Endorsement (Negotiation)</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 14-15 | Transfer of Property Act 1882</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📄 Assignment</th><th>✍️ Endorsement (সমর্থন)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>সম্পত্তির আইনগত শিরোনাম হস্তান্তর</td><td>Instrument-এ স্বাক্ষর করে অধিকার হস্তান্তর ও দায় গ্রহণ</td></tr>
+    <tr><td>২</td><td>দায়</td><td>Assignee শুধু শিরোনাম পায়, দায় নেয় না</td><td>Endorser দায়ী থাকেন যতক্ষণ instrument নিষ্পত্তি না হয়</td></tr>
+    <tr><td>৩</td><td>শিরোনামের মান</td><td>Assignee, Assignor-এর শিরোনামের বেশি পায় না</td><td>HDC ভালো শিরোনাম পেতে পারে ত্রুটিপূর্ণ Assignor থেকেও</td></tr>
+    <tr><td>৪</td><td>লিখিত চুক্তি</td><td>স্ট্যাম্প সহ লিখিত চুক্তি প্রয়োজন</td><td>Instrument-এ স্বাক্ষরই যথেষ্ট</td></tr>
+    <tr><td>৫</td><td>Notice</td><td>Debtor-কে Notice দিতে হয়</td><td>Notice-এর দরকার নেই</td></tr>
+    <tr><td>৬</td><td>প্রযোজ্যতা</td><td>সকল সম্পত্তিতে প্রযোজ্য</td><td>শুধুমাত্র Negotiable Instruments-এ</td></tr>
+    <tr><td>৭</td><td>Negotiability</td><td>Non-negotiable instruments-এ প্রযোজ্য</td><td>শুধু Negotiable instruments-এ</td></tr>
+    <tr><td>৮</td><td>আইন</td><td>Transfer of Property Act / Contract Act</td><td>NI Act 1881, Sec 14-15</td></tr>
+  </table>
+</div>
+
+<!-- MODULE D -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module D — Business Related Laws</h2>
+
+<!-- 10. Public vs Private Company -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D</span>
+    <span class="badge b-imp">গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Public Limited Company বনাম Private Limited Company</span>
+  </div>
+  <div class="law">Companies Act 1994, Sec 2, 5, 17</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🏢 Public Limited Company</th><th>🏠 Private Limited Company</th></tr>
+    <tr><td>১</td><td>ন্যূনতম সদস্য</td><td>৭ জন</td><td>২ জন</td></tr>
+    <tr><td>২</td><td>সর্বোচ্চ সদস্য</td><td>সীমাহীন</td><td>৫০ জন</td></tr>
+    <tr><td>৩</td><td>পরিচালক সংখ্যা</td><td>ন্যূনতম ৩ জন</td><td>ন্যূনতম ২ জন</td></tr>
+    <tr><td>৪</td><td>IPO / শেয়ার ইস্যু</td><td>সর্বসাধারণের কাছে IPO করতে পারে</td><td>IPO করতে পারে না</td></tr>
+    <tr><td>৫</td><td>শেয়ার হস্তান্তর</td><td>অবাধে হস্তান্তরযোগ্য</td><td>হস্তান্তরে বাধা রয়েছে</td></tr>
+    <tr><td>৬</td><td>বার্ষিক সাধারণ সভা</td><td>Statutory Meeting বাধ্যতামূলক</td><td>বাধ্যতামূলক নয়</td></tr>
+    <tr><td>৭</td><td>Audit</td><td>Audit ফার্ম দ্বারা অডিট বাধ্যতামূলক</td><td>বাধ্যতামূলক নয়</td></tr>
+    <tr><td>৮</td><td>আর্থিক প্রতিবেদন</td><td>Public Disclosure বাধ্যতামূলক</td><td>Public Disclosure প্রয়োজন নেই</td></tr>
+    <tr><td>৯</td><td>ব্যবসা শুরুর প্রমাণ</td><td>Certificate of Commencement লাগে</td><td>Certificate of Incorporation যথেষ্ট</td></tr>
+    <tr><td>১০</td><td>নামের শেষে</td><td>"Limited" বা "Ltd." ব্যবহার করে</td><td>"Private Limited" বা "(Pvt.) Ltd." ব্যবহার করে</td></tr>
+  </table>
+</div>
+
+<!-- 11. MOA vs AOA -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Memorandum of Association (MOA) বনাম Articles of Association (AOA)</span>
+  </div>
+  <div class="law">Companies Act 1994, Sec 5 (MOA) | Sec 17 (AOA)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📜 MOA (মেমোরান্ডাম)</th><th>📋 AOA (আর্টিকেলস)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>কোম্পানির সংবিধান — মূল লক্ষ্য ও সীমা</td><td>কোম্পানির পরিচালনা বিধিমালা</td></tr>
+    <tr><td>২</td><td>আইনি ধারা</td><td>Companies Act 1994, Section 5</td><td>Companies Act 1994, Section 17</td></tr>
+    <tr><td>৩</td><td>বিষয়বস্তু</td><td>নাম, ঠিকানা, উদ্দেশ্য, দায়, মূলধন</td><td>পরিচালক নির্বাচন, সভা, ভোট, লভ্যাংশ</td></tr>
+    <tr><td>৪</td><td>সম্পর্ক</td><td>বাইরের বিশ্বের সাথে কোম্পানির সম্পর্ক নির্ধারণ</td><td>ভেতরের পরিচালনা নির্ধারণ</td></tr>
+    <tr><td>৫</td><td>সীমা</td><td>MOA-র বাইরে কাজ করলে "Ultra Vires" ও বাতিল</td><td>MOA-র সীমার মধ্যে থাকতে হবে</td></tr>
+    <tr><td>৬</td><td>পরিবর্তন</td><td>কঠিন — বিশেষ প্রস্তাব ও আদালতের অনুমতি প্রয়োজন</td><td>তুলনামূলক সহজ — সাধারণ প্রস্তাবে পরিবর্তন সম্ভব</td></tr>
+    <tr><td>৭</td><td>গুরুত্ব</td><td>সর্বোচ্চ গুরুত্বপূর্ণ দলিল</td><td>MOA-র অধস্তন</td></tr>
+    <tr><td>৮</td><td>সংঘাতে</td><td>MOA প্রাধান্য পাবে</td><td>MOA-র অনুকূলে ব্যাখ্যা হবে</td></tr>
+    <tr><td>৯</td><td>নথিভুক্তি</td><td>RJSC-তে বাধ্যতামূলক নথিভুক্তি</td><td>RJSC-তে দাখিল করতে হয়</td></tr>
+    <tr><td>১০</td><td>ব্যাংকের দৃষ্টিতে</td><td>কোম্পানি অ্যাকাউন্ট খুলতে MOA পরীক্ষা করতে হয়</td><td>কর্তৃপক্ষ ও সীমানা জানতে AOA দেখতে হয়</td></tr>
+  </table>
+</div>
+
+<!-- 12. Guarantee vs Indemnity -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Contract of Guarantee বনাম Contract of Indemnity</span>
+  </div>
+  <div class="law">Contract Act 1872, Sec 124 (Indemnity) | Sec 126 (Guarantee)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🤝 Guarantee (গ্যারান্টি)</th><th>🛡️ Indemnity (ইনডেমনিটি)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>তৃতীয় পক্ষের ঋণ পরিশোধের প্রতিশ্রুতি</td><td>ক্ষতি থেকে রক্ষা করার প্রতিশ্রুতি</td></tr>
+    <tr><td>২</td><td>আইনি ধারা</td><td>Contract Act 1872, Section 126</td><td>Contract Act 1872, Section 124</td></tr>
+    <tr><td>৩</td><td>পক্ষ সংখ্যা</td><td>তিনটি — Debtor, Creditor ও Surety</td><td>দুটি — Indemnifier ও Indemnified</td></tr>
+    <tr><td>৪</td><td>চুক্তির সংখ্যা</td><td>দুটি চুক্তি (Debtor-Creditor + Surety-Creditor)</td><td>একটি চুক্তি (Indemnifier-Beneficiary)</td></tr>
+    <tr><td>৫</td><td>দায়ের প্রকৃতি</td><td>Surety-র দায় গৌণ (Secondary)</td><td>Indemnifier-এর দায় প্রধান (Primary)</td></tr>
+    <tr><td>৬</td><td>উদ্দেশ্য</td><td>ঋণের নিরাপত্তা প্রদান করা</td><td>ক্ষতিপূরণ নিশ্চিত করা</td></tr>
+    <tr><td>৭</td><td>ঝুঁকির ধরন</td><td>বিদ্যমান দায় (Existing Liability)</td><td>ভবিষ্যৎ ক্ষতির ঝুঁকি (Contingent Risk)</td></tr>
+    <tr><td>৮</td><td>প্রতিদাবি অধিকার</td><td>Surety পরে Debtor-এর বিরুদ্ধে দাবি করতে পারেন</td><td>Indemnifier আর কারো কাছ থেকে ফেরত পাওয়ার অধিকার নেই</td></tr>
+    <tr><td>৯</td><td>অনুরোধ</td><td>Debtor-এর অনুরোধে Surety গ্যারান্টি দেন</td><td>Indemnifier স্বেচ্ছায় বা অনুরোধে ক্ষতিপূরণ দেন</td></tr>
+    <tr><td>১০</td><td>ব্যাংকিং উদাহরণ</td><td>ব্যাংক ঋণের জন্য তৃতীয় পক্ষের গ্যারান্টি</td><td>হারানো FDR-এর বদলে নতুন FDR ইস্যুতে Indemnity Bond</td></tr>
+  </table>
+  <div class="tip">💡 মনে রাখো: Guarantee = ৩ পক্ষ, গৌণ দায় | Indemnity = ২ পক্ষ, প্রধান দায়</div>
+</div>
+
+<!-- 13. Ordinary Share vs Preference Share -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D</span>
+    <span class="qtitle">Ordinary/Equity Share বনাম Preference Share</span>
+  </div>
+  <div class="law">Companies Act 1994, Sec 150-154</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🟦 Ordinary/Equity Share</th><th>🟩 Preference Share</th></tr>
+    <tr><td>১</td><td>লভ্যাংশ</td><td>মুনাফার পরে যা থাকে তা পায়</td><td>নির্দিষ্ট হারে আগে লভ্যাংশ পায়</td></tr>
+    <tr><td>২</td><td>ভোটাধিকার</td><td>সম্পূর্ণ ভোটাধিকার আছে</td><td>সাধারণত ভোটাধিকার সীমিত</td></tr>
+    <tr><td>৩</td><td>ঝুঁকি</td><td>বেশি ঝুঁকি</td><td>কম ঝুঁকি</td></tr>
+    <tr><td>৪</td><td>অবসায়নে অগ্রাধিকার</td><td>সর্বশেষে মূলধন ফেরত পায়</td><td>Ordinary-এর আগে মূলধন ফেরত পায়</td></tr>
+    <tr><td>৫</td><td>ফেরতযোগ্যতা</td><td>সাধারণত ফেরতযোগ্য নয়</td><td>Redeemable হতে পারে [Sec 154]</td></tr>
+    <tr><td>৬</td><td>লভ্যাংশ জমা</td><td>না পেলে জমা হয় না</td><td>Cumulative হলে জমা হয়</td></tr>
+    <tr><td>৭</td><td>অংশগ্রহণ</td><td>অতিরিক্ত মুনাফায় অংশ পায়</td><td>Non-participating হলে অংশ পায় না</td></tr>
+    <tr><td>৮</td><td>মূলধনের ধরন</td><td>Equity Capital</td><td>Hybrid Capital (Debt ও Equity-এর মাঝামাঝি)</td></tr>
+    <tr><td>৯</td><td>রূপান্তর</td><td>রূপান্তরযোগ্য নয়</td><td>Convertible হলে Equity-তে রূপান্তর হতে পারে</td></tr>
+    <tr><td>১০</td><td>বিনিয়োগকারীর পছন্দ</td><td>বেশি আয়ের আশায় ঝুঁকি নিতে রাজি বিনিয়োগকারী</td><td>নিরাপদ, নিশ্চিত আয় চাওয়া বিনিয়োগকারী</td></tr>
+  </table>
+</div>
+
+<!-- MODULE F/G -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module F/G — General Laws & Overview</h2>
+
+<!-- 14. Sale vs Mortgage vs Lease vs Gift -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module F/G</span>
+    <span class="badge b-past">৫ম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Sale বনাম Mortgage বনাম Lease বনাম Gift (হেবা)</span>
+  </div>
+  <div class="law">Transfer of Property Act 1882, Sec 54 (Sale), Sec 58 (Mortgage), Sec 105 (Lease), Sec 122 (Gift)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📦 Sale</th><th>🏠 Mortgage</th><th>🔑 Lease</th><th>🎁 Gift (হেবা)</th></tr>
+    <tr><td>১</td><td>মালিকানা হস্তান্তর</td><td>সম্পূর্ণ হস্তান্তর</td><td>সুদ হস্তান্তর (মূল্য নয়)</td><td>সাময়িক ব্যবহারাধিকার</td><td>বিনামূল্যে সম্পূর্ণ হস্তান্তর</td></tr>
+    <tr><td>২</td><td>মূল্য | Consideration</td><td>মূল্য প্রয়োজন</td><td>ঋণের বিনিময়ে</td><td>ভাড়া প্রদান</td><td>কোনো মূল্য নেই</td></tr>
+    <tr><td>৩</td><td>দখল</td><td>ক্রেতার কাছে যায়</td><td>বিক্রেতার কাছে থাকে (সাধারণত)</td><td>ভাড়াটের কাছে যায়</td><td>গ্রহীতার কাছে যায়</td></tr>
+    <tr><td>৪</td><td>মেয়াদ</td><td>স্থায়ী</td><td>ঋণ পরিশোধ পর্যন্ত</td><td>চুক্তির মেয়াদ পর্যন্ত</td><td>স্থায়ী</td></tr>
+    <tr><td>৫</td><td>রেজিস্ট্রেশন</td><td>অস্থাবরে বাধ্যতামূলক</td><td>অস্থাবরে বাধ্যতামূলক</td><td>১ বছরের বেশি হলে বাধ্যতামূলক</td><td>অস্থাবরে বাধ্যতামূলক</td></tr>
+    <tr><td>৬</td><td>উদ্দেশ্য</td><td>মালিকানা বদল</td><td>ঋণের জামানত</td><td>সাময়িক ব্যবহার</td><td>ভালোবাসা/প্রীতি</td></tr>
+  </table>
+</div>
+
+<!-- 15. Fixed Charge vs Floating Charge -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D/G</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Fixed Charge বনাম Floating Charge</span>
+  </div>
+  <div class="law">Companies Act 1994 | Banking Practice</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🏗️ Fixed Charge (নির্দিষ্ট চার্জ)</th><th>🌊 Floating Charge (ভাসমান চার্জ)</th></tr>
+    <tr><td>১</td><td>সম্পদের ধরন</td><td>নির্দিষ্ট স্থাবর সম্পত্তি (জমি, ভবন)</td><td>পরিবর্তনশীল সম্পদ (মজুদ, দেনা, ইনভেন্টরি)</td></tr>
+    <tr><td>২</td><td>সম্পদে নিয়ন্ত্রণ</td><td>গ্রাহক নিজে ব্যবহার বা বিক্রি করতে পারে না</td><td>গ্রাহক স্বাভাবিক ব্যবসায় ব্যবহার ও বিক্রি করতে পারেন</td></tr>
+    <tr><td>৩</td><td>নিবন্ধন</td><td>অবশ্যই নিবন্ধন করতে হবে</td><td>নিবন্ধন সুবিধাজনক হলেও বাধ্যতামূলক নয়</td></tr>
+    <tr><td>৪</td><td>স্থায়িত্ব</td><td>সম্পদ নির্দিষ্ট ও অপরিবর্তনীয়</td><td>সম্পদ পরিবর্তনশীল</td></tr>
+    <tr><td>৫</td><td>ব্যাংকের নিরাপত্তা</td><td>বেশি নিরাপদ</td><td>তুলনামূলক কম নিরাপদ</td></tr>
+    <tr><td>৬</td><td>বিক্রির অধিকার</td><td>তাৎক্ষণিকভাবে বিক্রি করা যায়</td><td>Crystallize হওয়ার পরে বিক্রি করা যায়</td></tr>
+    <tr><td>৭</td><td>Crystallization</td><td>সবসময় স্থির থাকে</td><td>নির্দিষ্ট ঘটনায় Crystallize হয়</td></tr>
+    <tr><td>৮</td><td>উদ্বৃত্তে অগ্রাধিকার</td><td>Floating Charge-এর আগে অগ্রাধিকার পায়</td><td>Fixed Charge-এর পরে</td></tr>
+    <tr><td>৯</td><td>ব্যাংকিং ব্যবহার</td><td>Term Loan-এ ভূমি/ভবন বন্ধকে</td><td>Working Capital/CC Loan-এ মজুদ বন্ধকে</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>৫ বিঘা জমি Fixed Charge হিসেবে</td><td>গুদামের মজুদ পণ্য Floating Charge হিসেবে</td></tr>
+  </table>
+</div>
+
+<!-- 16. Pledge vs Hypothecation -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module D/G</span>
+    <span class="badge b-past">৯৭তম ও ৯৯তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Pledge বনাম Hypothecation</span>
+  </div>
+  <div class="law">Contract Act 1872, Sec 172 (Pledge) | Banking Practice (Hypothecation)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🔒 Pledge (বন্ধক)</th><th>📦 Hypothecation (হাইপোথেকেশন)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>ঋণের বিপরীতে সম্পদ ব্যাংকের দখলে হস্তান্তর</td><td>ঋণের বিপরীতে জামানত, কিন্তু দখল গ্রাহকের কাছে থাকে</td></tr>
+    <tr><td>২</td><td>দখল (Possession)</td><td>ব্যাংকের কাছে থাকে</td><td>গ্রাহকের কাছে থাকে</td></tr>
+    <tr><td>৩</td><td>সম্পদের ধরন</td><td>স্থাবর বা মূল্যবান সম্পদ, FDR, সোনা</td><td>চলমান পণ্য, স্টক, ইনভেন্টরি</td></tr>
+    <tr><td>৪</td><td>বিক্রির অধিকার</td><td>আদালত ছাড়াই বিক্রি করা যায়</td><td>সাধারণত আদালতের অনুমতি প্রয়োজন</td></tr>
+    <tr><td>৫</td><td>ব্যাংকের ঝুঁকি</td><td>কম ঝুঁকি (দখল ব্যাংকের কাছে)</td><td>বেশি ঝুঁকি (দখল গ্রাহকের কাছে)</td></tr>
+    <tr><td>৬</td><td>Limitation Period</td><td>কোনো নির্দিষ্ট সময়সীমা নেই</td><td>Loan: ৩ বছর | CC Account: বার্ষিক নবায়ন</td></tr>
+    <tr><td>৭</td><td>মনিটরিং</td><td>কম মনিটরিং প্রয়োজন</td><td>নিয়মিত মনিটরিং প্রয়োজন</td></tr>
+    <tr><td>৮</td><td>আইনি ভিত্তি</td><td>Contract Act 1872, Section 172</td><td>ব্যাংকিং প্রথা ও Contract Act</td></tr>
+    <tr><td>৯</td><td>গ্রাহকের ব্যবহার</td><td>গ্রাহক সম্পদ ব্যবহার করতে পারেন না</td><td>গ্রাহক সম্পদ ব্যবহার করতে পারেন</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>FDR-এর বিপরীতে ঋণ, সোনা বন্ধক</td><td>দোকানের মালের বিপরীতে CC Loan</td></tr>
+  </table>
+  <div class="tip">💡 Pledge = ব্যাংকের হাতে চাবি | Hypothecation = গ্রাহকের হাতে চাবি, ব্যাংকের কাছে শুধু কাগজ</div>
+</div>
+
+<!-- MODULE H -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module H — Deposit Accounts & Operation</h2>
+
+<!-- 17. Savings vs Current vs FD Account -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module H</span>
+    <span class="badge b-imp">গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Savings Account বনাম Current Account বনাম Fixed Deposit (FDR)</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>💰 Savings Account</th><th>🏢 Current Account</th><th>📅 Fixed Deposit (FDR)</th></tr>
+    <tr><td>১</td><td>সুদ/মুনাফা</td><td>সীমিত সুদ প্রযোজ্য (৬% BB-নির্ধারিত সর্বোচ্চ)</td><td>কোনো সুদ নেই (সাধারণত)</td><td>সর্বোচ্চ সুদ পাওয়া যায়</td></tr>
+    <tr><td>২</td><td>উত্তোলন সীমা</td><td>মাসে নির্দিষ্টবার উত্তোলন সীমা আছে</td><td>যেকোনো সময় যেকোনো পরিমাণ</td><td>মেয়াদ শেষ না হলে উত্তোলন কঠিন</td></tr>
+    <tr><td>৩</td><td>লক্ষ্য গ্রাহক</td><td>ব্যক্তি ও পরিবার</td><td>ব্যবসায়ী ও প্রতিষ্ঠান</td><td>বিনিয়োগকারী</td></tr>
+    <tr><td>৪</td><td>চেক সুবিধা</td><td>সীমিত চেক সুবিধা</td><td>সীমাহীন চেক সুবিধা</td><td>চেক সুবিধা নেই</td></tr>
+    <tr><td>৫</td><td>ওভারড্রাফট</td><td>সাধারণত নেই</td><td>Overdraft সুবিধা আছে</td><td>নেই</td></tr>
+    <tr><td>৬</td><td>নিষ্ক্রিয় হওয়ার সময়</td><td>৩ বছরে নিষ্ক্রিয় (BB Circular)</td><td>২ বছরে নিষ্ক্রিয় (BB Circular)</td><td>মেয়াদ নির্ধারিত</td></tr>
+    <tr><td>৭</td><td>ন্যূনতম ব্যালেন্স</td><td>নির্দিষ্ট ন্যূনতম ব্যালেন্স প্রয়োজন</td><td>নির্দিষ্ট ন্যূনতম ব্যালেন্স প্রয়োজন</td><td>নির্দিষ্ট পরিমাণ জমা রাখতে হয়</td></tr>
+    <tr><td>৮</td><td>TDS</td><td>সুদে TDS প্রযোজ্য</td><td>প্রযোজ্য নয়</td><td>সুদে TDS @১০% (TIN সহ)</td></tr>
+    <tr><td>৯</td><td>তারল্য</td><td>মাঝারি তারল্য</td><td>সর্বোচ্চ তারল্য</td><td>কম তারল্য</td></tr>
+    <tr><td>১০</td><td>উদ্দেশ্য</td><td>সঞ্চয়ের অভ্যাস গড়া</td><td>ব্যবসায়িক লেনদেন</td><td>বিনিয়োগ ও বেশি আয়</td></tr>
+  </table>
+</div>
+
+<!-- 18. Dormant vs Unclaimed -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module H</span>
+    <span class="badge b-imp">গুরুত্বপূর্ণ</span>
+    <span class="qtitle">Dormant (নিষ্ক্রিয়) Account বনাম Unclaimed Deposit (দাবিহীন আমানত)</span>
+  </div>
+  <div class="law">BB BRPD Circular 26/2008 (Dormant) | BCA 1991, Sec 35 (Unclaimed)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>😴 Dormant Account (নিষ্ক্রিয় হিসাব)</th><th>🏛️ Unclaimed Deposit (দাবিহীন আমানত)</th></tr>
+    <tr><td>১</td><td>সময়সীমা — Savings</td><td>৩ বছর কোনো লেনদেন না হলে</td><td>১০ বছর নিষ্ক্রিয় থাকলে</td></tr>
+    <tr><td>২</td><td>সময়সীমা — Current</td><td>২ বছর কোনো লেনদেন না হলে</td><td>১০ বছর নিষ্ক্রিয় থাকলে</td></tr>
+    <tr><td>৩</td><td>অ্যাকাউন্টের অবস্থান</td><td>ব্যাংকে থাকে, লেনদেন সীমিত</td><td>Bangladesh Bank-এ হস্তান্তর হয়</td></tr>
+    <tr><td>৪</td><td>সুদ প্রদান</td><td>সুদ চলতে থাকে</td><td>BB-তে হস্তান্তরের পরেও সুদ পাওয়া যায়</td></tr>
+    <tr><td>৫</td><td>পুনরায় সক্রিয়</td><td>শাখা ব্যবস্থাপকের অনুমোদনে সক্রিয় করা যায়</td><td>BB-তে আবেদন করে ফেরত পাওয়া যায়</td></tr>
+    <tr><td>৬</td><td>কারণ</td><td>গ্রাহক লেনদেন করেননি</td><td>গ্রাহক খোঁজ নেননি বহু বছর</td></tr>
+    <tr><td>৭</td><td>সতর্কতা</td><td>কঠোর KYC, CPV, শাখা প্রধানের অনুমোদন</td><td>আইনি উত্তরাধিকার প্রমাণ</td></tr>
+    <tr><td>৮</td><td>আইনগত ভিত্তি</td><td>BB BRPD Circular 26/2008</td><td>BCA 1991, Section 35</td></tr>
+  </table>
+</div>
+
+<!-- MODULE I -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module I — NI Act 1881 (Advanced)</h2>
+
+<!-- 19. Open/General Crossing vs Special Crossing -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module I</span>
+    <span class="badge b-imp">গুরুত্বপূর্ণ</span>
+    <span class="qtitle">General Crossing বনাম Special Crossing</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 123 (General) | Sec 124 (Special)</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>〓 General Crossing (সাধারণ ক্রসিং)</th><th>🏦 Special Crossing (বিশেষ ক্রসিং)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>দুটি সমান্তরাল রেখা — "& Co." বা কিছুই লেখা নেই</td><td>দুই রেখার মাঝে নির্দিষ্ট ব্যাংকের নাম লেখা</td></tr>
+    <tr><td>২</td><td>পরিশোধের মাধ্যম</td><td>যেকোনো ব্যাংকের মাধ্যমে পরিশোধ হবে</td><td>শুধুমাত্র উল্লিখিত ব্যাংকের মাধ্যমে পরিশোধ হবে</td></tr>
+    <tr><td>৩</td><td>নিরাপত্তা</td><td>নিরাপদ</td><td>আরও বেশি নিরাপদ</td></tr>
+    <tr><td>৪</td><td>আইনি ধারা</td><td>NI Act 1881, Sec 123</td><td>NI Act 1881, Sec 124</td></tr>
+    <tr><td>৫</td><td>নগদ প্রদান</td><td>নগদে প্রদান সম্ভব নয়</td><td>নগদে প্রদান সম্ভব নয়</td></tr>
+    <tr><td>৬</td><td>উদাহরণ</td><td>শুধু দুটো লাইন // অথবা // & Co.//</td><td>//Dutch Bangla Bank// মাঝে নাম লেখা</td></tr>
+    <tr><td>৭</td><td>হস্তান্তরযোগ্যতা</td><td>একাধিক ব্যাংকে সংগ্রহ করা যায়</td><td>শুধু নির্দিষ্ট ব্যাংক সংগ্রহ করতে পারে</td></tr>
+    <tr><td>৮</td><td>Payee Bank's Protection</td><td>মাঝারি সুরক্ষা</td><td>সর্বোচ্চ সুরক্ষা</td></tr>
+  </table>
+</div>
+
+<!-- 20. Pay Order vs Bank Draft -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module I/J</span>
+    <span class="badge b-past">৯৯তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Pay Order বনাম Demand Draft (Bank Draft)</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 85A (Draft) | Banking Practice</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>💳 Pay Order (পেমেন্ট অর্ডার)</th><th>📬 Demand Draft (ডিমান্ড ড্রাফট)</th></tr>
+    <tr><td>১</td><td>ইস্যুকারী ও পরিশোধকারী</td><td>একই শাখা ইস্যু ও পরিশোধ করে</td><td>এক শাখা ইস্যু, অন্য শাখা পরিশোধ করে</td></tr>
+    <tr><td>২</td><td>ব্যবহারের এলাকা</td><td>শুধুমাত্র একই শহরে / স্থানীয় পেমেন্টে</td><td>অন্য শহরে বা জেলায় পেমেন্টে</td></tr>
+    <tr><td>৩</td><td>Negotiability</td><td>Non-negotiable (লেখাই থাকে)</td><td>Negotiable হতে পারে</td></tr>
+    <tr><td>৪</td><td>পেমেন্ট বন্ধ করা</td><td>Beneficiary-র সম্মতি ছাড়া বন্ধ করা যায় না</td><td>নির্দিষ্ট শর্তে বন্ধ করা যায়</td></tr>
+    <tr><td>৫</td><td>আইনগত সুরক্ষা</td><td>সীমিত আইনগত সুরক্ষা</td><td>NI Act Sec 85A-এর অধীনে সুরক্ষা</td></tr>
+    <tr><td>৬</td><td>Duplicate ইস্যু</td><td>Indemnity Bond সহ দেওয়া যায়</td><td>Indemnity Bond + ২ জন জামিনদার সহ</td></tr>
+    <tr><td>৭</td><td>টেস্ট কী</td><td>প্রয়োজন নেই</td><td>Test Key (Check Cypher) প্রয়োজন</td></tr>
+    <tr><td>৮</td><td>ব্যাংকের দায়</td><td>ব্যাংক প্রধান দায়ী (Primary liability)</td><td>ইস্যুকারী শাখা প্রধান দায়ী</td></tr>
+    <tr><td>৯</td><td>Clearing</td><td>Clearing-এ উপস্থাপন করা যায়</td><td>Clearing-এ উপস্থাপন করা যায়</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>সরকারি দপ্তরে জামানত জমা</td><td>ঢাকা থেকে চট্টগ্রামে টাকা পাঠানো</td></tr>
+  </table>
+</div>
+
+<!-- 21. Nostro vs Vostro -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Nostro Account বনাম Vostro Account</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🌍 Nostro Account (নস্ট্রো)</th><th>🏠 Vostro Account (ভস্ট্রো)</th></tr>
+    <tr><td>১</td><td>অর্থ</td><td>"আমাদের" (ইতালীয় শব্দ "Nostro")</td><td>"তোমাদের" (ইতালীয় শব্দ "Vostro")</td></tr>
+    <tr><td>২</td><td>সংজ্ঞা</td><td>বিদেশি ব্যাংকে আমাদের অ্যাকাউন্ট</td><td>আমাদের ব্যাংকে বিদেশি ব্যাংকের অ্যাকাউন্ট</td></tr>
+    <tr><td>৩</td><td>দৃষ্টিকোণ</td><td>দেশীয় ব্যাংকের দৃষ্টিতে</td><td>বিদেশি ব্যাংকের দৃষ্টিতে</td></tr>
+    <tr><td>৪</td><td>মুদ্রা</td><td>বিদেশি মুদ্রায় পরিচালিত (যেমন USD)</td><td>স্থানীয় মুদ্রায় পরিচালিত (BDT)</td></tr>
+    <tr><td>৫</td><td>উদ্দেশ্য</td><td>বৈদেশিক মুদ্রা সংগ্রহ ও বিদেশী পেমেন্ট</td><td>বিদেশি ব্যাংক বাংলাদেশে কার্যক্রমের জন্য</td></tr>
+    <tr><td>৬</td><td>উদাহরণ</td><td>Sonali Bank-এর NYC-তে Dollar Account</td><td>NYC Bank-এর Sonali Bank-এ Taka Account</td></tr>
+    <tr><td>৭</td><td>মালিকানা</td><td>দেশীয় ব্যাংকের মালিকানাধীন</td><td>বিদেশি ব্যাংকের মালিকানাধীন</td></tr>
+    <tr><td>৮</td><td>SWIFT কোড</td><td>নিজস্ব SWIFT কোড ব্যবহার করে</td><td>দেশীয় ব্যাংকের SWIFT কোড ব্যবহার করে</td></tr>
+  </table>
+</div>
+
+<!-- MODULE J -->
+<h2 style="font-size:16px;margin:1.5rem 0 .5rem;color:var(--text)">📚 Module J — General Banking</h2>
+
+<!-- 22. Banker's Lien vs Right of Set-off -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Banker's Lien বনাম Banker's Right of Set-off</span>
+  </div>
+  <div class="law">NI Act 1881 | Contract Act 1872 | Banking Practice</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🔒 Banker's Lien (ব্যাংকারের লিয়েন)</th><th>⚖️ Right of Set-off (সেট-অফ অধিকার)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>গ্রাহকের জিনিস আটক রাখার অধিকার ঋণ পরিশোধ না হওয়া পর্যন্ত</td><td>গ্রাহকের ঋণ ব্যালেন্স থেকে কেটে নেওয়ার অধিকার</td></tr>
+    <tr><td>২</td><td>প্রকৃতি</td><td>সম্পদ আটক রাখার অধিকার (Retention Right)</td><td>ব্যালেন্স সমন্বয়ের অধিকার (Adjustment Right)</td></tr>
+    <tr><td>৩</td><td>বিষয়বস্তু</td><td>ব্যাংকে জমা দেওয়া সিকিউরিটি, বিল, চেক</td><td>গ্রাহকের ব্যাংক অ্যাকাউন্টের ব্যালেন্স</td></tr>
+    <tr><td>৪</td><td>বিক্রির অধিকার</td><td>Implied Pledge হিসেবে বিক্রি করা যায়</td><td>বিক্রির ধারণা নেই, শুধু সমন্বয়</td></tr>
+    <tr><td>৫</td><td>Notice প্রয়োজন</td><td>যৌক্তিক নোটিশের পরে বিক্রি করা যায়</td><td>সাধারণত নোটিশ ছাড়াই করা যায়</td></tr>
+    <tr><td>৬</td><td>Garnishee Order</td><td>প্রভাবিত হয় না</td><td>Garnishee Order দিয়ে বাধা দেওয়া যায়</td></tr>
+    <tr><td>৭</td><td>ব্যবহারের শর্ত</td><td>গ্রাহক ব্যাংকার হিসেবে সম্পদ দিয়েছে</td><td>উভয় দাবি অবশ্যই নিশ্চিত ও পরিশোধযোগ্য হতে হবে</td></tr>
+    <tr><td>৮</td><td>অপব্যবহারের ঝুঁকি</td><td>কম (সম্পদ আটক)</td><td>বেশি (জানানো না হলে বিতর্ক হতে পারে)</td></tr>
+    <tr><td>৯</td><td>Joint Account</td><td>প্রযোজ্য হতে পারে</td><td>Joint A/C-এর ক্ষেত্রে সীমাবদ্ধতা আছে</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>ব্যাংক FDR আটক রেখে ঋণ আদায়</td><td>ঋণখেলাপি গ্রাহকের Savings A/C থেকে টাকা কেটে নেওয়া</td></tr>
+  </table>
+</div>
+
+<!-- 23. Drawing Power vs Power of Attorney -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৭তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Drawing Power বনাম Power of Attorney</span>
+  </div>
+  <div class="law">Contract Act 1872 | Registration Act 1908</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>✏️ Drawing Power (আহরণ ক্ষমতা)</th><th>📜 Power of Attorney (মোক্তারনামা)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>ব্যাংক ঋণ হিসাব থেকে কতটুকু উত্তোলন করা যাবে তার সীমা</td><td>একজন ব্যক্তি অন্যকে তার পক্ষে কাজ করার অনুমতি দেওয়ার দলিল</td></tr>
+    <tr><td>২</td><td>প্রযোজ্য ক্ষেত্র</td><td>Cash Credit, Overdraft, Working Capital Loan</td><td>যেকোনো আইনি কার্যক্রম — বিক্রয়, ব্যাংক লেনদেন</td></tr>
+    <tr><td>৩</td><td>হিসাবকারী</td><td>ব্যাংক নিজেই নির্ধারণ করে (মজুদের ভিত্তিতে)</td><td>অ্যাকাউন্টধারী দেন অন্যকে</td></tr>
+    <tr><td>৪</td><td>পরিবর্তন</td><td>মজুদ পরিবর্তনের সাথে পরিবর্তিত হয়</td><td>স্থায়ী, বাতিল না করা পর্যন্ত কার্যকর</td></tr>
+    <tr><td>৫</td><td>নিবন্ধন</td><td>প্রয়োজন নেই</td><td>বিশেষ ক্ষেত্রে Registration Act অনুযায়ী</td></tr>
+    <tr><td>৬</td><td>সীমা</td><td>Eligible Security-র ৭০-৮০% পর্যন্ত</td><td>দলিলে উল্লিখিত ক্ষমতার মধ্যে</td></tr>
+    <tr><td>৭</td><td>উদ্দেশ্য</td><td>অতিরিক্ত ঋণ রোধ করা</td><td>অনুপস্থিতিতে কাজ পরিচালনা করা</td></tr>
+    <tr><td>৮</td><td>মৃত্যুতে প্রভাব</td><td>অ্যাকাউন্ট চলে না</td><td>POA বাতিল হয়ে যায়</td></tr>
+  </table>
+</div>
+
+<!-- 24. Broad Money vs Narrow Money -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module G/J</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Broad Money (M2) বনাম Narrow Money (M1)</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>💰 M1 — Narrow Money (সংকীর্ণ অর্থ)</th><th>🏦 M2 — Broad Money (বিস্তৃত অর্থ)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>তাৎক্ষণিকভাবে ব্যবহারযোগ্য অর্থের পরিমাণ</td><td>M1 + সকল আমানত সহ মোট অর্থ সরবরাহ</td></tr>
+    <tr><td>২</td><td>অন্তর্ভুক্তি</td><td>নগদ + চলতি হিসাব আমানত</td><td>নগদ + চলতি + সঞ্চয় + FDR + অন্যান্য</td></tr>
+    <tr><td>৩</td><td>তারল্য</td><td>অত্যন্ত তরল সম্পদ</td><td>তুলনামূলক কম তরল সম্পদ অন্তর্ভুক্ত</td></tr>
+    <tr><td>৪</td><td>পরিধি</td><td>সংকীর্ণ</td><td>ব্যাপক</td></tr>
+    <tr><td>৫</td><td>মুদ্রানীতিতে ব্যবহার</td><td>তাৎক্ষণিক অর্থপ্রবাহ পরিমাপে</td><td>সামগ্রিক মুদ্রানীতি নির্ধারণে</td></tr>
+    <tr><td>৬</td><td>নিয়ন্ত্রণ কর্তৃপক্ষ</td><td>BB মুদ্রানীতিতে উভয় বিবেচনা করে</td><td>BB মুদ্রানীতিতে M2 বেশি ব্যবহার করে</td></tr>
+    <tr><td>৭</td><td>মুদ্রাস্ফীতি</td><td>M1 বাড়লে তাৎক্ষণিক মুদ্রাস্ফীতি</td><td>M2 বাড়লে দীর্ঘমেয়াদী মুদ্রাস্ফীতি</td></tr>
+    <tr><td>৮</td><td>উদাহরণ</td><td>পকেটে ১,০০০ টাকা + চলতি হিসাবে ৫,০০০</td><td>উপরের সবকিছু + FDR ২০,০০০ + সঞ্চয় ১০,০০০</td></tr>
+  </table>
+</div>
+
+<!-- 25. RTGS vs BEFTN -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J/K</span>
+    <span class="badge b-imp">⭐ নতুন টপিক</span>
+    <span class="qtitle">RTGS বনাম BEFTN (ইলেকট্রনিক ফান্ড ট্রান্সফার)</span>
+  </div>
+  <div class="law">Bangladesh Payment and Settlement Systems Regulation 2014 | BB Circular</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>⚡ RTGS (Real Time Gross Settlement)</th><th>📊 BEFTN (Bangladesh Electronic Funds Transfer Network)</th></tr>
+    <tr><td>১</td><td>পূর্ণ নাম</td><td>Real Time Gross Settlement</td><td>Bangladesh Electronic Funds Transfer Network</td></tr>
+    <tr><td>২</td><td>নিষ্পত্তির সময়</td><td>তাৎক্ষণিক (Real Time)</td><td>পরের কার্যদিবসে (T+1) Batch-এ</td></tr>
+    <tr><td>৩</td><td>ন্যূনতম পরিমাণ</td><td>১ লক্ষ টাকা (BB নির্ধারিত)</td><td>কোনো ন্যূনতম সীমা নেই</td></tr>
+    <tr><td>৪</td><td>নিষ্পত্তির পদ্ধতি</td><td>Gross basis (প্রতিটি লেনদেন আলাদাভাবে)</td><td>Net/Batch basis (একসাথে সব নিষ্পত্তি)</td></tr>
+    <tr><td>৫</td><td>ব্যবহার</td><td>বড় ও জরুরি লেনদেন (হোলসেল)</td><td>ছোট ও নিয়মিত লেনদেন (Retail)</td></tr>
+    <tr><td>৬</td><td>ঝুঁকি</td><td>Settlement risk কম</td><td>তুলনামূলক বেশি Counterparty Risk</td></tr>
+    <tr><td>৭</td><td>খরচ</td><td>বেশি খরচ</td><td>কম খরচ</td></tr>
+    <tr><td>৮</td><td>উদ্দেশ্য</td><td>আন্তঃব্যাংক ও বড় পেমেন্ট</td><td>সরকারি বেতন, পেনশন, ইউটিলিটি বিল</td></tr>
+    <tr><td>৯</td><td>Irrevocability</td><td>লেনদেন হওয়ার পরে বাতিল করা যায় না</td><td>Batch process হওয়ার আগে বাতিল সম্ভব</td></tr>
+    <tr><td>১০</td><td>সংযোগ</td><td>BB Core Banking-এর সাথে সরাসরি সংযুক্ত</td><td>NPSB-এর মাধ্যমেও ব্যবহার করা যায়</td></tr>
+  </table>
+</div>
+
+<!-- 26. Impressed Stamp vs Embossed Stamp -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module F/E</span>
+    <span class="badge b-past">৬ষ্ঠ পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Impressed Stamp বনাম Embossed Stamp (আঁকা স্ট্যাম্প বনাম উত্তল স্ট্যাম্প)</span>
+  </div>
+  <div class="law">Stamp Act 1899 | Registration Act 1908</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🖊️ Impressed Stamp</th><th>🔴 Embossed Stamp</th></tr>
+    <tr><td>১</td><td>পদ্ধতি</td><td>কালি ও সিলমোহর দিয়ে ছাপানো</td><td>উত্তল-অবতল যন্ত্র দিয়ে চাপ দিয়ে তৈরি</td></tr>
+    <tr><td>২</td><td>দৃশ্যমানতা</td><td>স্পষ্টভাবে দেখা যায়</td><td>স্পর্শে বোঝা যায়, সামনে থেকে কম স্পষ্ট</td></tr>
+    <tr><td>৩</td><td>ব্যবহার</td><td>সাধারণ আইনি দলিলে</td><td>বিশেষ ও নিরাপত্তাসম্পন্ন দলিলে</td></tr>
+    <tr><td>৪</td><td>জালিয়াতির সম্ভাবনা</td><td>তুলনামূলক বেশি সম্ভাবনা</td><td>কম সম্ভাবনা (বিশেষ যন্ত্র প্রয়োজন)</td></tr>
+    <tr><td>৫</td><td>নমনীয়তা</td><td>সহজে তৈরি করা যায়</td><td>বিশেষ যন্ত্র প্রয়োজন</td></tr>
+    <tr><td>৬</td><td>উদাহরণ</td><td>চার্জ দলিল, ইনডেমনিটি বন্ড</td><td>সরকারি সিলমোহর, নোটারি পাবলিক সার্টিফিকেট</td></tr>
+    <tr><td>৭</td><td>স্থায়িত্ব</td><td>ম্লান হতে পারে</td><td>দীর্ঘস্থায়ী</td></tr>
+    <tr><td>৮</td><td>রঙ</td><td>কালো/নীল রঙের ছাপ</td><td>রঙের প্রয়োজন নেই</td></tr>
+  </table>
+</div>
+
+<!-- 27. Bid Bond vs Performance Guarantee -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Bid Bond বনাম Performance Guarantee</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📝 Bid Bond (দরপত্র বন্ড)</th><th>🏗️ Performance Guarantee (কার্য-সম্পাদন গ্যারান্টি)</th></tr>
+    <tr><td>১</td><td>সময় | Timing</td><td>দরপত্র দাখিলের সময়</td><td>চুক্তি স্বাক্ষরের পরে</td></tr>
+    <tr><td>২</td><td>উদ্দেশ্য</td><td>দরদাতার গুরুত্ব ও আর্থিক সক্ষমতা প্রমাণ</td><td>চুক্তির শর্ত পালনের নিশ্চয়তা দেওয়া</td></tr>
+    <tr><td>৩</td><td>পরিমাণ</td><td>ছোট (সাধারণত দরের ১-৫%)</td><td>বড় (সাধারণত চুক্তিমূল্যের ১০-১৫%)</td></tr>
+    <tr><td>৪</td><td>মেয়াদ</td><td>দরপত্রের মেয়াদকালীন</td><td>চুক্তির সম্পূর্ণ মেয়াদ পর্যন্ত</td></tr>
+    <tr><td>৫</td><td>বাতিলের শর্ত</td><td>দরদাতা চুক্তি নিতে অস্বীকার করলে</td><td>চুক্তি সঠিকভাবে সম্পাদিত না হলে</td></tr>
+    <tr><td>৬</td><td>উপকারভোগী</td><td>টেন্ডার আহ্বানকারী</td><td>চুক্তির অপর পক্ষ (সরকার/ক্রেতা)</td></tr>
+    <tr><td>৭</td><td>উদাহরণ</td><td>রাস্তা নির্মাণের দরপত্রে ২ লক্ষ টাকা জমা</td><td>রাস্তা সম্পন্ন না হলে ২০ লক্ষ টাকার ক্ষতিপূরণ</td></tr>
+    <tr><td>৮</td><td>ফেরত পাওয়া যায়?</td><td>চুক্তি সম্পন্ন হলে ফেরত পাওয়া যায়</td><td>কাজ সম্পন্ন হলে ফেরত পাওয়া যায়</td></tr>
+  </table>
+</div>
+
+<!-- 28. Transferability vs Negotiability -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module B/I</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Transferability (হস্তান্তরযোগ্যতা) বনাম Negotiability (আলোচনাযোগ্যতা)</span>
+  </div>
+  <div class="law">NI Act 1881, Sec 14 | Transfer of Property Act 1882</div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📄 Transferability</th><th>💱 Negotiability</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>সম্পত্তির আইনগত শিরোনাম এক ব্যক্তি থেকে অন্যজনে যাওয়া</td><td>Instrument-এর মালিকানা হস্তান্তর এবং হস্তান্তরকারীর দায় গ্রহণ</td></tr>
+    <tr><td>২</td><td>দায় গ্রহণ</td><td>Assignee দায় গ্রহণ করে না</td><td>Endorser দায় গ্রহণ করেন</td></tr>
+    <tr><td>৩</td><td>শিরোনামের মান</td><td>Assignor-এর মতোই শিরোনাম পাওয়া যায়</td><td>HDC আগের মালিকের ত্রুটিমুক্ত শিরোনাম পেতে পারে</td></tr>
+    <tr><td>৪</td><td>আইন</td><td>Transfer of Property Act, Contract Act</td><td>NI Act 1881</td></tr>
+    <tr><td>৫</td><td>পদ্ধতি</td><td>চুক্তি বা দলিলের মাধ্যমে</td><td>Delivery বা Endorsement এবং Delivery-এর মাধ্যমে</td></tr>
+    <tr><td>৬</td><td>Notice</td><td>Debtor-কে Notice দিতে হয়</td><td>Notice দেওয়ার দরকার নেই</td></tr>
+    <tr><td>৭</td><td>সকল সম্পদ</td><td>সকল ধরনের সম্পদের জন্য</td><td>শুধু Negotiable Instruments-এর জন্য</td></tr>
+    <tr><td>৮</td><td>উদাহরণ</td><td>জমির দলিল হস্তান্তর</td><td>চেক বা বিনিময় বিল হস্তান্তর</td></tr>
+  </table>
+</div>
+
+<!-- 29. ATM vs POS -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J/K</span>
+    <span class="badge b-past">৯৭তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">ATM বনাম POS (Point of Sale)</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🏧 ATM (Automated Teller Machine)</th><th>💳 POS (Point of Sale Terminal)</th></tr>
+    <tr><td>১</td><td>কাজ</td><td>নগদ উত্তোলন ও ব্যাংকিং সেবা</td><td>পণ্য/সেবার বিনিময়ে কার্ড দিয়ে পেমেন্ট</td></tr>
+    <tr><td>২</td><td>অবস্থান</td><td>ব্যাংক শাখা, শপিং মল, রাস্তার ধারে</td><td>দোকান, হোটেল, হাসপাতাল</td></tr>
+    <tr><td>৩</td><td>নগদ প্রয়োজন</td><td>নগদ টাকা তোলার মেশিন</td><td>নগদ ছাড়াই পেমেন্ট সম্ভব</td></tr>
+    <tr><td>৪</td><td>কার্ডের ধরন</td><td>Debit ও Credit Card উভয়ই</td><td>Debit, Credit ও Prepaid Card</td></tr>
+    <tr><td>৫</td><td>PIN প্রয়োজন</td><td>সর্বদা PIN প্রয়োজন</td><td>PIN বা Signature প্রয়োজন</td></tr>
+    <tr><td>৬</td><td>ব্যবসায়িক সুবিধা</td><td>ব্যবসায়ীর জন্য সীমিত সুবিধা</td><td>ব্যবসায়ী অনলাইনে লেনদেন গ্রহণ করতে পারেন</td></tr>
+    <tr><td>৭</td><td>খরচ</td><td>অন্য ব্যাংকের ATM-এ চার্জ আছে</td><td>ব্যবসায়ী MDR (Merchant Discount Rate) দেন</td></tr>
+    <tr><td>৮</td><td>সংযোগ</td><td>NPSB, shared network-এর মাধ্যমে</td><td>NPSB, Bank-এর Payment Gateway-এর মাধ্যমে</td></tr>
+    <tr><td>৯</td><td>নিরাপত্তা ঝুঁকি</td><td>Card Skimming, Cash Trapping</td><td>Data Theft, Counterfeit Transactions</td></tr>
+    <tr><td>১০</td><td>উদ্দেশ্য</td><td>ব্যাংকিং সেবা ২৪ ঘণ্টা সহজলভ্য করা</td><td>ক্যাশলেস পেমেন্ট সহজ করা</td></tr>
+  </table>
+</div>
+
+<!-- 30. Repo vs Reverse Repo -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৯তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Repo বনাম Reverse Repo</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>📈 Repo (পুনঃক্রয় চুক্তি)</th><th>📉 Reverse Repo</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>সিকিউরিটি বিক্রি করে পরে কেনার চুক্তি (ব্যাংক অর্থ নেয়)</td><td>সিকিউরিটি কিনে পরে বিক্রির চুক্তি (ব্যাংক অর্থ দেয়)</td></tr>
+    <tr><td>২</td><td>BB-এর ভূমিকা</td><td>BB ব্যাংককে অর্থ ধার দেয়</td><td>BB ব্যাংক থেকে অর্থ নেয় (বা বাজার থেকে নেয়)</td></tr>
+    <tr><td>৩</td><td>মুদ্রানীতির প্রভাব</td><td>Expansionary — বাজারে অর্থ বাড়ে</td><td>Contractionary — বাজার থেকে অর্থ কমে</td></tr>
+    <tr><td>৪</td><td>মুদ্রাস্ফীতি</td><td>Repo Rate কমালে মুদ্রাস্ফীতি বাড়তে পারে</td><td>Reverse Repo Rate বাড়ালে মুদ্রাস্ফীতি কমে</td></tr>
+    <tr><td>৫</td><td>সুদের হার</td><td>Repo Rate (BB কর্তৃক নির্ধারিত)</td><td>Reverse Repo Rate (Repo-র নিচে)</td></tr>
+    <tr><td>৬</td><td>মেয়াদ</td><td>স্বল্পমেয়াদী (১-১৪ দিন)</td><td>স্বল্পমেয়াদী (১-১৪ দিন)</td></tr>
+    <tr><td>৭</td><td>তারল্য</td><td>ব্যাংকের তারল্য বাড়ে</td><td>ব্যাংকের তারল্য কমে</td></tr>
+    <tr><td>৮</td><td>উদ্দেশ্য</td><td>তারল্য সংকটে ব্যাংককে সাহায্য করা</td><td>অতিরিক্ত তারল্য শোষণ করা</td></tr>
+    <tr><td>৯</td><td>কে দেয়?</td><td>BB দেয় ব্যাংককে</td><td>ব্যাংক দেয় BB-কে</td></tr>
+    <tr><td>১০</td><td>উদাহরণ</td><td>ব্যাংক সরকারি বন্ড জমা দিয়ে BB থেকে ঋণ নেয়</td><td>ব্যাংক অতিরিক্ত তারল্য BB-তে জমা রাখে</td></tr>
+  </table>
+  <div class="tip">💡 মনে রাখো: Repo = Ration (সরবরাহ বাড়ে) | Reverse Repo = Removal (অর্থ সরে যায়)</div>
+</div>
+
+<!-- 31. Bill of Lading vs Bill of Entry -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৭তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Bill of Lading বনাম Bill of Entry</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>🚢 Bill of Lading (পণ্য বোঝাই বিল)</th><th>📋 Bill of Entry (আমদানি ঘোষণাপত্র)</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>জাহাজ কোম্পানি কর্তৃক পণ্য বহনের রসিদ ও চুক্তি</td><td>আমদানিকারক কাস্টমসে পণ্য খালাসের জন্য জমা দেওয়া ঘোষণাপত্র</td></tr>
+    <tr><td>২</td><td>কে ইস্যু করে?</td><td>Shipping Line/Carrier</td><td>আমদানিকারক কাস্টমস কর্তৃপক্ষে জমা দেন</td></tr>
+    <tr><td>৩</td><td>উদ্দেশ্য</td><td>পণ্যের মালিকানা ও শিপমেন্টের প্রমাণ</td><td>কাস্টমস শুল্ক নির্ধারণ ও পণ্য খালাস</td></tr>
+    <tr><td>৪</td><td>মালিকানার নথি</td><td>হ্যাঁ — Title Document হিসেবে কাজ করে</td><td>না — শুধুমাত্র ঘোষণাপত্র</td></tr>
+    <tr><td>৫</td><td>Negotiability</td><td>Negotiable হতে পারে</td><td>Negotiable নয়</td></tr>
+    <tr><td>৬</td><td>ব্যাংকের ভূমিকা</td><td>LC-তে জামানত হিসেবে ব্যবহার করা হয়</td><td>ব্যাংকিং প্রক্রিয়ার বাইরে</td></tr>
+    <tr><td>৭</td><td>ব্যবহারের সময়</td><td>পণ্য লোড হওয়ার সময় ইস্যু</td><td>পণ্য বন্দরে পৌঁছানোর পরে জমা দেওয়া হয়</td></tr>
+    <tr><td>৮</td><td>উদাহরণ</td><td>Chittagong Port-এ পণ্য পাঠানোর BoL</td><td>পণ্য খালাসে Customs-এ Bill of Entry জমা</td></tr>
+  </table>
+</div>
+
+<!-- 32. Traveller's Cheque vs Circular LC -->
+<div class="card">
+  <div class="card-hd">
+    <span class="badge b-mod">Module J</span>
+    <span class="badge b-past">৯৬তম পরীক্ষায় এসেছে</span>
+    <span class="qtitle">Traveller's Cheque বনাম Circular Letter of Credit</span>
+  </div>
+  <table>
+    <tr><th>#</th><th>বিষয়</th><th>✈️ Traveller's Cheque</th><th>🌐 Circular Letter of Credit</th></tr>
+    <tr><td>১</td><td>সংজ্ঞা</td><td>বিদেশ ভ্রমণে ব্যবহারের জন্য প্রি-পেইড চেক</td><td>বিশ্বজুড়ে বিভিন্ন ব্যাংক থেকে অর্থ উত্তোলনের অনুমতিপত্র</td></tr>
+    <tr><td>২</td><td>স্বাক্ষর সংখ্যা</td><td>দুটি স্বাক্ষর — ক্রয়কালে ও উত্তোলনকালে</td><td>একটি অনুমতিপত্র যা বিভিন্ন ব্যাংক মান্য করে</td></tr>
+    <tr><td>৩</td><td>হারালে</td><td>প্রতিস্থাপন করা যায়</td><td>Issuing Bank-এ জানাতে হয়</td></tr>
+    <tr><td>৪</td><td>নির্দিষ্ট পরিমাণ</td><td>নির্দিষ্ট মূল্যের চেক</td><td>নির্দিষ্ট সীমা পর্যন্ত উত্তোলন করা যায়</td></tr>
+    <tr><td>৫</td><td>ব্যবহার</td><td>পেমেন্ট ও নগদ উত্তোলন উভয়ই</td><td>শুধুমাত্র নগদ উত্তোলন</td></tr>
+    <tr><td>৬</td><td>মেয়াদ</td><td>অনির্দিষ্ট (দীর্ঘমেয়াদী)</td><td>নির্দিষ্ট মেয়াদ থাকে</td></tr>
+    <tr><td>৭</td><td>নিরাপত্তা</td><td>দ্বৈত স্বাক্ষরে নিরাপদ</td><td>Correspondent Bank নেটওয়ার্কে নিরাপদ</td></tr>
+    <tr><td>৮</td><td>আধুনিক বিকল্প</td><td>Forex Card/Debit Card দ্বারা প্রতিস্থাপিত হচ্ছে</td><td>SWIFT Transfer দ্বারা প্রতিস্থাপিত হচ্ছে</td></tr>
+  </table>
+</div>
+
+<!-- ===== PART E ===== -->
+<div class="sec">📝 Part E — Short Questions (2×10=20 Marks)</div>
+<p style="color:var(--text2);font-size:13px;margin-bottom:1.5rem">সবগুলো প্রশ্নের উত্তর দিতে হবে | Answer ALL 10 questions. প্রতিটি ২-৩ লাইনে উত্তর করুন।</p>
+
+<!-- MODULE A SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module A — Financial Institutions Laws</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q1. Bangladesh Bank guidelines অনুযায়ী একটি আর্থিক প্রতিষ্ঠান তার paid-up capital ও reserves-এর কত শতাংশ পর্যন্ত অস্থাবর সম্পত্তি ধারণ করতে পারে?<br><small>What % of paid-up capital & reserves can a FI hold as immovable property?</small></div>
+    <div class="qbox-a"><span class="law">BB Guidelines | FIA 1993</span><br>বাংলাদেশ ব্যাংকের নির্দেশনা অনুযায়ী, একটি আর্থিক প্রতিষ্ঠান তার <strong>paid-up capital ও reserves-এর সর্বোচ্চ ২৫%</strong> পর্যন্ত অস্থাবর সম্পত্তি অর্জন বা ধারণ করতে পারে।<br><em>As per BB guidelines, a financial institution can acquire or hold immovable property up to maximum <strong>25%</strong> of its paid-up capital and reserves.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q2. অর্থঋণ আদালতে মামলা দায়েরের ন্যূনতম আর্থিক মূল্য কত?<br><small>Minimum monetary value for filing a suit in Artha Rin Adalat?</small></div>
+    <div class="qbox-a"><span class="law">Artha Rin Adalat Ain 2003, Sec 4</span><br>অর্থঋণ আদালত আইন, ২০০৩-এর ধারা ৪ অনুযায়ী, অর্থঋণ আদালতে মামলা দায়েরের ন্যূনতম মূল্য <strong>১ লক্ষ (১,০০,০০০) টাকা</strong>।<br><em>Per Artha Rin Adalat Ain 2003, Section 4: minimum suit value is <strong>Tk. 1 lakh (BDT 1,00,000)</strong>.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q3. ব্যাংক কোম্পানি আইন ১৯৯১ অনুযায়ী দাবিহীন আমানত (Unclaimed Deposit) কী এবং কখন তা Bangladesh Bank-এ হস্তান্তর হয়?<br><small>What is unclaimed deposit and when is it transferred to BB?</small></div>
+    <div class="qbox-a"><span class="law">BCA 1991, Section 35</span><br>যে ব্যাংক অ্যাকাউন্টে <strong>১০ বছর বা তার বেশি সময়</strong> ধরে কোনো লেনদেন হয়নি এবং গ্রাহক কোনো দাবি করেননি, তাকে Unclaimed Deposit বলে। এই আমানত ব্যাংক কোম্পানি আইন ১৯৯১-এর ধারা ৩৫ অনুযায়ী <strong>Bangladesh Bank-এ হস্তান্তর</strong> করতে হয়।<br><em>Deposits untouched for 10+ years must be transferred to BB per BCA 1991, Section 35.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q4. বাংলাদেশ ব্যাংকের ন্যূনতম CAR (Capital Adequacy Ratio) কত এবং Capital Conservation Buffer সহ মোট হার কত?<br><small>What is the minimum CAR in Bangladesh including CCB?</small></div>
+    <div class="qbox-a"><span class="law">BCA 1991, Sec 13 | BB RBCA Guidelines 2014</span><br>ন্যূনতম CRAR = <strong>১০%</strong> of Total RWA। Capital Conservation Buffer (CCB) = <strong>২.৫%</strong>। তাই মোট প্রয়োজনীয় মূলধন = <strong>১০% + ২.৫% = ১২.৫%</strong> of Total RWA।<br><em>Minimum CRAR = 10% + CCB 2.5% = Total 12.5% of RWA.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q5. আর্থিক প্রতিষ্ঠান আইন, ১৯৯৩ অনুযায়ী বৈধ লাইসেন্স ছাড়া অর্থায়ন ব্যবসা পরিচালনার শাস্তি কী?<br><small>Punishment for financing business without valid license under FIA 1993?</small></div>
+    <div class="qbox-a"><span class="law">Financial Institutions Act 1993, Sec 4 & 34</span><br>আর্থিক প্রতিষ্ঠান আইন, ১৯৯৩ অনুযায়ী বৈধ লাইসেন্স ছাড়া অর্থায়ন ব্যবসা পরিচালনার শাস্তি হলো সর্বোচ্চ <strong>৫ (পাঁচ) বছরের কারাদণ্ড</strong> অথবা <strong>৫ লক্ষ টাকা পর্যন্ত জরিমানা</strong> অথবা উভয় দণ্ড।<br><em>Max 5 years imprisonment or BDT 5 lakh fine or both.</em></div>
+  </div>
+</div>
+
+<!-- MODULE B/C SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module B/C — NI Act & AML</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q6. CTR (Cash Transaction Report) সম্পর্কে কী জানেন? এর সীমা কত?<br><small>What is CTR? What is the threshold?</small></div>
+    <div class="qbox-a"><span class="law">MLPA 2012, Sec 25 | BFIU Guidelines</span><br>CTR হলো নগদ লেনদেনের প্রতিবেদন। কোনো একটি কর্মদিবসে একক গ্রাহকের <strong>৭০ লক্ষ (BDT 70 lakh)</strong> বা তার বেশি নগদ লেনদেন হলে রিপোর্টিং সংস্থাকে <strong>BFIU (Bangladesh Financial Intelligence Unit)-তে CTR দাখিল করতে হবে</strong>।<br><em>Cash transactions of BDT 70 lakh or above on a single day must be reported to BFIU as CTR.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q7. চেক Crossing-এর গুরুত্ব/তাৎপর্য কী?<br><small>What is the significance of crossing a cheque?</small></div>
+    <div class="qbox-a"><span class="law">NI Act 1881, Sec 123-131</span><br>চেক Crossing মানে চেকের উপর দুটি সমান্তরাল রেখা টানা। এর তাৎপর্য হলো:<br>১. Crossed চেক সরাসরি নগদ পাওয়া যায় না — শুধুমাত্র ব্যাংক অ্যাকাউন্টের মাধ্যমে পেমেন্ট হয়।<br>২. এতে জালিয়াতি ও চুরির ঝুঁকি কমে।<br>৩. পেমেন্টের সঠিক রেকর্ড থাকে।<br><em>Crossed cheque cannot be cashed directly — must be deposited in a bank account, reducing fraud risk [NI Act Sec 123-131].</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q8. মানি লন্ডারিং প্রতিরোধ আইন ২০১২-এ STR কী এবং কখন জমা দিতে হয়?<br><small>What is STR and when must it be submitted?</small></div>
+    <div class="qbox-a"><span class="law">MLPA 2012, Sec 25 | BFIU Guidelines</span><br>STR = Suspicious Transaction Report (সন্দেহজনক লেনদেন প্রতিবেদন)। কোনো লেনদেন সন্দেহজনক মনে হলে রিপোর্টিং সংস্থাকে <strong>যত দ্রুত সম্ভব, সর্বোচ্চ ৩ কার্যদিবসের মধ্যে</strong> BFIU-তে STR দাখিল করতে হবে। STR-এর কপি কমপক্ষে <strong>৫ বছর</strong> সংরক্ষণ করতে হবে।<br><em>STR must be submitted to BFIU within 3 working days of detection; records kept for 5 years.</em></div>
+  </div>
+</div>
+
+<!-- MODULE D/E SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module D/E — Business/ICT Laws</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q9. বাংলাদেশে Digital Signature ব্যবহার কোন আইন নিয়ন্ত্রণ করে?<br><small>Which act regulates the use of digital signatures in Bangladesh?</small></div>
+    <div class="qbox-a"><span class="law">ICT Act 2006, Sec 2, 55-65</span><br>বাংলাদেশে ডিজিটাল স্বাক্ষরের ব্যবহার <strong>তথ্য ও যোগাযোগ প্রযুক্তি (ICT) আইন, ২০০৬</strong> নিয়ন্ত্রণ করে। এই আইনের ৯টি অধ্যায় ও ৯০টি ধারা রয়েছে।<br><em>The Information and Communication Technology (ICT) Act, 2006 regulates digital signatures in Bangladesh.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q10. ICT আইন, ২০০৬ অনুযায়ী বাংলাদেশে ইলেকট্রনিক রেকর্ড সংরক্ষণের মেয়াদ কত?<br><small>Retention period for electronic records per ICT Act 2006?</small></div>
+    <div class="qbox-a"><span class="law">ICT Act 2006, Section 9</span><br>ICT আইন, ২০০৬-এর ধারা ৯ অনুযায়ী বাংলাদেশে ইলেকট্রনিক রেকর্ড সংরক্ষণের মেয়াদ হলো ন্যূনতম <strong>৫ (পাঁচ) বছর</strong>।<br><em>Minimum 5 (five) years as per ICT Act 2006, Section 9.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q11. চুক্তি ভঙ্গের মামলা দায়েরের সময়সীমা কত?<br><small>Limitation period for filing a suit for breach of contract?</small></div>
+    <div class="qbox-a"><span class="law">Limitation Act 1908</span><br>সীমাবদ্ধতা আইন, ১৯০৮ অনুযায়ী চুক্তি ভঙ্গের মামলা দায়েরের সময়সীমা হলো <strong>৩ (তিন) বছর</strong>, যা ভঙ্গের তারিখ থেকে গণনা শুরু হয়।<br><em>3 (three) years from the date of breach per Limitation Act 1908.</em></div>
+  </div>
+</div>
+
+<!-- MODULE H/I SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module H/I — Deposit Accounts & NI Act</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q12. Contact Point Verification (CPV) কী?<br><small>What do you know about Contact Point Verification (CPV)?</small></div>
+    <div class="qbox-a"><span class="law">BB KYC Guidelines | Module H, Contact Point Verification</span><br>CPV হলো এমন একটি প্রক্রিয়া যেখানে ব্যাংক কর্মকর্তা গ্রাহকের দেওয়া ঠিকানায় সরাসরি গিয়ে তার পরিচয় ও তথ্য যাচাই করেন। এটি KYC-এর একটি গুরুত্বপূর্ণ অংশ। বিশেষত Dormant Account পুনরায় সক্রিয় করতে এবং বড় ঋণের ক্ষেত্রে CPV করা হয়।<br><em>CPV is the process where bank officials physically visit customer's stated address to verify identity — a key component of KYC.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q13. Standing Instruction কী? উদাহরণ দিন।<br><small>What is standing instruction? Give examples.</small></div>
+    <div class="qbox-a"><span class="law">Banking Practice | Module I/J</span><br>Standing Instruction হলো গ্রাহকের পূর্ব-নির্দেশনা যা অনুযায়ী ব্যাংক স্বয়ংক্রিয়ভাবে নিয়মিত বিরতিতে নির্দিষ্ট পরিমাণ অর্থ নির্দিষ্ট অ্যাকাউন্টে হস্তান্তর করে। উদাহরণ: ঋণের মাসিক কিস্তি, বীমা প্রিমিয়াম, ইউটিলিটি বিল পেমেন্ট।<br><em>Automatic regular transfer per customer's prior instruction. Examples: loan installment, insurance premium, utility bills.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q14. Duplicate FDR পেতে গ্রাহককে ব্যাংকে কী কী দলিল জমা দিতে হবে?<br><small>Documents required to obtain a duplicate FDR?</small></div>
+    <div class="qbox-a"><span class="law">Banking Practice | Module H</span><br>Duplicate FDR পেতে গ্রাহককে জমা দিতে হবে:<br>১. <strong>Indemnity Bond</strong> (ক্ষতিপূরণ বন্ড) — নির্ধারিত ফরম্যাটে<br>২. <strong>FDR হারানোর লিখিত আবেদন</strong><br>৩. <strong>পুলিশ জেনারেল ডায়েরি (GD)</strong><br>৪. <strong>পরিচয়পত্র</strong> (NID/Passport)<br><em>(1) Indemnity Bond (2) Written application (3) Police GD (4) Identity proof.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q15. Positive Pay Instruction কী এবং কোন পরিমাণের চেকে এটি বাধ্যতামূলক?<br><small>What is Positive Pay Instruction? When is it mandatory?</small></div>
+    <div class="qbox-a"><span class="law">BB Circular on Positive Pay | Module H</span><br>Positive Pay হলো একটি জালিয়াতি প্রতিরোধ ব্যবস্থা যেখানে গ্রাহক উচ্চমূল্যের চেক ইস্যুর আগে ব্যাংককে চেকের বিস্তারিত তথ্য দেন। ব্যাংক পরবর্তীতে চেকটি মিলিয়ে দেখে পরিশোধ করে। বাংলাদেশ ব্যাংকের নির্দেশনা অনুযায়ী <strong>৫ লক্ষ টাকা বা তার বেশি পরিমাণের চেকে এটি বাধ্যতামূলক</strong>।<br><em>Mandatory for cheques above BDT 5 lakh per Bangladesh Bank directive.</em></div>
+  </div>
+</div>
+
+<!-- MODULE J/K SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module J/K — General & Cash Management</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q16. Garnishee Order কী? কারা এটি জারি করতে পারেন?<br><small>What is a Garnishee Order? Who can issue it?</small></div>
+    <div class="qbox-a"><span class="law">Civil Procedure Code | Module J</span><br>Garnishee Order হলো আদালত কর্তৃক জারি করা একটি আদেশ যা ঋণীর (গ্রাহকের) ব্যাংক অ্যাকাউন্ট থেকে অর্থ উত্তোলন স্থগিত করে। <strong>Judgment Creditor-এর আবেদনে সক্ষম আদালত</strong> এই আদেশ জারি করে। অ্যাকাউন্টধারী (Judgment Debtor), ব্যাংক (Garnishee) এবং পাওনাদার (Judgment Creditor) — এই তিন পক্ষ থাকে।<br><em>Court order freezing a debtor's bank account; issued by court on judgment creditor's application.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q17. Cheque Dishonor হলে Section 138-এর অধীনে শাস্তি কী?<br><small>Punishment under Section 138 for cheque dishonor?</small></div>
+    <div class="qbox-a"><span class="law">NI Act 1881, Section 138</span><br>১. সর্বোচ্চ <strong>১ বছরের কারাদণ্ড</strong>।<br>২. চেকের পরিমাণের <strong>৩ গুণ পর্যন্ত জরিমানা</strong> (সংশোধিত বিধান)।<br>৩. উভয় দণ্ড একসাথে দেওয়া যায়।<br>NB: নোটিশের পরে ৩০ দিনের মধ্যে পেমেন্ট না করলে মামলা করা যায়।<br><em>Max 1 year imprisonment + fine up to 3× cheque amount or both [NI Act 1881, Sec 138].</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q18. UCIC (Unique Customer Identification Code) কী?<br><small>What is UCIC?</small></div>
+    <div class="qbox-a"><span class="law">BB Guidelines | Module H</span><br>UCIC হলো প্রতিটি গ্রাহকের জন্য একটি অনন্য কোড যা ব্যাংকের বিভিন্ন শাখায় গ্রাহকের সকল অ্যাকাউন্ট ও লেনদেন একই পরিচয়ের অধীনে পরিচালনা করতে সহায়তা করে। এটি Money Laundering প্রতিরোধে এবং KYC সম্পন্ন করতে সাহায্য করে।<br><em>UCIC is a unique identifier for each customer across all bank accounts, helping AML compliance and KYC management.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q19. e-KYC কী এবং এর মূল উদ্দেশ্য কী?<br><small>What is e-KYC and its purpose?</small></div>
+    <div class="qbox-a"><span class="law">BB e-KYC Guidelines | Module H</span><br>e-KYC (Electronic Know Your Customer) হলো ডিজিটাল পদ্ধতিতে গ্রাহকের পরিচয় যাচাই ও KYC প্রোফাইল তৈরির প্রক্রিয়া। মূল উদ্দেশ্য: ব্যাংকিং সেবার অ্যাক্সেস বাড়ানো, খরচ কমানো, মানি লন্ডারিং প্রতিরোধ এবং গ্রাহক অন-বোর্ডিং দ্রুত করা।<br><em>Paperless, digital customer verification process to speed onboarding and reduce AML risk.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q20. Minor Account কী? নাবালক কে? [Majority Act 1875]<br><small>What is a Minor Account? Who is a minor?</small></div>
+    <div class="qbox-a"><span class="law">Majority Act 1875, Sec 3 | NI Act Sec 26</span><br>নাবালক = <strong>১৮ বছরের কম বয়সী</strong> ব্যক্তি [Majority Act 1875, Sec 3]। Minor Account হলো এমন অ্যাকাউন্ট যা নাবালকের নামে পিতা/মাতা বা আইনি অভিভাবকের স্বাক্ষরে পরিচালিত হয়। নাবালক নিজে চেক ইস্যু করতে পারেন না এবং ঋণের জামিনদার হতে পারেন না।<br><em>Minor = below 18 years. Account operated by guardian; minor cannot issue cheques or provide guarantee.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q21. Banker's Lien-কে "Implied Pledge" বলা হয় কেন?<br><small>Why is Banker's Lien called "Implied Pledge"?</small></div>
+    <div class="qbox-a"><span class="law">Contract Act 1872, Sec 172 | Module J</span><br>সাধারণ Lien শুধুমাত্র সম্পদ আটক রাখার অধিকার দেয়। কিন্তু Banker's Lien-এ ব্যাংক শুধু আটক রাখে না, যৌক্তিক নোটিশের পরে সম্পদ <strong>বিক্রিও করতে পারে</strong>। এই বিক্রির অধিকার সাধারণত শুধু Pledge-এ থাকে। তাই Banker's Lien-কে "Implied Pledge" বলা হয়।<br><em>Because unlike ordinary lien, banker's lien includes the right to sell (like a pledge) after reasonable notice.</em></div>
+  </div>
+</div>
+
+<!-- MODULE L SHORT Qs -->
+<h2 style="font-size:15px;margin:1.2rem 0 .4rem;color:var(--text)">📚 Module L — Other General Banking</h2>
+<div class="card">
+  <div class="qbox">
+    <div class="qbox-q">Q22. DCFCL কী?<br><small>What is DCFCL?</small></div>
+    <div class="qbox-a"><span class="law">BB Circular | Module L</span><br>DCFCL = <strong>Departmental Control Function Checklist</strong>। এটি ব্যাংক শাখা/বিভাগের অভ্যন্তরীণ নিয়ন্ত্রণ পরীক্ষার তালিকা। শাখা/বিভাগীয় প্রধান নিয়মিত এই Checklist ব্যবহার করে নিয়ন্ত্রণ কার্যক্রম পর্যালোচনা করেন। এটি জালিয়াতি ও অনিয়ম রোধে ব্যবহৃত হয়।<br><em>Departmental Control Function Checklist — an internal control review tool used by branch/department heads to prevent fraud and irregularities.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q23. IBC ও OBC কী?<br><small>What are IBC and OBC?</small></div>
+    <div class="qbox-a"><span class="law">Banking Practice | Module L</span><br>IBC = <strong>Inward Bills for Collection</strong> — অন্য ব্যাংক/শাখা থেকে আমাদের শাখায় সংগ্রহের জন্য আসা বিল/চেক।<br>OBC = <strong>Outward Bills for Collection</strong> — আমাদের গ্রাহকের হয়ে অন্য ব্যাংক/শাখায় সংগ্রহের জন্য পাঠানো বিল/চেক।<br>এগুলো সাধারণত ব্যবহৃত হয় যখন Cheque, Draft বা অন্য instrument Clearing House-এর মাধ্যমে নিষ্পত্তি হওয়া সম্ভব নয়।<br><em>IBC = bills received for collection from other branches; OBC = bills sent out to other branches for collection.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q24. Walk-in Customer কে? ব্যাংকারের দায়িত্ব কী?<br><small>Who is a walk-in customer? What are banker's responsibilities?</small></div>
+    <div class="qbox-a"><span class="law">Banking Practice | Module J/L</span><br>Walk-in Customer হলো এমন ব্যক্তি যার ওই ব্যাংক শাখায় কোনো অ্যাকাউন্ট নেই, কিন্তু সেবা গ্রহণের জন্য আসেন (যেমন DD ক্রয়, বিনিময়)। ব্যাংকারের দায়িত্ব: পরিচয় যাচাই করা, সন্দেহজনক লেনদেনে STR দাখিল করা, সীমিত কিন্তু দক্ষতাপূর্ণ সেবা প্রদান করা।<br><em>Person without an account who visits for services; banker must verify identity and file STR if suspicious.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q25. Alternative Dispute Resolution (ADR) কী? ব্যাংকিংয়ে এর গুরুত্ব কী?<br><small>What is ADR? Its importance in banking?</small></div>
+    <div class="qbox-a"><span class="law">Companies Act 1994, Sec 192A-192K | Module D</span><br>ADR হলো আদালতের বাইরে বিরোধ নিষ্পত্তির পদ্ধতি — Mediation (মধ্যস্থতা) ও Arbitration (সালিশ) এর মাধ্যমে। ব্যাংকিংয়ে গুরুত্ব: দ্রুত নিষ্পত্তি, কম খরচ, ব্যবসায়িক সম্পর্ক বজায় রাখা এবং আদালতের ভার কমানো।<br><em>Out-of-court settlement through mediation or arbitration; faster, cheaper, and preserves business relationships.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q26. Hundi কী? বাংলাদেশের অর্থনীতিতে এর নেতিবাচক প্রভাব কী?<br><small>What is Hundi? Its negative effect on Bangladesh economy?</small></div>
+    <div class="qbox-a"><span class="law">FERA 1947 | MLPA 2012</span><br>Hundi হলো অনানুষ্ঠানিক অর্থ হস্তান্তর ব্যবস্থা — অনুমোদনহীন চ্যানেলে বিদেশ থেকে দেশে টাকা পাঠানো। নেতিবাচক প্রভাব: (১) বৈদেশিক মুদ্রার রিজার্ভ কমে, (২) মানি লন্ডারিং সহজ হয়, (৩) সরকার রাজস্ব হারায়, (৪) ব্যাংকিং খাত ক্ষতিগ্রস্ত হয়।<br><em>Informal remittance channel that bypasses official system, reducing reserves, enabling money laundering, and costing revenue.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q27. Bancassurance কী? বাংলাদেশে এর সম্ভাবনা কী?<br><small>What is Bancassurance?</small></div>
+    <div class="qbox-a"><span class="law">BB Circular | Module J/L</span><br>Bancassurance হলো ব্যাংক ও বীমা কোম্পানির মধ্যে অংশীদারিত্ব যেখানে ব্যাংক তার গ্রাহকদের কাছে বীমা পণ্য বিক্রয় করে। ব্যাংক Intermediary হিসেবে কাজ করে। বাংলাদেশে সম্ভাবনা: বিশাল অব্যাংকিত জনগোষ্ঠী, ব্যাংকের বিস্তৃত শাখা নেটওয়ার্ক, বীমা সচেতনতা বৃদ্ধি।<br><em>Partnership where banks distribute insurance products; huge potential given Bangladesh's large unbanked population.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q28. Stale Cheque কী? এটি কখন হয়?<br><small>What is a stale cheque?</small></div>
+    <div class="qbox-a"><span class="law">NI Act 1881, Sec 73 | Module I</span><br>Stale Cheque হলো এমন চেক যা ইস্যু হওয়ার পরে যৌক্তিক সময়ের মধ্যে উপস্থাপন করা হয়নি। বাংলাদেশে একটি চেক ইস্যুর তারিখ থেকে <strong>৬ মাস</strong> পরে উপস্থাপিত হলে Stale Cheque বলে বিবেচিত হয় এবং ব্যাংক তা প্রত্যাখ্যান করে। পুনঃবৈধকরণ ছাড়া এই চেক সম্মান করা হয় না।<br><em>A cheque becomes stale after 6 months from its date of issue [NI Act Sec 73]; bank may refuse payment.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q29. NPSB (National Payment Switch Bangladesh) কী?<br><small>What is NPSB?</small></div>
+    <div class="qbox-a"><span class="law">BB BPSSR-2014 | Module J/K</span><br>NPSB = National Payment Switch Bangladesh। এটি Bangladesh Bank কর্তৃক প্রতিষ্ঠিত একটি কেন্দ্রীয় সুইচিং প্ল্যাটফর্ম যা বিভিন্ন ব্যাংকের ATM, POS এবং ইন্টারনেট ব্যাংকিং সিস্টেমকে সংযুক্ত করে। এর মাধ্যমে গ্রাহক যেকোনো ব্যাংকের ATM-এ যেকোনো ব্যাংকের কার্ড ব্যবহার করতে পারেন।<br><em>Bangladesh Bank's central switching platform connecting all banks' ATM, POS and internet banking systems for interoperability.</em></div>
+  </div>
+  <div class="qbox">
+    <div class="qbox-q">Q30. Treasury Bond কী? এবং এটি কোন মন্ত্রণালয় ইস্যু করে?<br><small>What is a Treasury Bond and who issues it?</small></div>
+    <div class="qbox-a"><span class="law">Government Securities Regulations | Module J/K</span><br>Treasury Bond হলো বাংলাদেশ সরকারের দীর্ঘমেয়াদী ঋণপত্র যা অভ্যন্তরীণ বাজার থেকে অর্থসংগ্রহের জন্য ব্যবহৃত হয়। <strong>অর্থ মন্ত্রণালয়ের অনুরোধে বাংলাদেশ ব্যাংক (BB)</strong> Treasury Bond ইস্যু করে। এটি SLR-এর যোগ্য সম্পদ হিসেবে গণ্য হয়। মেয়াদ সাধারণত ৫ থেকে ২০ বছর পর্যন্ত হয়।<br><em>Long-term government securities issued by BB on behalf of Ministry of Finance; eligible for SLR.</em></div>
+  </div>
+</div>
+
+<!-- EXAM STRATEGY -->
+<div class="card" style="background:var(--green-bg);border-color:var(--green)">
+  <div style="font-size:15px;font-weight:500;color:var(--green-t);margin-bottom:.8rem">🎯 পরীক্ষায় সর্বোচ্চ নম্বর পাওয়ার কৌশল | Exam Strategy</div>
+  <div class="bi">
+    <div class="bn"><div class="lbl">Part D Compare/Contrast</div>
+      <ul>
+        <li>সর্বদা টেবিল আকারে উত্তর দিন</li>
+        <li>ন্যূনতম ৮টি পয়েন্ট দিন</li>
+        <li>আইনের ধারা উল্লেখ করুন</li>
+        <li>একটি উদাহরণ দিন</li>
+        <li>সবচেয়ে আগে পরিচিত টপিকটি করুন</li>
+      </ul>
+    </div>
+    <div class="en"><div class="lbl">Part E Short Questions</div>
+      <ul>
+        <li>সর্বদা বাংলা ও ইংরেজি উভয়ে লিখুন</li>
+        <li>২-৩ লাইনে সঠিক উত্তর লিখুন</li>
+        <li>আইনের ধারা উল্লেখ করুন</li>
+        <li>সংজ্ঞা + উদাহরণ + আইন = পূর্ণ নম্বর</li>
+        <li>কোনো প্রশ্ন খালি রাখবেন না</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:2rem;color:var(--text2);font-size:14px">
+  <strong style="color:var(--text)">পরীক্ষার জন্য শুভকামনা! Best of Luck for the 7th Banking Professional Examination! 🎓</strong><br>
+  <span>সূত্র: law_book.pdf (Module A-L) + বিগত পরীক্ষার প্রশ্ন বিশ্লেষণ</span>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LPGB 7th Exam — Part A Broad Questions Complete Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+  :root {
+    --primary: #1a3a6b;
+    --secondary: #c8860a;
+    --accent: #e63946;
+    --green: #2a7f3f;
+    --light-bg: #f8f6f0;
+    --card-bg: #ffffff;
+    --border: #d4c9a8;
+    --text-dark: #1a1a2e;
+    --text-mid: #3a3a5c;
+    --gold: #d4a017;
+    --purple: #5a4b8c;
+    --teal: #1d7a73;
+    --pink: #c0392b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', 'Noto Serif Bengali', serif;
+    background: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* HEADER */
+  .master-header {
+    background: linear-gradient(135deg, #0d1b3e 0%, #1a3a6b 50%, #0d1b3e 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .master-header::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.02) 10px, rgba(255,255,255,0.02) 20px);
+  }
+  .master-header .badge {
+    display: inline-block;
+    background: var(--gold);
+    color: #1a1a2e;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 18px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .master-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  .master-header .subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+  }
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .stat-item {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .stat-item .num { font-size: 22px; font-weight: 700; color: var(--gold); }
+  .stat-item .lbl { font-size: 11px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* TOC */
+  .toc-wrapper {
+    background: var(--primary);
+    color: white;
+    padding: 25px 30px;
+  }
+  .toc-wrapper h2 { font-size: 14px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; margin-bottom: 15px; }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 8px;
+  }
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 6px;
+    border-left: 3px solid var(--gold);
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: white;
+  }
+  .toc-item:hover { background: rgba(255,255,255,0.15); }
+  .toc-item .mod-tag {
+    background: var(--gold);
+    color: #1a1a2e;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  /* CONTAINER */
+  .container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+
+  /* MODULE HEADER */
+  .module-header {
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: 35px 0 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .module-header::after {
+    content: '';
+    position: absolute; right: -20px; top: -20px;
+    width: 120px; height: 120px;
+    border: 30px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+  }
+  .module-header .mod-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.8; }
+  .module-header h2 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; margin-top: 4px; }
+  .mod-a { background: linear-gradient(135deg, #1a3a6b, #2d5a9e); }
+  .mod-b { background: linear-gradient(135deg, #2a7f3f, #3aad58); }
+  .mod-c { background: linear-gradient(135deg, #7b2d8b, #a640be); }
+  .mod-d { background: linear-gradient(135deg, #c8680a, #e07a20); }
+  .mod-e { background: linear-gradient(135deg, #1d7a73, #28afa5); }
+  .mod-f { background: linear-gradient(135deg, #8b1a3a, #b02050); }
+
+  /* QUESTION CARD */
+  .q-card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+    overflow: hidden;
+    border: 1px solid #e8e0d0;
+  }
+  .q-header {
+    padding: 16px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border-bottom: 1px solid #f0ebe0;
+  }
+  .q-num {
+    min-width: 42px; height: 42px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 16px;
+    color: white;
+    flex-shrink: 0;
+  }
+  .q-text { flex: 1; }
+  .q-text .bn { font-size: 15px; font-weight: 600; color: var(--primary); line-height: 1.5; }
+  .q-text .en { font-size: 13px; color: #666; margin-top: 3px; font-style: italic; }
+  .q-marks {
+    background: var(--secondary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    align-self: flex-start;
+  }
+  .q-body { padding: 20px 22px; }
+
+  /* PREDICTION BADGE */
+  .prediction {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+  .hot { background: #ffecec; color: #c0392b; border: 1px solid #ffcdd2; }
+  .likely { background: #fff8e1; color: #c8860a; border: 1px solid #ffe082; }
+  .new { background: #e8f5e9; color: #2a7f3f; border: 1px solid #c8e6c9; }
+
+  /* LAW BADGE */
+  .law-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #eef2ff;
+    color: #3949ab;
+    border: 1px solid #c5cae9;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 4px 4px 4px 0;
+  }
+
+  /* BILINGUAL SECTION */
+  .bilingual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 14px 0;
+  }
+  .bil-bn { background: #fdf9f0; padding: 16px; border-right: 1px solid var(--border); }
+  .bil-en { background: #f0f6ff; padding: 16px; }
+  .bil-header {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .bil-bn .bil-header { color: #8b5e00; }
+  .bil-en .bil-header { color: #1a3a6b; }
+
+  /* STEPS */
+  .steps { margin: 14px 0; }
+  .step {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+  }
+  .step-num {
+    min-width: 30px; height: 30px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+    color: white;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-content { flex: 1; }
+  .step-content .title { font-weight: 600; color: var(--text-dark); font-size: 14px; }
+  .step-content .detail { font-size: 13px; color: var(--text-mid); margin-top: 3px; }
+
+  /* TABLE */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13px;
+  }
+  .compare-table th {
+    background: var(--primary);
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .compare-table th:first-child { border-radius: 8px 0 0 0; }
+  .compare-table th:last-child { border-radius: 0 8px 0 0; }
+  .compare-table td { padding: 9px 14px; border-bottom: 1px solid #f0ebe0; vertical-align: top; }
+  .compare-table tr:nth-child(even) td { background: #fafaf8; }
+  .compare-table tr:hover td { background: #fff8e8; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .col-bn { background: #fdf9f0 !important; }
+  .compare-table .col-en { background: #f0f6ff !important; }
+
+  /* FLOWCHART */
+  .flowchart { margin: 16px 0; }
+  .flow-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+  .flow-box {
+    background: var(--primary);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 120px;
+  }
+  .flow-box.green { background: var(--green); }
+  .flow-box.orange { background: var(--secondary); }
+  .flow-box.red { background: var(--accent); }
+  .flow-box.purple { background: var(--purple); }
+  .flow-box.teal { background: var(--teal); }
+  .flow-arrow { font-size: 20px; color: #999; }
+  .flow-down { text-align: center; font-size: 22px; color: #999; line-height: 1; margin: 4px 0; }
+
+  /* HIGHLIGHT BOX */
+  .highlight {
+    border-left: 4px solid;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 12px 0;
+    font-size: 13.5px;
+  }
+  .highlight.info { border-color: var(--primary); background: #eef2ff; color: var(--primary); }
+  .highlight.warn { border-color: var(--secondary); background: #fff8e1; color: #7a4000; }
+  .highlight.success { border-color: var(--green); background: #e8f5e9; color: #1a5e30; }
+  .highlight.danger { border-color: var(--accent); background: #ffebee; color: #8b0000; }
+  .highlight strong { font-weight: 700; }
+
+  /* DEFINITION */
+  .def-box {
+    background: linear-gradient(135deg, #f0f6ff, #e8f0fe);
+    border: 1px solid #c5cae9;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .def-box .def-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3949ab;
+    margin-bottom: 6px;
+  }
+  .def-box .def-text { font-size: 14px; line-height: 1.6; }
+  .def-box .def-bn { color: #2c3e80; font-weight: 600; }
+  .def-box .def-en { color: #1a1a4a; margin-top: 6px; }
+
+  /* POINTS LIST */
+  .point-list { margin: 10px 0; padding: 0; list-style: none; }
+  .point-list li {
+    padding: 7px 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-size: 13.5px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .point-list li::before {
+    content: '◆';
+    font-size: 11px;
+    color: var(--secondary);
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .point-list.bn li { background: #fdf9f0; }
+  .point-list.en li { background: #f0f6ff; }
+
+  /* PUNISHMENT TABLE */
+  .punishment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 14px 0;
+  }
+  .punishment-card {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid;
+    text-align: center;
+  }
+  .punishment-card .p-num { font-size: 22px; font-weight: 700; }
+  .punishment-card .p-label { font-size: 12px; margin-top: 4px; }
+  .punishment-card .p-law { font-size: 10px; opacity: 0.7; margin-top: 4px; }
+  .pun-red { background: #ffebee; border-color: #ef9a9a; color: #8b0000; }
+  .pun-orange { background: #fff3e0; border-color: #ffcc80; color: #7a3a00; }
+  .pun-blue { background: #e3f2fd; border-color: #90caf9; color: #0d2c6a; }
+  .pun-green { background: #e8f5e9; border-color: #a5d6a7; color: #1a5e30; }
+
+  /* SECTION TAG */
+  .sec-tag {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a3a9e;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 12px;
+    border: 1px solid #c5cae9;
+    margin: 2px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 18px 0;
+  }
+
+  /* FOOTER */
+  .master-footer {
+    background: var(--text-dark);
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 700px) {
+    .bilingual { grid-template-columns: 1fr; }
+    .bil-bn { border-right: none; border-bottom: 1px solid var(--border); }
+    .master-header h1 { font-size: 22px; }
+    .stats-bar { gap: 12px; }
+    .toc-grid { grid-template-columns: 1fr; }
+  }
+  @media print {
+    .toc-wrapper { display: none; }
+    .q-card { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTER HEADER -->
+<div class="master-header">
+  <div class="badge">JAIBB • LPGB • 7th Exam Preparation</div>
+  <h1>Laws and Practice of General Banking<br><span style="color:#ffd166">৭ম পরীক্ষার সম্পূর্ণ প্রস্তুতি গাইড</span></h1>
+  <div class="subtitle">Part A — Broad Questions (20×2=40 Marks) | মডিউল-ওয়াইজ গুরুত্বপূর্ণ প্রশ্নোত্তর</div>
+  <div class="stats-bar">
+    <div class="stat-item"><div class="num">8</div><div class="lbl">Key Modules</div></div>
+    <div class="stat-item"><div class="num">16</div><div class="lbl">Predicted Questions</div></div>
+    <div class="stat-item"><div class="num">96–5th</div><div class="lbl">Exams Analyzed</div></div>
+    <div class="stat-item"><div class="num">100%</div><div class="lbl">Law Book Based</div></div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-wrapper">
+  <h2>📋 সূচিপত্র — Table of Contents</h2>
+  <div class="toc-grid">
+    <a class="toc-item" href="#modA"><span class="mod-tag">MOD A</span> Bangladesh Bank Order & BCA 1991</a>
+    <a class="toc-item" href="#modA2"><span class="mod-tag">MOD A</span> Artho Rin Adalat Ain, 2003</a>
+    <a class="toc-item" href="#modB"><span class="mod-tag">MOD B</span> NI Act — Holder, Endorsement, Collecting Bank</a>
+    <a class="toc-item" href="#modB2"><span class="mod-tag">MOD B</span> NI Act — Promissory Note, BOE, Cheque</a>
+    <a class="toc-item" href="#modC"><span class="mod-tag">MOD C</span> FERA 1947 — Authorized Dealers & Scope</a>
+    <a class="toc-item" href="#modC2"><span class="mod-tag">MOD C</span> Anti-Terrorism Act, 2009</a>
+    <a class="toc-item" href="#modD"><span class="mod-tag">MOD D</span> Companies Act 1994 — MOA, AOA, Directors</a>
+    <a class="toc-item" href="#modD2"><span class="mod-tag">MOD D</span> Contract Act — Guarantee, Indemnity, Bailment</a>
+    <a class="toc-item" href="#modE"><span class="mod-tag">MOD E</span> Transfer of Property — Mortgage Types</a>
+    <a class="toc-item" href="#modF"><span class="mod-tag">MOD F</span> Banker–Customer General & Special Relationship</a>
+    <a class="toc-item" href="#modG"><span class="mod-tag">MOD G</span> Account Opening — JSC, Co-op, Joint</a>
+    <a class="toc-item" href="#modH"><span class="mod-tag">MOD H</span> Garnishee Order & Banker's Lien</a>
+    <a class="toc-item" href="#modI"><span class="mod-tag">MOD I</span> Cheque Crossing & Collecting Bank</a>
+    <a class="toc-item" href="#modJ"><span class="mod-tag">MOD J</span> KYC & AML — Negative Effects & Measures</a>
+    <a class="toc-item" href="#modK"><span class="mod-tag">MOD K</span> Hundi — Definition & Effects</a>
+    <a class="toc-item" href="#modL"><span class="mod-tag">MOD L</span> Digital Banking & FinTech</a>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════ MODULE A: BB ORDER & BCA ═══════════════ -->
+<div class="module-header mod-a" id="modA">
+  <div class="mod-label">Module A — Financial Institutions Related Laws</div>
+  <h2>🏦 Bangladesh Bank Order 1972 & Bank Company Act 1991</h2>
+</div>
+
+<!-- Q1: BB FUNCTIONS -->
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1a3a6b">1</div>
+    <div class="q-text">
+      <div class="bn">⭐ বাংলাদেশ ব্যাংকের প্রধান কার্যাবলী বর্ণনা করুন এবং কেন্দ্রীয় ব্যাংক কেন "শেষ অবলম্বনের ঋণদাতা" বলা হয়?</div>
+      <div class="en">Describe the main functions of Bangladesh Bank (BB Order 1972). Why is BB called the "Lender of Last Resort"? [99th exam Q4a, Q4b]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ BB Order, 1972</span>
+      <span class="law-badge">Chapter III — Functions</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 সংজ্ঞা — Definition</div>
+      <div class="def-bn def-text">বাংলাদেশ ব্যাংক হলো বাংলাদেশের কেন্দ্রীয় ব্যাংক যা ৭ এপ্রিল ১৯৭২ সালে Bangladesh Bank Order, 1972 (P.O. No. 127 of 1972) দ্বারা প্রতিষ্ঠিত। এটি দেশের মুদ্রা ও ঋণ ব্যবস্থা পরিচালনা করে।</div>
+      <div class="def-en def-text">Bangladesh Bank is Bangladesh's central bank, established on 7 April 1972 under BB Order 1972. It manages the monetary and credit system to stabilize domestic monetary value and maintain competitive external par value of Taka.</div>
+    </div>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">📋 বাংলাদেশ ব্যাংকের প্রধান কার্যাবলী | Main Functions of Bangladesh Bank</h4>
+    <table class="compare-table">
+      <tr><th>#</th><th>বাংলা কার্যাবলী</th><th>English Functions</th><th>আইনি ধারা</th></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">১</td><td>মুদ্রানীতি প্রণয়ন ও বাস্তবায়ন</td><td>Formulate and implement monetary policy</td><td>BB Order Ch.III</td></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">২</td><td>বৈদেশিক মুদ্রা বাজারে হস্তক্ষেপ নীতি প্রণয়ন</td><td>Formulate intervention policies in FX market</td><td>BB Order</td></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">৩</td><td>সরকারকে মুদ্রানীতি ও রাজস্বনীতি বিষয়ে পরামর্শ</td><td>Advise Government on monetary, fiscal and exchange rate policy</td><td>BB Order</td></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">৪</td><td>সরকারি বৈদেশিক মুদ্রা রিজার্ভ ধারণ ও ব্যবস্থাপনা</td><td>Hold and manage official foreign exchange reserves</td><td>BB Order</td></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">৫</td><td>নিরাপদ ও দক্ষ পেমেন্ট সিস্টেম নিশ্চিত করা এবং নোট ইস্যু</td><td>Promote, regulate secure payment system; issue of bank notes</td><td>BB Order</td></tr>
+      <tr><td style="font-weight:700;color:var(--primary)">৬</td><td>ব্যাংকিং কোম্পানি ও আর্থিক প্রতিষ্ঠান নিয়ন্ত্রণ ও তত্ত্বাবধান</td><td>Regulate and supervise banking companies and financial institutions</td><td>BB Order</td></tr>
+    </table>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">🏦 শেষ অবলম্বনের ঋণদাতা (বাংলা)</div>
+        <p>বাংলাদেশ ব্যাংককে "লেন্ডার অব লাস্ট রিসোর্ট" বলা হয় কারণ যখন কোনো বাণিজ্যিক ব্যাংক আর্থিক সংকটে পড়ে এবং অন্য কোনো উৎস থেকে তরলতা পায় না, তখন কেন্দ্রীয় ব্যাংক সেই ব্যাংককে জরুরি ঋণ সুবিধা প্রদান করে।</p>
+        <ul class="point-list bn" style="margin-top:10px">
+          <li>ব্যাংকিং ব্যবস্থার স্থিতিশীলতা রক্ষা করে</li>
+          <li>আর্থিক সংকট ছড়িয়ে পড়া প্রতিরোধ করে</li>
+          <li>আমানতকারীদের আস্থা বজায় রাখে</li>
+          <li>ব্যাংক রান প্রতিরোধ করে</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">🏦 Lender of Last Resort (English)</div>
+        <p>Bangladesh Bank is the "Lender of Last Resort" because when commercial banks face a financial crisis and cannot obtain liquidity from any other source, the central bank provides emergency lending facilities.</p>
+        <ul class="point-list en" style="margin-top:10px">
+          <li>Protects stability of banking system</li>
+          <li>Prevents financial crisis from spreading</li>
+          <li>Maintains depositors' confidence</li>
+          <li>Prevents bank runs and panic</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight warn">
+      <strong>⚠️ পরীক্ষার টিপস:</strong> BB Order-এ মোট ৬টি Chapter ও ৮৪টি Section আছে। Board of Directors-এ Governor ও Deputy Governors থাকেন। BB শুধু নোট ইস্যু করতে পারে — বাণিজ্যিক ব্যাংক পারে না।
+    </div>
+  </div>
+</div>
+
+<!-- Q2: BCA 1991 DIRECTORS -->
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1a3a6b">2</div>
+    <div class="q-text">
+      <div class="bn">⭐ Bank Company Act 1991 অনুযায়ী পরিচালকের পদ শূন্য হওয়ার পরিস্থিতি কী? পরিচালকের অযোগ্যতা সম্পর্কে আলোচনা করুন।</div>
+      <div class="en">When does the office of a director fall vacant under BCA 1991? Discuss disqualifications of a director. [97th exam Q9a; 96th Group B Q8a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ BCA 1991, Sec. 94 — Disqualification</span>
+      <span class="law-badge">⚖️ BCA 1991, Sec. 108 — Vacation of Office</span>
+      <span class="law-badge">⚖️ Companies Act 1994, Sec. 94</span>
+    </div>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">📌 পরিচালকের অযোগ্যতা (Section 94)</div>
+        <ul class="point-list bn">
+          <li>অপ্রকৃতস্থ বা দেউলিয়া ঘোষিত ব্যক্তি</li>
+          <li>বিদেশি ও নাগরিকত্ব হারানো ব্যক্তি</li>
+          <li>ফৌজদারি অপরাধে ২ বছরের বেশি দণ্ডপ্রাপ্ত</li>
+          <li>নৈতিক স্খলনের অপরাধে দোষী সাব্যস্ত</li>
+          <li>১৮ বছরের কম বয়স্ক</li>
+          <li>আদালতের নিষেধাজ্ঞাপ্রাপ্ত ব্যক্তি</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">📌 Disqualifications of Director (Sec 94)</div>
+        <ul class="point-list en">
+          <li>Person of unsound mind or declared bankrupt</li>
+          <li>Foreign national or person who lost citizenship</li>
+          <li>Convicted with imprisonment exceeding 2 years</li>
+          <li>Convicted of offence involving moral turpitude</li>
+          <li>Below 18 years of age</li>
+          <li>Person under court injunction</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">🚪 পরিচালকের পদ শূন্য হওয়ার পরিস্থিতি | Vacation of Office (Section 108)</h4>
+    <table class="compare-table">
+      <tr><th>পরিস্থিতি</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th></tr>
+      <tr><td>১</td><td>পদত্যাগ পত্র জমা দিলে</td><td>Upon submission of resignation letter</td></tr>
+      <tr><td>২</td><td>কোম্পানির সভায় টানা ৩টিতে অনুপস্থিত থাকলে</td><td>Absent from 3 consecutive company meetings</td></tr>
+      <tr><td>৩</td><td>শেয়ার হস্তান্তর করলে বা যোগ্যতার শেয়ার না রাখলে</td><td>Transfers shares or ceases to hold qualification shares</td></tr>
+      <tr><td>৪</td><td>দেউলিয়া ঘোষিত হলে</td><td>On being adjudicated bankrupt/insolvent</td></tr>
+      <tr><td>৫</td><td>অপ্রকৃতস্থ ঘোষিত হলে</td><td>On being found of unsound mind by court</td></tr>
+      <tr><td>৬</td><td>আদালত কর্তৃক নিষেধাজ্ঞা জারি হলে</td><td>On court order restricting from directorship</td></tr>
+      <tr><td>৭</td><td>ঋণখেলাপি হলে (BB নির্দেশনা অনুযায়ী)</td><td>On becoming loan defaulter (per BB guidelines)</td></tr>
+    </table>
+
+    <div class="highlight info">
+      <strong>📌 গুরুত্বপূর্ণ সংযোজন — PCA (Section 77Ka):</strong> ব্যাংক কোম্পানি আইন ১৯৯১ (সংশোধন ২০২৩)-এর ধারা ৭৭কা অনুযায়ী, বাংলাদেশ ব্যাংক দুর্বল ব্যাংকের বিরুদ্ধে Prompt Corrective Action (PCA) নিতে পারে — মার্জার, পুনর্গঠন, পরিচালক পরিবর্তন সহ।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE A2: ARTHO RIN ═══════════════ -->
+<div class="module-header mod-a" id="modA2">
+  <div class="mod-label">Module A — Financial Institutions Related Laws</div>
+  <h2>⚖️ Artho Rin Adalat Ain, 2003 — ঋণ আদায়ের আইন</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1a3a6b">3</div>
+    <div class="q-text">
+      <div class="bn">⭐ অর্থঋণ আদালত আইন, ২০০৩ এর প্রধান বিধানসমূহ বর্ণনা করুন। এই আইন কিভাবে ব্যাংকের ঋণ আদায়ে সহায়তা করে?</div>
+      <div class="en">Discuss the main provisions of Artha Rin Adalat Ain 2003. How does it help recovery of stuck-up loans? [99th Q6a; 99th Q6b; 98th Q6a; 5th exam Q9a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Artha Rin Adalat Ain 2003</span>
+      <span class="law-badge">Sec. 4 — Minimum Tk. 1 Lakh</span>
+      <span class="law-badge">Sec. 12, 33, 46, 47</span>
+      <span class="law-badge">Amendment 2010</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 উদ্দেশ্য ও পটভূমি</div>
+      <div class="def-bn def-text">অর্থঋণ আদালত আইন, ২০০৩ হলো ব্যাংক ও আর্থিক প্রতিষ্ঠানের অনাদায়ী ঋণ দ্রুত আদায়ের জন্য বিশেষ আইন। এটি সাধারণ দেওয়ানি আদালতের পরিবর্তে বিশেষ আদালতের মাধ্যমে ঋণ আদায়ের ব্যবস্থা করে।</div>
+      <div class="def-en def-text">The Artha Rin Adalat Ain 2003 is a special law for fast recovery of default loans by banks and financial institutions through dedicated loan courts, bypassing the slow ordinary civil court system.</div>
+    </div>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">📊 অর্থঋণ আদালত — মামলা পরিচালনার ধাপ</h4>
+    <div class="flowchart">
+      <div class="flow-row"><div class="flow-box">মামলা দায়ের<br><small>Min. Tk. 1 Lakh</small></div><div class="flow-arrow">→</div><div class="flow-box green">সমন জারি<br><small>১৫ দিনের মধ্যে</small></div><div class="flow-arrow">→</div><div class="flow-box orange">লিখিত জবাব<br><small>৪০ দিনের মধ্যে</small></div></div>
+      <div class="flow-down">↓</div>
+      <div class="flow-row"><div class="flow-box purple">মামলার নিষ্পত্তি<br><small>৯০ দিনের মধ্যে</small></div><div class="flow-arrow">→</div><div class="flow-box teal">রায়<br><small>১০ দিনের মধ্যে</small></div><div class="flow-arrow">→</div><div class="flow-box red">নিলামে বিক্রয়<br><small>১৫ দিনের নোটিশ</small></div></div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>বাংলা বিধান</th><th>English Provision</th><th>ধারা</th></tr>
+      <tr><td>নূন্যতম মামলার পরিমাণ</td><td>সর্বনিম্ন ১ লক্ষ টাকা</td><td>Minimum Tk. 1,00,000</td><td>Sec. 4</td></tr>
+      <tr><td>সমন ফেরত</td><td>১৫ দিনের মধ্যে সার্ভ করতে হবে</td><td>Summons served within 15 days</td><td>Sec. 7</td></tr>
+      <tr><td>লিখিত জবাব</td><td>আদালতে হাজির হওয়ার ৪০ দিনের মধ্যে</td><td>Written reply within 40 days</td><td>Sec. 10</td></tr>
+      <tr><td>সময় বাড়ানো</td><td>আরও ২০ দিন বাড়ানো যাবে (সর্বোচ্চ Tk. 5,000 খরচে)</td><td>Extended by 20 more days at Tk. 2,000–5,000 cost</td><td>Sec. 10</td></tr>
+      <tr><td>মামলা নিষ্পত্তির সময়</td><td>বিশেষজ্ঞ থাকলে ৩০ দিন, অন্যথায় ৯০ দিন</td><td>30 days if expert, else 90 days from written statement</td><td>Sec. 17</td></tr>
+      <tr><td>রায়</td><td>শুনানি শেষে ১০ দিনের মধ্যে</td><td>Judgment within 10 days of hearing</td><td>Sec. 16</td></tr>
+      <tr><td>নিলাম বিক্রয়</td><td>১৫ দিনের খোলা নিলাম</td><td>Open auction with 15 days notice</td><td>Sec. 33</td></tr>
+      <tr><td>সিভিল কারাবাস</td><td>৬ মাস পর্যন্ত কারাবাস</td><td>Civil imprisonment up to 6 months</td><td>Sec. 34</td></tr>
+      <tr><td>নিষ্পত্তি মামলার সময়</td><td>৩৬০ দিনের মধ্যে</td><td>Execution case within 360 days</td><td>Sec. 28</td></tr>
+      <tr><td>আপিল</td><td>৫০ লক্ষ পর্যন্ত জেলা জজ, তার বেশি হাইকোর্ট</td><td>Up to Tk. 50 lac to District Judge, above to High Court</td><td>Sec. 41</td></tr>
+    </table>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">🔧 ২০১০ সালের গুরুত্বপূর্ণ সংশোধনী</div>
+        <ul class="point-list bn">
+          <li>ব্যাংক পাওয়ার অব অ্যাটর্নি ছাড়াও জামানত বিক্রি করতে পারবে (Sec 12(3))</li>
+          <li>সালিশির মাধ্যমে যেকোনো পর্যায়ে মামলা নিষ্পত্তি সম্ভব (Sec 22)</li>
+          <li>নিষ্পত্তি মামলা ১৮০ দিনের পরিবর্তে ৩৬০ দিনের মধ্যে</li>
+          <li>নিলামে আমানত: ১০ লক্ষ পর্যন্ত ২০%, ১০–৫০ লক্ষে ১৫%, ৫০ লক্ষের বেশি ১০%</li>
+          <li>সুদের হার: সাধারণ ১২%, আপিলে ১৬%, উচ্চ আদালতে ১৮%</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">🔧 Key 2010 Amendments</div>
+        <ul class="point-list en">
+          <li>Banks can sell mortgage property even without Power of Attorney (Sec 12(3))</li>
+          <li>Settlement through arbitration at any stage (Sec 22)</li>
+          <li>Execution case time extended from 180 to 360 days</li>
+          <li>Auction deposit: 20% up to Tk 10 lac; 15% (10–50 lac); 10% (above 50 lac)</li>
+          <li>Interest rates: 12% normally; 16% on appeal; 18% at High Court</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight success">
+      <strong>✅ কিভাবে ঋণ আদায়ে সাহায্য করে:</strong> দ্রুত বিচার → সম্পদ নিলাম → সিভিল কারাবাস → সালিশ → আপিলে জামানত প্রদানের বাধ্যবাধকতা — এই সব মিলিয়ে ব্যাংক দ্রুত আটকে পড়া ঋণ আদায় করতে পারে।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE B: NI ACT ═══════════════ -->
+<div class="module-header mod-b" id="modB">
+  <div class="mod-label">Module B — Financial Instrument Related Laws</div>
+  <h2>📜 Negotiable Instruments Act, 1881 — Holder, HDC, Endorsement</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#2a7f3f">4</div>
+    <div class="q-text">
+      <div class="bn">⭐ "Holder for Value" ও "Holder in Due Course (HDC)" এর মধ্যে পার্থক্য দেখান। Payment in Due Course কী?</div>
+      <div class="en">Distinguish between "Holder for Value" and "Holder in Due Course". What is Payment in Due Course? [96th Q2b; 97th Q5a; 98th Q5a; 5th Q2c]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 বারবার আসে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 8 — Holder</span>
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 9 — HDC</span>
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 10 — Payment in Due Course</span>
+    </div>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">📖 Holder সংজ্ঞা (ধারা ৮)</div>
+        <p>যে ব্যক্তি প্রমিসরি নোট, বিল অব এক্সচেঞ্জ বা চেক এর Payee বা Endorsee হিসেবে দখলে আছেন, তিনিই Holder।</p>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">📖 Holder Definition (Sec 8)</div>
+        <p>The holder is the payee or endorsee who is in possession of the instrument or bearer thereof, but does NOT include a beneficial owner claiming through a benamidar.</p>
+      </div>
+    </div>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">📊 তুলনামূলক বিশ্লেষণ</h4>
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>Holder for Value</th><th>Holder in Due Course (HDC)</th></tr>
+      <tr><td>সংজ্ঞা (বাংলা)</td><td>যিনি বিনিময়মূল্য দিয়ে হোল্ডার হয়েছেন</td><td>যিনি বিনিময়মূল্য দিয়ে, মেয়াদ উত্তীর্ণের আগে, স্বজ্ঞানে দোষমুক্ত দলিল গ্রহণ করেছেন</td></tr>
+      <tr><td>Definition (English)</td><td>Any holder who has given consideration (value) for the instrument</td><td>Person who gets instrument for value, before maturity, in good faith, without notice of defect in title (Sec 9)</td></tr>
+      <tr><td>Consideration</td><td>প্রয়োজন / Required</td><td>প্রয়োজন / Required</td></tr>
+      <tr><td>Good Faith</td><td>না লাগে / Not required</td><td>অবশ্যই প্রয়োজন / Must</td></tr>
+      <tr><td>Before Maturity</td><td>না লাগে / Not required</td><td>অবশ্যই প্রয়োজন / Must</td></tr>
+      <tr><td>Notice of Defect</td><td>জানলেও চলে / May know</td><td>জানা থাকলে HDC নয় / Must not know</td></tr>
+      <tr><td>Rights</td><td>সীমিত সুরক্ষা / Limited protection</td><td>সর্বোচ্চ সুরক্ষা — পূর্ববর্তী দলিলের ত্রুটি থেকে মুক্ত</td></tr>
+      <tr><td>Privilege</td><td>No special privilege</td><td>Free from defects of prior parties — privileged holder</td></tr>
+    </table>
+
+    <div class="def-box" style="margin-top:14px">
+      <div class="def-label">💳 Payment in Due Course — ধারা ১০</div>
+      <div class="def-bn def-text"><strong>বাংলা:</strong> Payment in Due Course হলো সেই পরিশোধ যা — (ক) দলিলের স্পষ্ট শর্ত অনুযায়ী, (খ) সৎভাবে ও অবহেলা ছাড়া, (গ) দখলকারী ব্যক্তিকে যার পরিশোধ পাওয়ার অধিকার সন্দেহাতীত মনে হয়।</div>
+      <div class="def-en def-text"><strong>English:</strong> Payment in accordance with the apparent tenor of the instrument, in good faith and without negligence, to any person in possession, under circumstances which do not afford reasonable ground for believing that person is NOT entitled to receive payment.</div>
+    </div>
+
+    <div class="highlight warn">
+      <strong>⚠️ মনে রাখার ট্রিক:</strong> HDC = HFV + Good Faith + Before Maturity + No Notice of Defect. সব শর্ত পূরণ হলেই HDC হওয়া যায়। HDC সবচেয়ে শক্তিশালী অবস্থানে থাকেন।
+    </div>
+  </div>
+</div>
+
+<!-- Q: ENDORSEMENT -->
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#2a7f3f">5</div>
+    <div class="q-text">
+      <div class="bn">⭐ এন্ডোর্সমেন্ট কী? বিভিন্ন প্রকার এন্ডোর্সমেন্ট বর্ণনা করুন। এন্ডোর্সমেন্টের সাধারণ নীতিমালা কী?</div>
+      <div class="en">What is endorsement? Explain types of endorsement and general principles governing endorsement. [98th Q5b; 5th Q5b]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 15 — Endorsement</span>
+      <span class="law-badge">⚖️ Sec. 16 — Blank & Full Endorsement</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 এন্ডোর্সমেন্টের সংজ্ঞা</div>
+      <div class="def-bn def-text">যখন কোনো দলিলের নির্মাতা বা ধারক negotiation-এর উদ্দেশ্যে দলিলের পিঠে বা সামনে বা সংযুক্ত কাগজে (allonge) স্বাক্ষর করেন, তাকে এন্ডোর্সমেন্ট বলে।</div>
+      <div class="def-en def-text">When the maker or holder of a negotiable instrument signs the same for the purpose of negotiation — on the back or face, or on an annexed slip (allonge) — it is called an endorsement. The signer is the endorser, recipient is the endorsee.</div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>প্রকার</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th><th>উদাহরণ</th></tr>
+      <tr><td><strong>Blank / General</strong></td><td>শুধু নাম স্বাক্ষর করা — নির্দিষ্ট ব্যক্তির নাম নেই</td><td>Only signature of endorser, no specific person named — becomes payable to bearer</td><td>"sd/- Rahman"</td></tr>
+      <tr><td><strong>Full / Special</strong></td><td>নির্দিষ্ট ব্যক্তির নাম লিখে স্বাক্ষর করা</td><td>Specifies person to whom or whose order the instrument is payable</td><td>"Pay to Karim, sd/- Rahman"</td></tr>
+      <tr><td><strong>Restrictive</strong></td><td>আরও এন্ডোর্স করা নিষিদ্ধ করে</td><td>Restricts further negotiation — restricts endorsee's right to transfer</td><td>"Pay Karim only"</td></tr>
+      <tr><td><strong>Conditional / Qualified</strong></td><td>শর্তসাপেক্ষ দায়বদ্ধতা — নির্দিষ্ট ঘটনা না ঘটলে দায় নেই</td><td>Limits or negates endorser's liability — adds condition</td><td>"Pay if ship arrives"</td></tr>
+      <tr><td><strong>Partial</strong></td><td>আংশিক পরিমাণ এন্ডোর্স করা — অবৈধ</td><td>Endorsement of only part of amount — INVALID (Sec 56)</td><td>Not allowed</td></tr>
+      <tr><td><strong>Sans Recours</strong></td><td>"Without recourse" — এন্ডোর্সার দায়মুক্ত</td><td>Endorser disclaims personal liability — endorser not liable if dishonored</td><td>"Pay Karim sans recours"</td></tr>
+      <tr><td><strong>Facultative</strong></td><td>এন্ডোর্সার notice of dishonour ত্যাগ করেন</td><td>Endorser waives right to receive notice of dishonour</td><td>"Pay Karim, waiving notice"</td></tr>
+    </table>
+
+    <div class="highlight info">
+      <strong>📌 মূল নীতি:</strong> নাবালকের এন্ডোর্সমেন্ট অন্যকে বাধ্য করতে পারে না (Sec 26)। এন্ডোর্সার নিজে দায়বদ্ধ থাকেন যতক্ষণ পূর্ববর্তী পক্ষরা দায়মুক্ত না হন।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE B2: PN, BOE, CHEQUE ═══════════════ -->
+<div class="module-header mod-b" id="modB2">
+  <div class="mod-label">Module B — Financial Instrument Related Laws</div>
+  <h2>📄 Promissory Note, Bill of Exchange & Cheque — মূল পার্থক্য</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#2a7f3f">6</div>
+    <div class="q-text">
+      <div class="bn">⭐ নেগোসিয়েবল ইনস্ট্রুমেন্ট কী এবং এর বৈশিষ্ট্য কী? নিচের উপকরণগুলো নেগোসিয়েবল ইনস্ট্রুমেন্ট হিসেবে বিবেচিত হবে কি না?</div>
+      <div class="en">What are negotiable instruments and their characteristics? Determine if each is a negotiable instrument: Bill of Lading, Railway Receipt, Life Insurance, Promissory Note, Debenture. [96th Q2a; 97th Q2a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 4 — Promissory Note</span>
+      <span class="law-badge">⚖️ Sec. 5 — Bill of Exchange</span>
+      <span class="law-badge">⚖️ Sec. 6 — Cheque</span>
+      <span class="law-badge">⚖️ Sec. 13 — Negotiable Instrument</span>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>Promissory Note (PN)</th><th>Bill of Exchange (BOE)</th><th>Cheque</th></tr>
+      <tr><td>সংজ্ঞা</td><td>লিখিত নিঃশর্ত প্রতিশ্রুতি নির্দিষ্ট অর্থ পরিশোধের (Sec 4)</td><td>লিখিত নিঃশর্ত আদেশ নির্দিষ্ট ব্যক্তিকে পরিশোধের (Sec 5)</td><td>নির্দিষ্ট ব্যাংকারের উপর আঁকা BOE — শুধু demand-এ পরিশোধ (Sec 6)</td></tr>
+      <tr><td>পক্ষসমূহ</td><td>২ পক্ষ: Maker, Payee</td><td>৩ পক্ষ: Drawer, Drawee, Payee</td><td>৩ পক্ষ: Drawer, Drawee (Bank), Payee</td></tr>
+      <tr><td>Drawee</td><td>নেই</td><td>যেকোনো ব্যক্তি</td><td>অবশ্যই ব্যাংক</td></tr>
+      <tr><td>Acceptance</td><td>প্রয়োজন নেই</td><td>প্রয়োজন হতে পারে</td><td>প্রয়োজন নেই</td></tr>
+      <tr><td>Crossing</td><td>প্রযোজ্য নয়</td><td>প্রযোজ্য নয়</td><td>প্রযোজ্য (Sec 123-131)</td></tr>
+      <tr><td>Validity</td><td>৩ বছর</td><td>—</td><td>৬ মাস (Sec 73)</td></tr>
+      <tr><td>উদাহরণ</td><td>IOU, হুন্ডি</td><td>বাণিজ্যিক বিল</td><td>ব্যাংক চেক</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">✅ নেগোসিয়েবল কিনা — বিশ্লেষণ</h4>
+    <table class="compare-table">
+      <tr><th>উপকরণ</th><th>নেগোসিয়েবল?</th><th>কারণ</th></tr>
+      <tr><td>Bill of Lading</td><td>❌ না</td><td>এটি পণ্যের শিরোনাম দলিল, অর্থ পরিশোধের দলিল নয়</td></tr>
+      <tr><td>Railway Receipt</td><td>❌ না</td><td>পণ্য গ্রহণের প্রমাণ, আর্থিক দায় নয়</td></tr>
+      <tr><td>Life Insurance Policy</td><td>❌ না</td><td>অর্থ প্রদানের শর্তযুক্ত — নিঃশর্ত নয়</td></tr>
+      <tr><td>Promissory Note</td><td>✅ হ্যাঁ</td><td>NI Act 1881, Sec. 4 অনুযায়ী সংজ্ঞায়িত</td></tr>
+      <tr><td>Debenture</td><td>❌ না (সাধারণত)</td><td>কোম্পানি দলিল — প্রতিটি শর্ত পূরণ করে না</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE C: FERA ═══════════════ -->
+<div class="module-header mod-c" id="modC">
+  <div class="mod-label">Module C — Financial Activities Related Laws</div>
+  <h2>💱 Foreign Exchange Regulation Act (FERA), 1947</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#7b2d8b">7</div>
+    <div class="q-text">
+      <div class="bn">⭐ বৈদেশিক মুদ্রা নিয়ন্ত্রণ আইন, ১৯৪৭ এর পরিধি ও মূল উদ্দেশ্য বর্ণনা করুন। অথরাইজড ডিলার কারা? ব্লকড অ্যাকাউন্ট কী?</div>
+      <div class="en">State scope and main purposes of FERA 1947. Who are authorized dealers? Define blocked and special accounts. [97th Q9a; 5th Q8a; 5th Q8b; 5th Q8c]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ FERA, 1947 (Act No. VII of 1947)</span>
+      <span class="law-badge">FERA Amendment 2015</span>
+      <span class="law-badge">Sec. 3 — AD License</span>
+      <span class="law-badge">Sec. 5 — Payment Restriction</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 উদ্দেশ্য ও পটভূমি</div>
+      <div class="def-bn def-text">বৈদেশিক মুদ্রা নিয়ন্ত্রণ আইন ১৯৪৭ (FERA) হলো বাংলাদেশের বৈদেশিক মুদ্রা লেনদেন নিয়ন্ত্রণের মূল আইন। ২০১৫ সালে সংশোধিত। লক্ষ্য: দেশের বৈদেশিক মুদ্রার সংরক্ষণ, নিয়ন্ত্রণ ও সুষ্ঠু ব্যবহার নিশ্চিত করা।</div>
+      <div class="def-en def-text">FERA 1947 (amended 2015) is Bangladesh's primary law regulating all foreign exchange transactions. Purpose: conservation, proper use, and regulation of foreign exchange to protect the country's foreign exchange reserves.</div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>বাংলা বিধান</th><th>English Provision</th></tr>
+      <tr><td>অথরাইজড ডিলার (AD)</td><td>বাংলাদেশ ব্যাংক কর্তৃক লাইসেন্সপ্রাপ্ত ব্যাংক/প্রতিষ্ঠান যারা বৈদেশিক মুদ্রা লেনদেন করতে পারে</td><td>Banks/institutions licensed by BB (Sec 3) to deal in foreign exchange — Full AD or Limited AD</td></tr>
+      <tr><td>AD-এর দায়িত্ব</td><td>BB-এর নির্দেশনা মেনে চলতে হবে; লেনদেনের আগে ঘোষণা নিতে হবে</td><td>Must comply with BB's general/special directions; require declarations before FX transactions</td></tr>
+      <tr><td>BB অনুমতি ছাড়া</td><td>AD ছাড়া অন্য কেউ বৈদেশিক মুদ্রা কিনতে/বেচতে পারবে না</td><td>No person can buy/sell FX except through AD without BB permission</td></tr>
+      <tr><td>লঙ্ঘনের শাস্তি</td><td>সর্বোচ্চ ৭ বছর কারাদণ্ড বা জরিমানা বা উভয়</td><td>Up to 7 years imprisonment or fine or both for contravention</td></tr>
+      <tr><td>ব্লকড অ্যাকাউন্ট</td><td>বাংলাদেশে অ-বাসিন্দা ব্যক্তির সম্পদ যা BB-এর নির্দেশে আটকানো হয়</td><td>Account of non-resident holding assets in Bangladesh that are blocked/frozen per BB order</td></tr>
+      <tr><td>বিশেষ অ্যাকাউন্ট</td><td>নির্দিষ্ট উদ্দেশ্যে BB-এর অনুমোদনে খোলা বিশেষ বৈদেশিক মুদ্রা অ্যাকাউন্ট</td><td>Special foreign currency accounts opened with BB approval for specific purposes</td></tr>
+    </table>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">🚫 ধারা ৫ — পেমেন্ট সীমাবদ্ধতা</div>
+        <ul class="point-list bn">
+          <li>বাংলাদেশের বাইরের ব্যক্তিকে কোনো পেমেন্ট করা যাবে না</li>
+          <li>বিদেশি ব্যক্তির নামে কোনো ক্রেডিট করা যাবে না</li>
+          <li>বিদেশে সম্পদ অর্জনের জন্য পেমেন্ট নিষিদ্ধ</li>
+          <li>ব্যতিক্রম: BB-এর অনুমোদন সাপেক্ষে চলতি হিসাব লেনদেন বৈধ</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">🚫 Section 5 — Payment Restrictions</div>
+        <ul class="point-list en">
+          <li>Cannot make payment to person resident outside Bangladesh</li>
+          <li>Cannot credit any sum to person outside Bangladesh</li>
+          <li>No payment as consideration for acquisition of property outside Bangladesh</li>
+          <li>Exception: Current account transactions allowed per BB permission</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE D: COMPANIES ACT ═══════════════ -->
+<div class="module-header mod-d" id="modD">
+  <div class="mod-label">Module D — Business Related Laws</div>
+  <h2>🏢 Companies Act, 1994 — MOA, AOA & Director Rules</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#c8680a">8</div>
+    <div class="q-text">
+      <div class="bn">⭐ Memorandum of Association (MOA) ও Articles of Association (AOA) এর মধ্যে পার্থক্য দেখান। একটি কোম্পানির পরিচালক কখন অযোগ্য হন?</div>
+      <div class="en">Distinguish MOA vs AOA. When does a company director become disqualified under Companies Act 1994? [97th Q10b; Related to 96th Q8a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Companies Act 1994, Sec. 5 — MOA</span>
+      <span class="law-badge">⚖️ Companies Act 1994, Sec. 17 — AOA</span>
+      <span class="law-badge">⚖️ Sec. 94 — Disqualification</span>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>MOA (মেমোরান্ডাম)</th><th>AOA (আর্টিকেলস)</th></tr>
+      <tr><td>সংজ্ঞা (বাংলা)</td><td>কোম্পানির সংবিধান — মূল লক্ষ্য ও সীমানা নির্ধারণ</td><td>কোম্পানির পরিচালনা বিধিমালা — অভ্যন্তরীণ ব্যবস্থাপনা</td></tr>
+      <tr><td>Definition (English)</td><td>Company's constitution — defines fundamental objectives and limits of its powers</td><td>Company's internal management rules — governs conduct of directors, meetings, votes</td></tr>
+      <tr><td>বিষয়বস্তু</td><td>নাম, নিবন্ধিত অফিস, উদ্দেশ্য, দায়, মূলধন ধারা</td><td>পরিচালক নির্বাচন, সভা, ভোট, শেয়ার হস্তান্তর</td></tr>
+      <tr><td>সম্পর্ক</td><td>কোম্পানি ও বাইরের জগতের সম্পর্ক নির্ধারণ</td><td>কোম্পানির ভেতরের পরিচালনা নির্ধারণ</td></tr>
+      <tr><td>Ultra Vires</td><td>MOA-এর বাইরে কাজ = Ultra Vires (বাতিল)</td><td>AOA-এর বাইরে কাজ — কোম্পানি পুনরায় গ্রহণ করতে পারে</td></tr>
+      <tr><td>পরিবর্তন</td><td>কঠিন — বিশেষ প্রস্তাব ও কোর্ট অনুমোদন লাগে</td><td>তুলনামূলক সহজ — বিশেষ প্রস্তাব যথেষ্ট</td></tr>
+      <tr><td>আইনি ধারা</td><td>Sec. 5, Companies Act 1994</td><td>Sec. 17, Companies Act 1994</td></tr>
+    </table>
+
+    <div class="highlight info">
+      <strong>📌 MOA-এর ৫টি ধারা (Clauses):</strong> ১) Name Clause, ২) Registered Office Clause, ৩) Objects Clause, ৪) Liability Clause, ৫) Capital Clause — এই পাঁচটি ক্লজ MOA-তে অবশ্যই থাকতে হবে।
+    </div>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">🚫 পরিচালকের অযোগ্যতা | Director Disqualification (Sec 94)</h4>
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">❌ অযোগ্য পরিচালক (বাংলা)</div>
+        <ul class="point-list bn">
+          <li>অপ্রকৃতস্থ বা দেউলিয়া ঘোষিত ব্যক্তি</li>
+          <li>ফৌজদারি অপরাধে ২ বছরের বেশি কারাদণ্ডপ্রাপ্ত</li>
+          <li>নৈতিক স্খলনজনিত অপরাধে দণ্ডিত</li>
+          <li>১৮ বছরের কম বয়সী</li>
+          <li>RJSC-এর নির্দেশে অযোগ্য ঘোষিত</li>
+          <li>ঋণখেলাপি (BB নির্দেশনা অনুযায়ী)</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">❌ Disqualified Directors (English)</div>
+        <ul class="point-list en">
+          <li>Person of unsound mind or adjudicated bankrupt</li>
+          <li>Convicted with imprisonment exceeding 2 years</li>
+          <li>Convicted of offence involving moral turpitude</li>
+          <li>Below 18 years of age</li>
+          <li>Declared disqualified by RJSC</li>
+          <li>Loan defaulter (as per BB guidelines)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE D2: CONTRACT ACT ═══════════════ -->
+<div class="module-header mod-d" id="modD2">
+  <div class="mod-label">Module D — Business Related Laws</div>
+  <h2>📝 Contract Act, 1872 — গ্যারান্টি, ইনডেমনিটি ও বেইলমেন্ট</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#c8680a">9</div>
+    <div class="q-text">
+      <div class="bn">⭐ গ্যারান্টি চুক্তির সাথে ইনডেমনিটি চুক্তির পার্থক্য কী? ব্যাংকিংয়ে ইনডেমনিটি ও গ্যারান্টির গুরুত্ব ও সতর্কতা বর্ণনা করুন।</div>
+      <div class="en">Distinguish Guarantee vs Indemnity. Explain importance of Guarantee and Indemnity in banking and precautions while taking guarantee. [5th Q10g; 99th — short notes]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Contract Act 1872, Sec. 124 — Indemnity</span>
+      <span class="law-badge">⚖️ Contract Act 1872, Sec. 126 — Guarantee</span>
+      <span class="law-badge">⚖️ Sec. 127 — Consideration for Guarantee</span>
+      <span class="law-badge">⚖️ Sec. 128 — Surety's Liability</span>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>গ্যারান্টি (Guarantee)</th><th>ইনডেমনিটি (Indemnity)</th></tr>
+      <tr><td>সংজ্ঞা (বাংলা)</td><td>তৃতীয় ব্যক্তির দায় পরিশোধের প্রতিশ্রুতি চুক্তি (Sec 126)</td><td>অন্যের ক্ষতি থেকে রক্ষার প্রতিশ্রুতি চুক্তি (Sec 124)</td></tr>
+      <tr><td>Definition</td><td>Contract to perform promise or discharge liability of a THIRD PERSON in case of his default</td><td>Contract to save the other from LOSS caused by promisor himself or any other person</td></tr>
+      <tr><td>পক্ষের সংখ্যা</td><td>৩ পক্ষ: Surety, Principal Debtor, Creditor</td><td>২ পক্ষ: Indemnifier, Indemnified</td></tr>
+      <tr><td>চুক্তির সংখ্যা</td><td>২টি চুক্তি</td><td>১টি চুক্তি</td></tr>
+      <tr><td>দায়ের প্রকৃতি</td><td>গৌণ দায় (Secondary) — প্রধান ঋণগ্রহীতার পরে</td><td>প্রধান দায় (Primary) — সরাসরি দায়বদ্ধতা</td></tr>
+      <tr><td>ঝুঁকির প্রকৃতি</td><td>বিদ্যমান ঝুঁকি (Subsisting risk)</td><td>ভবিষ্যৎ আকস্মিক ঝুঁকি (Contingent risk)</td></tr>
+      <tr><td>উদ্দেশ্য</td><td>ঋণদাতাকে জামানত প্রদান</td><td>ক্ষতি থেকে সুরক্ষা</td></tr>
+      <tr><td>ব্যাংকিং উদাহরণ</td><td>ব্যাংক ঋণের জন্য তৃতীয় পক্ষের গ্যারান্টি</td><td>হারানো FDR-এর পরিবর্তে নতুন FDR নিতে Indemnity Bond</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">⚠️ গ্যারান্টি গ্রহণে সতর্কতা | Precautions While Taking Guarantee</h4>
+    <div class="steps">
+      <div class="step"><div class="step-num" style="background:#c8680a">১</div><div class="step-content"><div class="title">গ্যারান্টারের আর্থিক সচ্ছলতা যাচাই</div><div class="detail">Verify the solvency and integrity of the guarantor</div></div></div>
+      <div class="step"><div class="step-num" style="background:#c8680a">২</div><div class="step-content"><div class="title">চুক্তি করার যোগ্যতা নিশ্চিত করুন</div><div class="detail">Ensure capacity to contract — must be major and of sound mind</div></div></div>
+      <div class="step"><div class="step-num" style="background:#c8680a">৩</div><div class="step-content"><div class="title">গ্যারান্টির ধরন নির্ধারণ</div><div class="detail">Specific or Continuing guarantee — decide the type</div></div></div>
+      <div class="step"><div class="step-num" style="background:#c8680a">৪</div><div class="step-content"><div class="title">স্বেচ্ছামূলক সম্মতি নিশ্চিত করুন</div><div class="detail">Free consent — no coercion, fraud, misrepresentation</div></div></div>
+      <div class="step"><div class="step-num" style="background:#c8680a">৫</div><div class="step-content"><div class="title">নিয়মিত নিশ্চিতকরণ (Periodical Confirmation)</div><div class="detail">Get regular confirmation from guarantor that guarantee stands</div></div></div>
+    </div>
+
+    <div class="highlight warn">
+      <strong>⚠️ গুরুত্বপূর্ণ:</strong> নাবালকের গ্যারান্টি অবৈধ। তবে প্রধান ঋণগ্রহীতা নাবালক হলে, গ্যারান্টরই প্রধান দেনাদার হন। গ্যারান্টরের দায় সহ-ব্যাপক (Co-extensive) — ধারা ১২৮।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE E: TRANSFER OF PROPERTY ═══════════════ -->
+<div class="module-header mod-e" id="modE">
+  <div class="mod-label">Module E — Property Related Laws</div>
+  <h2>🏠 Transfer of Property Act, 1882 — বন্ধকের প্রকারভেদ</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1d7a73">10</div>
+    <div class="q-text">
+      <div class="bn">⭐ সম্পত্তি হস্তান্তর আইন, ১৮৮২ অনুযায়ী বন্ধক (Mortgage) কী? বিভিন্ন প্রকার বন্ধকের বর্ণনা দিন। ক্রেতার অধিকার ও দায়িত্ব বর্ণনা করুন।</div>
+      <div class="en">Define mortgage under TPA 1882. Describe different types of mortgage. What are the rights and liabilities of a buyer? [97th Q8a; 97th Q8c; 98th Q8a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ TPA 1882, Sec. 5 — Transfer definition</span>
+      <span class="law-badge">⚖️ Sec. 58 — Mortgage definition</span>
+      <span class="law-badge">⚖️ Sec. 55 — Rights of Buyer & Seller</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 বন্ধকের সংজ্ঞা (Section 58)</div>
+      <div class="def-bn def-text">বন্ধক হলো ঋণ পরিশোধের নিশ্চয়তা হিসেবে নির্দিষ্ট অস্থাবর সম্পত্তির স্বার্থ হস্তান্তর। যিনি হস্তান্তর করেন = Mortgagor, যাকে হস্তান্তর করা হয় = Mortgagee।</div>
+      <div class="def-en def-text">A mortgage is the transfer of an interest in specific IMMOVABLE PROPERTY for securing payment of money advanced by loan, or existing/future debt. Person transferring = Mortgagor; Person to whom transferred = Mortgagee.</div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বন্ধকের প্রকার</th><th>বাংলা বৈশিষ্ট্য</th><th>English Features</th><th>ব্যাংকিং ব্যবহার</th></tr>
+      <tr><td><strong>Simple Mortgage</strong></td><td>সম্পত্তির দখল হস্তান্তর হয় না। অর্থ না দিলে বিক্রয়ের আদেশ পাওয়ার অধিকার</td><td>No delivery of possession. Mortgagee can get court order for sale if debt not paid</td><td>সাধারণ ঋণের বিপরীতে</td></tr>
+      <tr><td><strong>Mortgage by Conditional Sale</strong></td><td>শর্তসাপেক্ষ বিক্রয়ের মাধ্যমে — নির্দিষ্ট সময়ে পরিশোধ না করলে বিক্রয় চূড়ান্ত</td><td>Apparent sale with condition — becomes absolute sale if debt not repaid within time</td><td>—</td></tr>
+      <tr><td><strong>Usufructuary Mortgage</strong></td><td>ঋণগ্রহীতা দখল হস্তান্তর করেন। ঋণদাতা ভোগ-দখল থেকে ঋণ পুনরুদ্ধার করেন</td><td>Mortgagor delivers possession; Mortgagee takes profits/rents to recover debt — no foreclosure needed</td><td>—</td></tr>
+      <tr><td><strong>English Mortgage</strong></td><td>সম্পত্তি সরাসরি হস্তান্তর — নির্দিষ্ট সময়ে পরিশোধ করলে ফেরত পাওয়ার শর্ত</td><td>Absolute transfer of property — mortgagor retransfers if debt paid on fixed date</td><td>ব্যাংকে সর্বাধিক ব্যবহৃত</td></tr>
+      <tr><td><strong>Equitable Mortgage</strong></td><td>টাইটেল দলিল জমা দিয়ে বন্ধক — কোনো নিবন্ধন লাগে না</td><td>Deposit of title deeds with creditor as security — no registration required in certain cases</td><td>ব্যাংকিংয়ে প্রচলিত</td></tr>
+      <tr><td><strong>Anomalous Mortgage</strong></td><td>উপরের কোনোটিতে পড়ে না — মিশ্র ধরনের</td><td>Does not fall under any of the above types — combination/hybrid form</td><td>—</td></tr>
+    </table>
+
+    <div class="highlight info">
+      <strong>📌 মনে রাখুন:</strong> ব্যাংক সাধারণত English Mortgage ও Equitable Mortgage ব্যবহার করে। English Mortgage সবচেয়ে শক্তিশালী কারণ সম্পত্তির মালিকানা ব্যাংকে যায়।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE F: BANKER-CUSTOMER ═══════════════ -->
+<div class="module-header mod-f" id="modF">
+  <div class="mod-label">Module F — General Banking</div>
+  <h2>🤝 Banker–Customer সাধারণ ও বিশেষ সম্পর্ক</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#8b1a3a">11</div>
+    <div class="q-text">
+      <div class="bn">⭐ ব্যাংকার ও গ্রাহকের মধ্যে সাধারণ ও বিশেষ সম্পর্ক বর্ণনা করুন। কোন পরিস্থিতিতে ব্যাংকার গ্রাহকের হিসাবের গোপনীয়তা প্রকাশ করতে পারেন?</div>
+      <div class="en">Describe general and special relationship between banker and customer. Under what circumstances can a banker disclose customer account secrecy? [96th Q1a; 97th Q1a; 97th Q1b; 5th Q2b; 5th Q6a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 বারবার আসে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Contract Act 1872</span>
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 31</span>
+      <span class="law-badge">⚖️ Contract Act, Sec. 148 — Bailment</span>
+    </div>
+
+    <h4 style="color:var(--primary);margin:0 0 12px">🤝 সাধারণ সম্পর্ক | General Relationship</h4>
+    <table class="compare-table">
+      <tr><th>#</th><th>সম্পর্কের ধরন</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th><th>কখন প্রযোজ্য</th></tr>
+      <tr><td>১</td><td><strong>দেনাদার–পাওনাদার</strong><br>Debtor–Creditor</td><td>আমানত নিলে ব্যাংক = দেনাদার, গ্রাহক = পাওনাদার। ঋণ দিলে উল্টো।</td><td>Bank borrows from customer (deposit) = Bank is debtor. Bank lends to customer = Bank is creditor</td><td>সকল ডিপোজিট ও ঋণে</td></tr>
+      <tr><td>২</td><td><strong>মূলতঃ–এজেন্ট</strong><br>Principal–Agent</td><td>গ্রাহকের পক্ষে চেক কালেকশন, বিল পরিশোধ করলে</td><td>When bank collects cheques, pays insurance premium on behalf of customer</td><td>Collections, Standing Instructions</td></tr>
+      <tr><td>৩</td><td><strong>ট্রাস্টি–সুবিধাভোগী</strong><br>Trustee–Beneficiary</td><td>নির্দিষ্ট উদ্দেশ্যে অর্থ জমা রাখলে — উদ্দেশ্য পূরণ না হওয়া পর্যন্ত</td><td>When money deposited for specific purpose — bank acts as trustee till purpose fulfilled</td><td>Specific purpose deposits</td></tr>
+      <tr><td>৪</td><td><strong>বেইলর–বেইলি</strong><br>Bailor–Bailee</td><td>সিকিউরিটি (শেয়ার, দলিল) জমা রাখলে — Sec 148 Contract Act</td><td>When customer deposits securities/valuables — pledge of goods for loan (Section 148)</td><td>Pledge, Safe Custody</td></tr>
+      <tr><td>৫</td><td><strong>লেসর–লেসি</strong><br>Lessor–Lessee</td><td>ব্যাংক লকার ভাড়া দিলে — ব্যাংক = লেসর, গ্রাহক = লেসি</td><td>When bank provides safe deposit lockers on lease — bank is lessor, customer is lessee</td><td>Safe Deposit Lockers</td></tr>
+      <tr><td>৬</td><td><strong>মর্টগেজর–মর্টগেজি</strong><br>Mortgagor–Mortgagee</td><td>সম্পত্তি বন্ধক রেখে ঋণ নিলে</td><td>When customer mortgages immovable property to secure loan</td><td>Property-backed loans</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">⭐ বিশেষ সম্পর্ক | Special Relationship</h4>
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">🔒 গোপনীয়তা প্রকাশের কারণ</div>
+        <ul class="point-list bn">
+          <li><strong>আইনের বাধ্যবাধকতায়:</strong> আদালতের আদেশ, আয়কর কর্তৃপক্ষ, পুলিশ তদন্ত</li>
+          <li><strong>MLPA 2012 ও ATА 2009:</strong> সন্দেহজনক লেনদেনের রিপোর্ট</li>
+          <li><strong>Companies Act 1994:</strong> কোম্পানির বিষয়াদি তদন্তে</li>
+          <li><strong>BCA 1991 ধারা ৩৫:</strong> ১০ বছরের অদাবিকৃত আমানতের বিবরণ</li>
+          <li><strong>গ্রাহকের সম্মতিতে:</strong> গ্রাহক লিখিতভাবে অনুমতি দিলে</li>
+          <li><strong>ব্যাংকের নিজের স্বার্থে:</strong> গ্যারান্টরকে জানাতে</li>
+          <li><strong>জনস্বার্থে:</strong> দেশবিরোধী কার্যক্রমের সাথে সম্পৃক্ততা</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">🔒 When Secrecy Can Be Disclosed</div>
+        <ul class="point-list en">
+          <li><strong>Compulsion of law:</strong> Court order, Income Tax Ordinance, Police investigation</li>
+          <li><strong>MLPA 2012 & ATA 2009:</strong> Report suspicious transactions</li>
+          <li><strong>Companies Act 1994:</strong> Investigating affairs of a company</li>
+          <li><strong>BCA 1991, Sec 35:</strong> 10-year unclaimed deposit statement</li>
+          <li><strong>Customer's consent:</strong> With express written consent of customer</li>
+          <li><strong>Bank's own interest:</strong> To inform guarantor about default</li>
+          <li><strong>Public interest:</strong> Customer involved in activities against the country</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight success">
+      <strong>✅ মূল বিষয়:</strong> ব্যাংকার-গ্রাহক সম্পর্ক fiduciary (বিশ্বাসভিত্তিক)। এই সম্পর্কে Trust ও Good Faith সবচেয়ে গুরুত্বপূর্ণ। ব্যাংকের প্রধান দায়িত্ব আমানত সুরক্ষা ও গোপনীয়তা রক্ষা।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE G: ACCOUNT OPENING ═══════════════ -->
+<div class="module-header mod-a" id="modG">
+  <div class="mod-label">Module G — Account Opening & Operations</div>
+  <h2>📋 যৌথ মূলধনী কোম্পানি ও সমবায় সমিতির হিসাব খোলা</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1a3a6b">12</div>
+    <div class="q-text">
+      <div class="bn">⭐ (ক) যৌথ মূলধনী কোম্পানির হিসাব খোলায় ব্যাংকার কী আনুষ্ঠানিকতা ও সতর্কতা অবলম্বন করেন? (খ) সমবায় সমিতির হিসাব খোলায় কী কী কাগজপত্র লাগে?</div>
+      <div class="en">What formalities does a banker follow in opening (a) Joint Stock Company account? (b) Co-operative Society account? [99th Q8a; 5th Q3a; 97th Q4a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 পরীক্ষায় আসবে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Companies Act 1994</span>
+      <span class="law-badge">⚖️ Co-operative Societies Act 2001</span>
+      <span class="law-badge">BB KYC Guidelines</span>
+    </div>
+
+    <h4 style="color:var(--primary);margin:0 0 10px">🏢 যৌথ মূলধনী কোম্পানি | Joint Stock Company Account</h4>
+    <table class="compare-table">
+      <tr><th>#</th><th>প্রয়োজনীয় কাগজপত্র (বাংলা)</th><th>Required Documents (English)</th></tr>
+      <tr><td>১</td><td>নিবন্ধন সনদ (Certificate of Incorporation)</td><td>Certificate of Incorporation from RJSC</td></tr>
+      <tr><td>২</td><td>ব্যবসা পরিচালনার সনদ (Certificate of Commencement)</td><td>Certificate of Commencement of Business (for Public Ltd only)</td></tr>
+      <tr><td>৩</td><td>স্মারক বিধিমালা (Memorandum of Association)</td><td>Memorandum of Association — certified copy</td></tr>
+      <tr><td>৪</td><td>পরিচালনা বিধিমালা (Articles of Association)</td><td>Articles of Association — certified copy</td></tr>
+      <tr><td>৫</td><td>পরিচালনা পর্ষদের সিদ্ধান্তের প্রতিলিপি (Board Resolution)</td><td>Board Resolution specifying authorized signatories</td></tr>
+      <tr><td>৬</td><td>তালিকাভুক্ত পরিচালকদের তালিকা</td><td>List of Directors with NID and address</td></tr>
+      <tr><td>৭</td><td>ক্ষমতাপ্রাপ্ত ব্যক্তির নমুনা স্বাক্ষর কার্ড</td><td>Specimen signature card of authorized persons</td></tr>
+      <tr><td>৮</td><td>TIN সনদ ও ভ্যাট নিবন্ধন</td><td>TIN certificate and VAT registration</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 10px">🤝 সমবায় সমিতি | Co-operative Society Account</h4>
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">📄 প্রয়োজনীয় কাগজপত্র (বাংলা)</div>
+        <ul class="point-list bn">
+          <li>সমবায় অধিদপ্তরের নিবন্ধন সনদ</li>
+          <li>সমবায় আইন ২০০১ অনুযায়ী উপবিধি</li>
+          <li>পরিচালনা কমিটির সিদ্ধান্তের প্রতিলিপি</li>
+          <li>সভাপতি ও সম্পাদকের NID ও ছবি</li>
+          <li>লেনদেনের জন্য অনুমোদিত সদস্যদের তালিকা</li>
+          <li>নমুনা স্বাক্ষর কার্ড</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">📄 Required Documents (English)</div>
+        <ul class="point-list en">
+          <li>Registration certificate from Co-operative Department</li>
+          <li>Byelaws/Rules under Co-operative Societies Act 2001</li>
+          <li>Copy of Managing Committee resolution</li>
+          <li>NID and photo of President and Secretary</li>
+          <li>List of authorized members for transactions</li>
+          <li>Specimen signature card</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight warn">
+      <strong>⚠️ ব্যাংকারের সতর্কতা:</strong> কোম্পানির MOA-তে ব্যাংক হিসাব খোলার ক্ষমতা আছে কিনা যাচাই করুন। Ultra Vires কার্যক্রম এড়ানোর জন্য Objects Clause যাচাই করুন।
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE H: GARNISHEE ORDER ═══════════════ -->
+<div class="module-header mod-e" id="modH">
+  <div class="mod-label">Module H — Special Banking Concepts</div>
+  <h2>⚖️ Garnishee Order ও Banker's Lien</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#1d7a73">13</div>
+    <div class="q-text">
+      <div class="bn">⭐ গার্নিশি অর্ডার কী? এর বৈশিষ্ট্য বর্ণনা করুন। ব্যাংকারের দাবির অধিকার (Banker's Lien) ও সেট-অফের অধিকার এর মধ্যে পার্থক্য কী?</div>
+      <div class="en">What is a Garnishee Order? Describe its features. Distinguish Banker's Lien vs Banker's Right of Set-off. [96th Q6i; 97th Q6ii; 5th Q10d]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ Civil Procedure Code</span>
+      <span class="law-badge">Special Banking Law</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 Garnishee Order সংজ্ঞা</div>
+      <div class="def-bn def-text">গার্নিশি অর্ডার হলো আদালত কর্তৃক ঋণদাতার অনুরোধে ঋণগ্রহীতার (ব্যাংকের গ্রাহক) ব্যাংক হিসাব জব্দ করার আদেশ — যাতে সেই হিসাবের অর্থ রায়প্রাপ্ত পাওনাদারকে পরিশোধ করা যায়।</div>
+      <div class="def-en def-text">A Garnishee Order is issued by court in favor of a judgment creditor upon a third party (bank), attaching money owed by the bank to its customer (judgment debtor) to satisfy the decree. Judgment Creditor requests → Court issues to Bank (Garnishee) → Bank freezes Judgment Debtor's account.</div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>Garnishee Order-এ প্রযোজ্য কি?</th><th>কারণ</th></tr>
+      <tr><td>ক্রেডিট ব্যালেন্সের হিসাব</td><td>✅ হ্যাঁ</td><td>পুরো ব্যালেন্স বা নির্দিষ্ট পরিমাণ আটক হয়</td></tr>
+      <tr><td>ওভারড্রাফট হিসাব</td><td>❌ না</td><td>ওভারড্রাফট হিসাবে অর্ডার প্রযোজ্য নয়</td></tr>
+      <tr><td>কালেকশনে পাঠানো চেক/বিল</td><td>❌ না</td><td>এখনও ক্লিয়ার হয়নি — ব্যাংকের সম্পদ নয়</td></tr>
+      <tr><td>অর্ডারের পরে জমাকৃত অর্থ</td><td>❌ না (সাধারণত)</td><td>অর্ডার জারির পরে জমা — অর্ডারে উল্লেখ না থাকলে প্রযোজ্য নয়</td></tr>
+      <tr><td>বিদেশে রক্ষিত সম্পদ</td><td>❌ না</td><td>বাংলাদেশের আদালতের এখতিয়ার বাইরে</td></tr>
+      <tr><td>নিরাপদ জিম্মায় সম্পদ</td><td>❌ না</td><td>Safe custody-তে রাখা জিনিস ব্যাংকের নিজের নয়</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">📊 Banker's Lien বনাম Set-off</h4>
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>Banker's Lien</th><th>Right of Set-off</th></tr>
+      <tr><td>সংজ্ঞা (বাংলা)</td><td>গ্রাহকের জিনিস ধরে রাখার অধিকার — পরোক্ষ pledge</td><td>গ্রাহকের হিসাবের ক্রেডিট দিয়ে ঋণ পাটাই করার অধিকার</td></tr>
+      <tr><td>Definition</td><td>Right to retain goods entrusted by customer — implied pledge with right of sale</td><td>Right to combine accounts and apply credit balance to satisfy debt owed to bank</td></tr>
+      <tr><td>দখল</td><td>ব্যাংকের দখলে থাকা বস্তুতে প্রযোজ্য</td><td>দখল নয় — হিসাব পাটাই করা</td></tr>
+      <tr><td>নোটিশ</td><td>যুক্তিসংগত নোটিশ দিয়ে বিক্রি করতে পারে</td><td>নোটিশ দিয়ে সমন্বয় করতে পারে</td></tr>
+      <tr><td>উদাহরণ</td><td>সিকিউরিটি বা দলিল জমা থাকলে ঋণ না দিলে ধরে রাখা</td><td>ক্রেডিট অ্যাকাউন্টের অর্থ দিয়ে লোন অ্যাকাউন্ট পরিশোধ</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE I: CHEQUE CROSSING ═══════════════ -->
+<div class="module-header mod-b" id="modI">
+  <div class="mod-label">Module I — NI Act Cheque Provisions</div>
+  <h2>✏️ Cheque Crossing ও Collecting Bank</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#2a7f3f">14</div>
+    <div class="q-text">
+      <div class="bn">⭐ চেক ক্রসিং কী? বিভিন্ন প্রকার ক্রসিং বর্ণনা করুন। কোনো ব্যাংকার কখন বৈধভাবে একটি ভালো চেক পরিশোধ না করে ফেরত দিতে পারেন?</div>
+      <div class="en">What is crossing a cheque? Describe types of crossing and effects. When can a banker legally return a valid cheque without payment? [98th Q1a; 98th Q1b; 99th Q2b; 97th Q2c]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction hot">🔥 বারবার আসে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ NI Act 1881, Sec. 123 — Crossing generally</span>
+      <span class="law-badge">⚖️ Sec. 124 — Account Payee</span>
+      <span class="law-badge">⚖️ Sec. 125 — Crossing Specially</span>
+      <span class="law-badge">⚖️ Sec. 126 — Effect of Crossing</span>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>প্রকার</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th><th>বাতিল করতে পারেন?</th></tr>
+      <tr><td><strong>General Crossing</strong><br>(Sec. 123)</td><td>চেকের সামনে দুটি সমান্তরাল রেখা। শুধু ব্যাংকের মাধ্যমে পরিশোধ হবে — নগদ দেওয়া যাবে না।</td><td>Two parallel lines drawn across cheque face — can be cashed ONLY through a bank account, not directly</td><td>ড্রয়ার বাতিল করতে পারেন</td></tr>
+      <tr><td><strong>Account Payee</strong><br>(Sec. 124)</td><td>"Account Payee" লেখা থাকলে শুধু নির্দিষ্ট payee-এর হিসাবে জমা হবে — তৃতীয় পক্ষে নয়।</td><td>"Account Payee" or "A/C Payee" — deposited only to payee's own account, cannot be negotiated further</td><td>ড্রয়ার বাতিল করতে পারেন</td></tr>
+      <tr><td><strong>Special Crossing</strong><br>(Sec. 125)</td><td>নির্দিষ্ট ব্যাংকের নাম উল্লেখ থাকে — শুধু সেই ব্যাংকের মাধ্যমে পরিশোধ হবে।</td><td>Name of specific bank between lines — only that specific bank can collect payment</td><td>ড্রয়ার বাতিল করতে পারেন</td></tr>
+      <tr><td><strong>Not Negotiable</strong><br>(Sec. 130)</td><td>"Not Negotiable" লেখা — ধারক ভালো মালিকানা পাবে না। প্রতারণার সুরক্ষা।</td><td>Transferee gets no better title than transferor — defeats fraud; can still be transferred but title doesn't improve</td><td>বাতিলযোগ্য নয়</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">⛔ কখন বৈধ চেক ফেরত দেওয়া যায়</h4>
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">❌ ব্যাংক চেক প্রত্যাখ্যান করতে পারে (বাংলা)</div>
+        <ul class="point-list bn">
+          <li>হিসাবে অপর্যাপ্ত অর্থ (Insufficient Funds)</li>
+          <li>চেকের মেয়াদ উত্তীর্ণ — ৬ মাসের বেশি পুরনো (Stale Cheque)</li>
+          <li>পোস্ট-ডেটেড চেক — তারিখ এখনও হয়নি</li>
+          <li>পেমেন্ট বন্ধের নির্দেশ (Stop Payment Order)</li>
+          <li>গার্নিশি অর্ডার বা আদালতের আদেশ</li>
+          <li>গ্রাহকের মৃত্যু, দেউলিয়া বা অপ্রকৃতস্থতার সংবাদ</li>
+          <li>চেকে ত্রুটি — তারিখ নেই, পরিমাণ মেলে না, স্বাক্ষর মেলে না</li>
+          <li>উপস্থাপনের সময় সঠিক নয় (ব্যাংক বন্ধ)</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">❌ When Bank Can Return Valid Cheque (English)</div>
+        <ul class="point-list en">
+          <li>Insufficient funds in account</li>
+          <li>Stale cheque — more than 6 months old</li>
+          <li>Post-dated cheque — date not yet reached</li>
+          <li>Stop payment order issued by drawer</li>
+          <li>Garnishee Order or court restraint</li>
+          <li>Notice of customer's death, insolvency, or insanity</li>
+          <li>Material alteration — amount words/figures differ; missing date</li>
+          <li>Presented outside banking hours or on holiday</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE J: KYC & AML ═══════════════ -->
+<div class="module-header mod-c" id="modJ">
+  <div class="mod-label">Module J — AML/CFT</div>
+  <h2>🔍 KYC গুরুত্ব ও মানি লন্ডারিংয়ের নেতিবাচক প্রভাব</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#7b2d8b">15</div>
+    <div class="q-text">
+      <div class="bn">⭐ মানি লন্ডারিং প্রতিরোধে KYC এর গুরুত্ব বর্ণনা করুন। মানি লন্ডারিং বাংলাদেশের অর্থনীতিতে কীভাবে নেতিবাচক প্রভাব ফেলে?</div>
+      <div class="en">Discuss the importance of KYC to prevent money laundering. How does money laundering affect Bangladesh economy? [5th Q7a; 5th Q7b; 5th Q7c; 99th Q9a]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ MLPA 2012</span>
+      <span class="law-badge">BB KYC Guidelines</span>
+      <span class="law-badge">BFIU Guidelines</span>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>KYC উপাদান</th><th>বাংলা ব্যাখ্যা</th><th>English Explanation</th></tr>
+      <tr><td><strong>Customer Identification</strong></td><td>NID, পাসপোর্ট, জন্ম সনদ দিয়ে পরিচয় যাচাই</td><td>Verify identity through NID, passport, birth certificate</td></tr>
+      <tr><td><strong>Customer Due Diligence (CDD)</strong></td><td>গ্রাহকের পেশা, আয়ের উৎস, ব্যবসার প্রকৃতি যাচাই</td><td>Verify occupation, source of income, nature of business</td></tr>
+      <tr><td><strong>Enhanced Due Diligence (EDD)</strong></td><td>উচ্চ ঝুঁকিপূর্ণ গ্রাহক (PEP, উচ্চঝুঁকি দেশ) — বাড়তি যাচাই</td><td>Enhanced scrutiny for high-risk customers — PEPs, high-risk countries</td></tr>
+      <tr><td><strong>Ongoing Monitoring</strong></td><td>লেনদেনের ধরন নিয়মিত পর্যবেক্ষণ</td><td>Continuous monitoring of transaction patterns</td></tr>
+      <tr><td><strong>Record Keeping</strong></td><td>ন্যূনতম ৫ বছর রেকর্ড সংরক্ষণ (MLPA Sec 25)</td><td>Minimum 5 years record keeping per MLPA Sec 25</td></tr>
+    </table>
+
+    <h4 style="color:var(--primary);margin:14px 0 8px">💔 মানি লন্ডারিংয়ের নেতিবাচক প্রভাব | Negative Effects on Bangladesh Economy</h4>
+    <div class="punishment-grid">
+      <div class="punishment-card pun-red"><div class="p-num">↓</div><div class="p-label">কর রাজস্ব হ্রাস<br><small>Tax Revenue Loss</small></div><div class="p-law">অবৈধ অর্থ কর দেয় না</div></div>
+      <div class="punishment-card pun-orange"><div class="p-num">↑</div><div class="p-label">মূল্যস্ফীতি বৃদ্ধি<br><small>Inflation Rise</small></div><div class="p-law">অতিরিক্ত অর্থ সরবরাহ বৃদ্ধি</div></div>
+      <div class="punishment-card pun-blue"><div class="p-num">↓</div><div class="p-label">বৈদেশিক বিনিয়োগ হ্রাস<br><small>FDI Decline</small></div><div class="p-law">আন্তর্জাতিক সম্পর্ক ক্ষতিগ্রস্ত</div></div>
+      <div class="punishment-card pun-green"><div class="p-num">⚠️</div><div class="p-label">আর্থিক অস্থিতিশীলতা<br><small>Financial Instability</small></div><div class="p-law">ব্যাংকিং ব্যবস্থার ঝুঁকি বৃদ্ধি</div></div>
+    </div>
+
+    <div class="bilingual" style="margin-top:14px">
+      <div class="bil-bn">
+        <div class="bil-header">💔 আরও নেতিবাচক প্রভাব (বাংলা)</div>
+        <ul class="point-list bn">
+          <li>অপরাধমূলক কার্যক্রম বৃদ্ধি পায়</li>
+          <li>ব্যাংকিং ব্যবস্থার বিশ্বাসযোগ্যতা হ্রাস পায়</li>
+          <li>সম্পদ মূল্য কৃত্রিমভাবে বৃদ্ধি পায় (Real Estate Bubble)</li>
+          <li>FATF Grey List-এ অন্তর্ভুক্তির ঝুঁকি — আন্তর্জাতিক কোড বন্ধ</li>
+          <li>বৈধ ব্যবসায়ীরা অসম প্রতিযোগিতার মুখে পড়েন</li>
+        </ul>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">💔 More Negative Effects (English)</div>
+        <ul class="point-list en">
+          <li>Criminal activities increase and flourish</li>
+          <li>Credibility of banking system diminishes</li>
+          <li>Asset prices artificially inflate (Real Estate Bubble)</li>
+          <li>Risk of FATF Grey List — international remittance channels blocked</li>
+          <li>Legitimate businesses face unfair competition</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MODULE K: HUNDI ═══════════════ -->
+<div class="module-header mod-f" id="modK">
+  <div class="mod-label">Module K — Special Topics</div>
+  <h2>💸 Hundi — সংজ্ঞা ও অর্থনীতিতে প্রভাব</h2>
+</div>
+
+<div class="q-card">
+  <div class="q-header">
+    <div class="q-num" style="background:#8b1a3a">16</div>
+    <div class="q-text">
+      <div class="bn">⭐ হুন্ডি কী? এটি কি নেগোসিয়েবল ইনস্ট্রুমেন্ট? হুন্ডি কেন ব্যবহার করা হয় এবং এটি বাংলাদেশের অর্থনীতিতে কীভাবে প্রভাব ফেলে?</div>
+      <div class="en">Define Hundi. Can it be considered a negotiable instrument? Why do people use Hundi and how does it affect Bangladesh economy? [97th Q7a; 97th Q7b; 97th Q7c]</div>
+    </div>
+    <div class="q-marks">20 মার্কস</div>
+  </div>
+  <div class="q-body">
+    <span class="prediction likely">⭐ আসতে পারে</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="law-badge">⚖️ NI Act 1881</span>
+      <span class="law-badge">FERA 1947</span>
+      <span class="law-badge">MLPA 2012</span>
+    </div>
+
+    <div class="def-box">
+      <div class="def-label">📖 হুন্ডির সংজ্ঞা</div>
+      <div class="def-bn def-text">হুন্ডি হলো একটি অনানুষ্ঠানিক মূল্য হস্তান্তর ব্যবস্থা — যেখানে মধ্যস্থতাকারীদের মাধ্যমে নগদ অর্থ ব্যাংকিং ব্যবস্থা বাইপাস করে এক দেশ থেকে অন্য দেশে পাঠানো হয়।</div>
+      <div class="def-en def-text">Hundi is an informal value transfer system where money is transferred across countries or regions through intermediaries (Hundiwallas) — bypassing the formal banking/financial system. Historically it was a form of promissory note.</div>
+    </div>
+
+    <div class="bilingual">
+      <div class="bil-bn">
+        <div class="bil-header">❓ হুন্ডি কি নেগোসিয়েবল?</div>
+        <p><strong>না —</strong> আধুনিক হুন্ডি NI Act 1881-এর অধীনে সংজ্ঞায়িত নেগোসিয়েবল ইনস্ট্রুমেন্ট নয়। এটি অনানুষ্ঠানিক ব্যবস্থা। তবে ঐতিহাসিকভাবে হুন্ডি BOE-এর মতো ছিল।</p>
+      </div>
+      <div class="bil-en">
+        <div class="bil-header">❓ Is Hundi a Negotiable Instrument?</div>
+        <p><strong>No —</strong> Modern Hundi is NOT a recognized negotiable instrument under NI Act 1881. It is an informal system operating outside legal framework. Historically, Hundi resembled a Bill of Exchange.</p>
+      </div>
+    </div>
+
+    <table class="compare-table">
+      <tr><th>বিষয়</th><th>হুন্ডির নেতিবাচক প্রভাব (বাংলা)</th><th>Negative Effects (English)</th></tr>
+      <tr><td>বৈদেশিক মুদ্রা</td><td>দেশের বৈদেশিক মুদ্রা রিজার্ভ কমে যায়</td><td>Reduces official foreign exchange reserves</td></tr>
+      <tr><td>কর রাজস্ব</td><td>সরকার কর থেকে বঞ্চিত হয়</td><td>Government loses tax revenue</td></tr>
+      <tr><td>রেমিট্যান্স</td><td>প্রবাসী রেমিট্যান্স ব্যাংকিং চ্যানেলে আসে না</td><td>Remittances bypassed official banking channels</td></tr>
+      <tr><td>MLPA</td><td>মানি লন্ডারিংয়ের হাতিয়ার হিসেবে ব্যবহৃত হয়</td><td>Used as a tool for money laundering</td></tr>
+      <tr><td>অর্থনৈতিক পরিসংখ্যান</td><td>সঠিক অর্থনৈতিক পরিসংখ্যান পাওয়া কঠিন হয়</td><td>Accurate national economic statistics become difficult</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ FINAL SUMMARY TABLE ═══════════════ -->
+<div style="background:linear-gradient(135deg,#1a3a6b,#0d1b3e);color:white;border-radius:14px;padding:28px 30px;margin:35px 0">
+  <h2 style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:20px;color:#ffd166">📊 ৭ম পরীক্ষার জন্য সম্ভাব্য প্রশ্নের সারসংক্ষেপ | 7th Exam Prediction Summary</h2>
+  <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.2)">
+      <th style="padding:10px;text-align:left;color:#ffd166">বিষয়/Topic</th>
+      <th style="padding:10px;text-align:center;color:#ffd166">সম্ভাবনা</th>
+      <th style="padding:10px;text-align:left;color:#ffd166">মূল আইন</th>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Artho Rin Adalat Ain 2003 — Provisions & Loan Recovery</td>
+      <td style="padding:10px;text-align:center">🔥🔥🔥</td>
+      <td style="padding:10px">Artha Rin Adalat Ain 2003</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Banker–Customer General & Special Relationship</td>
+      <td style="padding:10px;text-align:center">🔥🔥🔥</td>
+      <td style="padding:10px">Contract Act 1872; NI Act 1881</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">FERA 1947 — Scope, AD, Blocked Account</td>
+      <td style="padding:10px;text-align:center">🔥🔥🔥</td>
+      <td style="padding:10px">FERA 1947 (Amendment 2015)</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Bangladesh Bank Functions & Lender of Last Resort</td>
+      <td style="padding:10px;text-align:center">🔥🔥🔥</td>
+      <td style="padding:10px">BB Order 1972</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Holder vs HDC vs HFV + Payment in Due Course</td>
+      <td style="padding:10px;text-align:center">🔥🔥🔥</td>
+      <td style="padding:10px">NI Act 1881, Sec 9, 10</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">BCA 1991 — Director Vacation & Disqualification</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">BCA 1991, Sec 94, 108</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Endorsement Types + Negotiable Instruments Characteristics</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">NI Act 1881, Sec 15, 16</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Cheque Crossing Types + When Bank Can Return Cheque</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">NI Act 1881, Sec 123–131</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Joint Stock Company + Co-op Account Opening</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">Companies Act 1994</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Transfer of Property — Mortgage Types</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">TPA 1882, Sec 58</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">KYC Importance + AML Negative Effects</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">MLPA 2012; BB KYC Guidelines</td>
+    </tr>
+    <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+      <td style="padding:10px">Guarantee vs Indemnity + Precautions</td>
+      <td style="padding:10px;text-align:center">🔥🔥</td>
+      <td style="padding:10px">Contract Act 1872, Sec 124, 126</td>
+    </tr>
+    <tr>
+      <td style="padding:10px">MOA vs AOA + Companies Act Director Rules</td>
+      <td style="padding:10px;text-align:center">🔥</td>
+      <td style="padding:10px">Companies Act 1994, Sec 5, 17, 94</td>
+    </tr>
+  </table>
+  <div style="margin-top:18px;padding:14px;background:rgba(255,255,255,0.1);border-radius:8px;font-size:13px">
+    <strong style="color:#ffd166">💡 পরীক্ষার কৌশল:</strong> ৬টি প্রশ্নের মধ্যে যেকোনো ২টি উত্তর দিতে হবে। উপরের প্রতিটি বিষয় ২০ মার্কসের এক-একটি প্রশ্ন হতে পারে। মূল বইয়ের আইনের ধারা সহ লিখলে নম্বর বেশি পাবেন।
+  </div>
+</div>
+
+</div><!-- end container -->
+
+<div class="master-footer">
+  <strong>JAIBB — Laws and Practice of General Banking (LPGB) | Subject Code: 104</strong><br>
+  7th Banking Professional Examination, 2025 | Part A Broad Questions Preparation Guide<br>
+  <span style="opacity:0.6;font-size:11px;margin-top:6px;display:block">Based on Law Book (LPGB) by Sabbir Hassanul Islam & Past Exam Questions 96th–5th Banking Professional Examinations | All section references are from original laws</span>
+</div>
+
+</body>
+</html>
