@@ -1,4 +1,4 @@
-name: Simple LPGB Workflow
+name: LPGB Placeholder Workflow
 
 on:
   push:
@@ -19,23 +19,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      # 2️⃣ Show all files (debug)
-      - name: List files
+      # 2️⃣ Debug: Show all files
+      - name: List all repo files
         run: |
           echo "Current directory:"
           pwd
-          echo "All files in repo:"
+          echo "Files in repo:"
           ls -R
 
-      # 3️⃣ Create agent instruction (placeholder)
+      # 3️⃣ Create placeholder agent instruction
       - name: Generate Agent Instruction
         run: |
 cat > agent_instruction.txt <<'EOF'
-Task: Placeholder LPGB Agent instruction.
-This file currently just exists to avoid YAML errors.
+# LPGB Placeholder Instruction
+This file currently just exists to keep the workflow running without YAML errors.
 EOF
 
-      # 4️⃣ Execute LPGB Agent (placeholder)
+      # 4️⃣ Placeholder: Run LPGB Agent
       - name: Run LPGB Agent
         run: |
           echo "Agent would run here using agent_instruction.txt"
