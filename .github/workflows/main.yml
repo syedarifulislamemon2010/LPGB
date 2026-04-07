@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Debug: Show all files
+      # 2️⃣ Debug: List all files
       - name: List all repo files
         run: |
           echo "Current directory:"
           pwd
-          echo "Files in repo:"
+          echo "All files:"
           ls -R
 
-      # 3️⃣ Create placeholder agent instruction
+      # 3️⃣ Generate placeholder agent instruction
       - name: Generate Agent Instruction
         run: |
 cat > agent_instruction.txt <<'EOF'
@@ -40,7 +40,7 @@ EOF
         run: |
           echo "Agent would run here using agent_instruction.txt"
 
-      # 5️⃣ Upload artifact (placeholder)
+      # 5️⃣ Upload placeholder artifact
       - name: Upload placeholder artifact
         uses: actions/upload-artifact@v3
         with:
