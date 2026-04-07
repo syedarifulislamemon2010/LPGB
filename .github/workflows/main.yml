@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - copilot/**
+  workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -13,36 +15,92 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Debug: List all files
-      - name: List all repo files
+      - name: Build source-priority report
         run: |
-          echo "Current directory:"
-          pwd
-          echo "All files:"
-          ls -R
+          python - <<'PY'
+          import json
+          import pathlib
+          import re
+          import sys
 
-      # 3️⃣ Generate placeholder agent instruction
-      - name: Generate Agent Instruction
-        run: |
-          cat > agent_instruction.txt <<'EOF'
-          # LPGB Placeholder Instruction
-          This file currently just exists to keep the workflow running without YAML errors.
-          EOF
+          root = pathlib.Path(".")
 
-      # 4️⃣ Placeholder: Run LPGB Agent
-      - name: Run LPGB Agent
-        run: |
-          echo "Agent would run here using agent_instruction.txt"
+          expected_original_candidates = ["law book.pdf", "law_book.pdf"]
+          expected_past = ["96-99.pdf", "5th.pdf", "6th.pdf"]
+          detected_original = [f for f in expected_original_candidates if (root / f).exists()]
+          if not detected_original:
+              print("Missing required original law source (expected one of):", ", ".join(expected_original_candidates))
+              sys.exit(1)
 
-      # 5️⃣ Upload placeholder artifact
-      - name: Upload placeholder artifact
+          missing = [f for f in expected_past if not (root / f).exists()]
+          if missing:
+              print("Missing required files:", ", ".join(missing))
+              sys.exit(1)
+
+          all_content_files = sorted(
+              str(p)
+              for p in root.rglob("*")
+              if p.is_file()
+              and p.suffix.lower() in {".pdf", ".docx", ".html"}
+              and ".git/" not in str(p)
+          )
+
+          normalized = {}
+          for path in all_content_files:
+              stem = pathlib.Path(path).stem.lower()
+              key = re.sub(r"\s*\(\d+\)", "", stem)
+              key = re.sub(r"[^a-z0-9]+", "", key)
+              normalized.setdefault(key, []).append(path)
+
+          duplicates = {k: v for k, v in normalized.items() if len(v) > 1}
+
+          report = {
+              "source_priority": {
+                  "original_law": detected_original,
+                  "past_questions": expected_past,
+              },
+              "validation": {
+                  "required_files_present": True,
+                  "total_content_files": len(all_content_files),
+                  "duplicate_groups_found": len(duplicates),
+                  "duplicate_normalization": "lowercase + remove ' (digit)' patterns + remove non-alphanumeric chars",
+              },
+              "all_content_files": all_content_files,
+              "duplicate_groups": duplicates,
+          }
+
+          pathlib.Path("analysis_report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+
+          summary_lines = [
+              "# LPGB Source Validation",
+              "",
+              "## Source Priority",
+              f"- Original law source: {', '.join(detected_original)}",
+              f"- Past question sources: {', '.join(expected_past)}",
+              "",
+              "## Validation",
+              f"- Required files present: ✅",
+              f"- Total content files scanned: {len(all_content_files)}",
+              f"- Duplicate groups found: {len(duplicates)}",
+          ]
+          pathlib.Path("analysis_summary.md").write_text(
+              "\n".join(summary_lines) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Upload analysis artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: LPGB_Placeholder
-          path: agent_instruction.txt
+          name: LPGB_Analysis_Report
+          path: |
+            analysis_report.json
+            analysis_summary.md
