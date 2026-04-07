@@ -30,10 +30,10 @@ jobs:
       # 3️⃣ Generate placeholder agent instruction
       - name: Generate Agent Instruction
         run: |
-cat > agent_instruction.txt <<'EOF'
-# LPGB Placeholder Instruction
-This file currently just exists to keep the workflow running without YAML errors.
-EOF
+          cat > agent_instruction.txt <<'EOF'
+          # LPGB Placeholder Instruction
+          This file currently just exists to keep the workflow running without YAML errors.
+          EOF
 
       # 4️⃣ Placeholder: Run LPGB Agent
       - name: Run LPGB Agent
@@ -42,7 +42,7 @@ EOF
 
       # 5️⃣ Upload placeholder artifact
       - name: Upload placeholder artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: LPGB_Placeholder
           path: agent_instruction.txt
